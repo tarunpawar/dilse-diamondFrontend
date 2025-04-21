@@ -1,4 +1,5 @@
-import React from 'react';
+import React  from 'react';
+import {Link} from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -10,10 +11,12 @@ const Footer = () => {
               <p className="footer-nav__title acc-title text-white">Company</p>
               <ul className="site-footer__linklist acc-content p-0 list-unstyled">
                 <li className="site-footer__linklist-item">
-                  <a href="about.html" className="text-white">About</a>
+                <Link to="/about" className="text-white">
+  About
+</Link>
                 </li>
                 <li className="site-footer__linklist-item">
-                  <a href="contact.html" className="text-white">Contact us</a>
+                  <Link to="/contact" className="text-white">Contact us</Link>
                 </li>
                 <li className="site-footer__linklist-item">
                   <a href="#" className="text-white">Press</a>
@@ -128,7 +131,7 @@ const Footer = () => {
   </div>
 </div>
 
-<div className="col-3">
+<div className="col-4">
   <div className="site-footer__item-inner site-footer__item-inner--newsletter ">
     <div className="site-footer__logo text-center">
       <a className="site-footer__logo-link" href="/">AOD</a>
@@ -161,45 +164,41 @@ const Footer = () => {
             justifyContent: "center",
           }}
         >
-          <div style={{ display: "flex", flexDirection: "row", alignItems: "stretch" }}>
-            <div style={{ flex: 1, backgroundColor: "#000" }}>
-              <input
-                type="email"
-                name="email"
-                placeholder="Enter your email"
-                aria-label="Enter your email"
-                required
-                style={{
-                  boxSizing: "border-box",
-                  borderRadius: "2px",
-                  padding: "0 0 0 28px",
-                  height: "35px",
-                  backgroundColor: "#fff",
-                  border: "1px solid #ccc",
-                  fontSize: "16px",
-            
-                }}
-              />
-            </div>
-            <div style={{ margin: "0 auto" }}>
-              <button
-                type="submit"
-                style={{
-                  background: "#14344A",
-                  color: "#fff",
-                  fontSize: "13px",
-                  fontWeight: 500,
-                  letterSpacing: "3px",
-                  height: "35px",
-                  padding: "0 10px",
-                  border: "none",
-                  cursor: "pointer",
-                }}
-              >
-                SUBMIT
-              </button>
-            </div>
-          </div>
+        <div style={{ display: "flex", alignItems: "stretch", maxWidth: "400px", border: "1px solid #ccc", borderRadius: "2px", overflow: "hidden" }}>
+  <input
+    type="email"
+    name="email"
+    placeholder="Enter your email"
+    aria-label="Enter your email"
+    required
+    style={{
+      flex: 1,
+      padding: "0 0 0 14px",
+      height: "36px",
+      border: "none",
+      fontSize: "15px",
+      outline: "none"
+    }}
+  />
+  <button
+    type="submit"
+    style={{
+      background: "#14344A",
+      color: "#fff",
+      fontSize: "12px",
+      fontWeight: "600",
+      letterSpacing: "4px",
+      height: "36px",
+      padding: "0 15px",
+      border: "none",
+      cursor: "pointer",
+      textTransform: "uppercase"
+    }}
+  >
+    Submit
+  </button>
+</div>
+
         </div>
         <input type="submit" style={{ display: "none" }} aria-hidden="true" />
       </form>
@@ -214,7 +213,7 @@ const Footer = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <i className="fa-brands fa-2x fa-instagram icon icon-instagram"></i>
+        <i className="fa-brands fa-2x fa-instagram icon icon-instagram" style={{ fontSize: '30px' }}></i>
       </a>
     </li>
     <li className="social-icons__item">
@@ -224,7 +223,7 @@ const Footer = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <i className="fa-brands fa-2x fa-tiktok icon icon-tiktok"></i>
+        <i className="fa-brands fa-2x fa-tiktok icon icon-tiktok" style={{ fontSize: '30px' }}></i>
       </a>
     </li>
     <li className="social-icons__item">
@@ -234,7 +233,7 @@ const Footer = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <i className="fa-brands fa-2x fa-facebook-f icon icon-facebook"></i>
+        <i className="fa-brands  fa-facebook-f icon icon-facebook" style={{ fontSize: '30px' }}></i>
       </a>
     </li>
     <li className="social-icons__item">
@@ -244,7 +243,7 @@ const Footer = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <i className="fa-brands fa-2x fa-twitter icon icon-twitter"></i>
+        <i className="fa-brands fa-2x fa-twitter icon icon-twitter" style={{ fontSize: '30px' }}></i>
       </a>
     </li>
     <li className="social-icons__item">
@@ -254,7 +253,7 @@ const Footer = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <i className="fa-brands fa-2x fa-youtube icon icon-youtube"></i>
+        <i className="fa-brands fa-2x fa-youtube icon icon-youtube" style={{ fontSize: '30px' }}></i>
       </a>
     </li>
     <li className="social-icons__item">
@@ -264,16 +263,14 @@ const Footer = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <i className="fa-brands fa-2x fa-pinterest-p icon icon-pinterest"></i>
+        <i className="fa-brands fa-2x fa-pinterest-p icon icon-pinterest" style={{ fontSize: '30px' }}></i>
       </a>
     </li>
   </ul>
 </div>
 
   </div>
-</div>
-
-          
+</div>    
         </div>
       </div>
     </footer>

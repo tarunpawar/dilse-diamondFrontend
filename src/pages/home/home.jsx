@@ -1,5 +1,7 @@
 import React from 'react';
-
+import TrendingNow from "./TrendingNow";
+import BestsellingRings from "./BestsellingRings";
+import ExclusiveOffers from "./ExclusiveOffers";
 
 export default function Home() {
   return (
@@ -35,143 +37,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Trending Now Section */}
-      {/* <section className="trending_noe_wrapper my-5">
-      <div className="container">
-        <div className="row align-items-center">
-          <div className="col-3">
-            <h2 className="section-header-lg section-header-md mb-5">
-              Trending <br />Now
-            </h2>
-            <a href="#" className="btn border-button border my-2 p-2 rounded-0 fw-bold border-dark">
-              Explore Now
-            </a>
-          </div>
-          <div className="col-9">
-            <div className="trending_now">
-              <div>
-                <img src="images/elements.webp" alt="" className="img-fluid p-2" />
-                <p className="text-center m-0 text-uppercase">ELEMENTS</p>
-              </div>
-              <div>
-                <img src="images/THE-BOUQUET.webp" alt="" className="img-fluid p-2" />
-                <p className="text-center m-0 text-uppercase">THE BOUQUET</p>
-              </div>
-              <div>
-                <img src="images/ceremic_series.jpg" alt="" className="img-fluid p-2" />
-                <p className="text-center m-0 text-uppercase">THE CERAMIC SERIES</p>
-              </div>
-              <div>
-                <img src="images/WEDDING-BANDS.webp" alt="" className="img-fluid p-2" />
-                <p className="text-center m-0 text-uppercase">WEDDING BANDS</p>
-              </div>
-              <div>
-                <img src="images/EARRINGS.webp" alt="" className="img-fluid p-2" />
-                <p className="text-center m-0 text-uppercase">EARRINGS</p>
-              </div>
-              <div>
-                <img src="images/ANNIVERSARY-RINGS.webp" alt="" className="img-fluid p-2" />
-                <p className="text-center m-0 text-uppercase">ANNIVERSARY RINGS</p>
-              </div>
-              <div>
-                <img src="images/ETERNITY-RINGS.jpg" alt="" className="img-fluid p-2" />
-                <p className="text-center m-0 text-uppercase">ETERNITY RINGS</p>
-              </div>
-              <div>
-                <img src="images/TENNIS-NECKLACES.webp" alt="" className="img-fluid p-2" />
-                <p className="text-center m-0 text-uppercase">TENNIS NECKLACES</p>
-              </div>
-              <div>
-                <img src="images/TENNIS-BRACELETS.jpg" alt="" className="img-fluid p-2" />
-                <p className="text-center m-0 text-uppercase">TENNIS BRACELETS</p>
-              </div>
-              <div>
-                <img src="images/Fine-Jewelry.jpg" alt="" className="img-fluid p-2" />
-                <p className="text-center m-0 text-uppercase">Fine Jewelry</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> */}
-
-{/* <section className="Exclusive_Offers_wrapper my-5 bg-secondary py-5">
-  <div className="container">
-    <div className="row align-items-center">
-      <div className="col-12">
-        <h2 className="section-header-lg small--text-center">Exclusive Offers</h2>
-        <div className="Exclusive_Offers">
-          <div>
-            <div className="img-block">
-              <img
-                src="images/natural.webp"
-                alt=""
-                className="img-fluid"
-              />
-              <p className="offer text-center m-0 text-uppercase">up to 30% off</p>
-            </div>
-            <p className="text-center m-0 text-uppercase">natural diamonds</p>
-          </div>
-          <div>
-            <div className="img-block">
-              <img
-                src="images/BRACELETS.webp"
-                alt=""
-                className="img-fluid"
-              />
-              <p className="offer text-center m-0 text-uppercase">up to 30% off</p>
-            </div>
-            <p className="text-center m-0 text-uppercase">BRACELETS</p>
-          </div>
-          <div>
-            <div className="img-block">
-              <img
-                src="images/STUDS.webp"
-                alt=""
-                className="img-fluid"
-              />
-              <p className="offer text-center m-0 text-uppercase">up to 30% off</p>
-            </div>
-            <p className="text-center m-0 text-uppercase">sTUDS EARRINGS</p>
-          </div>
-          <div>
-            <div className="img-block">
-              <img
-                src="images/ETERNITY.webp"
-                alt=""
-                className="img-fluid"
-              />
-              <p className="offer text-center m-0 text-uppercase">up to 30% off</p>
-            </div>
-            <p className="text-center m-0 text-uppercase">ETERNITY RIngs</p>
-          </div>
-          <div>
-            <div className="img-block">
-              <img
-                src="images/annivarsary.webp"
-                alt=""
-                className="img-fluid"
-              />
-              <p className="offer text-center m-0 text-uppercase">up to 30% off</p>
-            </div>
-            <p className="text-center m-0 text-uppercase">Anniversary Band</p>
-          </div>
-          <div>
-            <div className="img-block">
-              <img
-                src="images/lab.webp"
-                alt=""
-                className="img-fluid"
-              />
-              <p className="offer text-center m-0 text-uppercase">up to 30% off</p>
-            </div>
-            <p className="text-center m-0 text-uppercase">lab Diamonds</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> */}
+    {/* Trending Now Section */}
+<TrendingNow />
 
 <section className="build_engagement_wrapper my-5">
   <div className="container">
@@ -271,6 +138,9 @@ export default function Home() {
   </div>
 </section>
 
+{/* Best selling section  */}
+<BestsellingRings />
+<ExclusiveOffers />
 
 <section className="Home_Preview_wrapper">
   <div className="container">

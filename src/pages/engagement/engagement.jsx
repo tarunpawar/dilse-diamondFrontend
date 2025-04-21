@@ -57,6 +57,7 @@ import "./index.css"
       src="images/engagement-rings-banner.webp"
       alt=""
       className="img-fluid w-100"
+      style={{marginTop:"170px"}} 
     />
     <div className="wrapper position-absolute text-center w-100 mb-5">
       <h2 className="fs-1 slide-title text-white">Engagement Rings</h2>
