@@ -6,6 +6,8 @@ import DiamondFilter from './DiamondFilter';
 import ColorSelect from "./ColorSelect";
 import ClaritySlider from './ClaritySlider';
 import FilterActions from './FilterActions';
+import DiamondHeader from './DiamondHeader';
+import DiamondTable from  './DiamondTable';
 
 const { Range } = Slider;
 const steps = [
@@ -122,6 +124,10 @@ export default function Diamond() {
 <ClaritySlider />
 
 <FilterActions />
+
+<DiamondHeader />
+
+<DiamondTable />
 
 
   </>
