@@ -218,7 +218,7 @@ export default function Contact() {
               <div className="accordion-body">
                 <p className="m-0">
                   We would love to hear from you. To place an order on the phone,
-                  simply call us at 844-234-6463 during our business hours. It may
+                  simply call us at +91 8511544005 during our business hours. It may
                   be helpful to call in for custom orders, split payments, or if
                   you have a shipping deadline in mind. We’re always available to
                   help with questions and special requests.
@@ -250,7 +250,7 @@ export default function Contact() {
                 <p className="m-0">
                   As all our jewelry is made to order, the best way to get all
                   the details on your order is emailing us at
-                  service@withclarity.com. We can also assist you via live chat or
+                  digitalmarketing.dilsejewels@gmail.com. We can also assist you via live chat or
                   phone to get you information right away about your ring or
                   jewelry order.
                 </p>
@@ -313,7 +313,7 @@ export default function Contact() {
                 <p className="m-0">
                   For all general questions, you can see our policies about
                   warranties, insurance, returns and more. For anything specific,
-                  please feel free to email, live chat or call us at 844-234-6463
+                  please feel free to email, live chat or call us at +91 8511544005
                   and we can provide you with quick answers to your questions.
                 </p>
               </div>
@@ -362,7 +362,7 @@ export default function Contact() {
                 aria-expanded="false"
                 aria-controls="collapseSix"
               >
-                Why should I choose WithClarity?
+                Why should I choose Dilse Jewels?
               </button>
             </h2>
             <div

@@ -209,7 +209,7 @@ const Footer = () => {
     <li className="social-icons__item">
       <a
         className="social-icons__link"
-        href="https://www.instagram.com/withclarityofficial/"
+        href="https://www.instagram.com/Dilse Jewelsofficial/"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -219,7 +219,7 @@ const Footer = () => {
     <li className="social-icons__item">
       <a
         className="social-icons__link"
-        href="https://www.tiktok.com/@withclarityofficial"
+        href="https://www.tiktok.com/@Dilse Jewelsofficial"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -229,7 +229,7 @@ const Footer = () => {
     <li className="social-icons__item">
       <a
         className="social-icons__link"
-        href="https://www.facebook.com/withclarityofficial"
+        href="https://www.facebook.com/Dilse Jewelsofficial"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -239,7 +239,7 @@ const Footer = () => {
     <li className="social-icons__item">
       <a
         className="social-icons__link"
-        href="https://twitter.com/withclarity"
+        href="https://twitter.com/Dilse Jewels"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -249,7 +249,7 @@ const Footer = () => {
     <li className="social-icons__item">
       <a
         className="social-icons__link"
-        href="https://www.youtube.com/withclarityofficial"
+        href="https://www.youtube.com/Dilse Jewelsofficial"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -259,7 +259,7 @@ const Footer = () => {
     <li className="social-icons__item">
       <a
         className="social-icons__link"
-        href="https://www.pinterest.com/withclarityofficial/"
+        href="https://www.pinterest.com/Dilse Jewelsofficial/"
         target="_blank"
         rel="noopener noreferrer"
       >

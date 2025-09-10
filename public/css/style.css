@@ -13,7 +13,7 @@ h1,h2,h3,h4,h5,h6{
 
 /* ----------------------header start */
 .header-wrapper .header-top-wrapper{
-  background-color:#06364c;
+  background-color:#0060AC;
   
 }
 .header-wrapper svg,.header-wrapper i{
@@ -48,7 +48,7 @@ display: none;
   position: Unset;
 }
 .logo-wrapper a.navbar-brand img.img-fluid {
-  max-width: 250px;
+  max-width: 100px;
 }
 header.header-wrapper.position-realtive {
   position: relative;
