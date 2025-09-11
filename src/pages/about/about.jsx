@@ -114,7 +114,7 @@ import React from 'react'
               <p className="w-80 text-center m-auto">
                 Committed to eco-friendly practices, sustainability lies at our core. Our mark in
                 the jewelry industry is invaluable to us, and to uphold this commitment we are proud
-                members of the Global Diamond Trade Organization (GDTO). The Carat Casa
+                members of the Global Diamond Trade Organization (GDTO). Dilsejewels
                 manufacturing process received a green rating, reflecting our standard.
               </p>
               <p className="w-80 text-center m-auto">
