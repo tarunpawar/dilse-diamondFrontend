@@ -1,34 +1,29 @@
-name: Deploy Frontend to DigitalOcean
+name: Deploy Frontend
 
 on:
   push:
-    branches:
-      - main # change if your branch is different
+    branches: [main]
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: "18"
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -p ${{ secrets.SERVER_PORT }} -H ${{ secrets.SERVER_HOST }} >> ~/.ssh/known_hosts
 
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build project
-        run: npm run build
-
-      - name: Deploy dist/ to DigitalOcean
-        uses: appleboy/scp-action@v0.1.7
-        with:
-          host: ${{ secrets.DO_SERVER_IP }}
-          username: ${{ secrets.DO_SERVER_USER }}
-          key: ${{ secrets.DO_SERVER_KEY }}
-          source: "dist/*"
-          target: "/var/www/html/diamondFrontend/dist"
+      - name: Deploy to Server
+        run: |
+          ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no -p ${{ secrets.SERVER_PORT }} ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} "
+            cd /var/www/html/diamondFrontend && \
+            git pull origin main && \
+            npm install && \
+            npm run build
+          "

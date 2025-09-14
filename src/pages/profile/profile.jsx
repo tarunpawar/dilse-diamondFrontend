@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useAuth } from "../../context/AuthContext";
 import { useNavigate } from "react-router-dom";
-import MyOrders from "../order/myOrders";
+import MyOrders from '../order/myOrders'
 import "./profile.css";
 
 const Profile = () => {
@@ -12,7 +12,7 @@ const Profile = () => {
   const handleLogout = async () => {
     setLogoutLoading(true);
     try {
-      await logout();
+      await logout(); 
       navigate("/signin");
     } catch (error) {
       console.error("Logout failed:", error);
@@ -147,11 +147,7 @@ const Profile = () => {
                 </div>
 
                 <div className="btn-wrapper small--hide">
-                  <button
-                    className="btn btn-wide"
-                    onClick={handleLogout}
-                    disabled={logoutLoading}
-                  >
+                  <button className="btn btn-wide" onClick={handleLogout} disabled={logoutLoading}>
                     {logoutLoading ? "Logging out..." : "Log out"}
                   </button>
                 </div>
@@ -222,7 +218,7 @@ const Profile = () => {
                                 <p>
                                   {user.name}
                                   <br />
-                                  United States
+                                  India
                                 </p>
                               </div>
                               <div className="btn-wrapper flex">
@@ -445,10 +441,10 @@ const Profile = () => {
                 <div className="col-lg-6 col-md-6 col-sm-12 col-12">
                   <div className="mb-3">
                     <select className="form-select" aria-label="Select country">
-                      <option defaultValue>United States</option>
-                      <option value="1">United States</option>
-                      <option value="2">United States</option>
-                      <option value="3">United States</option>
+                      <option defaultValue>India</option>
+                      <option value="1">India</option>
+                      <option value="2">India</option>
+                      <option value="3">India</option>
                     </select>
                   </div>
                 </div>

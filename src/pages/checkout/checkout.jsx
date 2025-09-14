@@ -333,7 +333,7 @@ const Checkout = () => {
                 >
                   <option value="">Select a country</option>
                   <option value="Canada">Canada</option>
-                  <option value="United States">United States</option>
+                  <option value="India">India</option>
                 </select>
               </div>
 
@@ -616,7 +616,9 @@ const Checkout = () => {
 
                   let imageUrl = null;
                   if (item.productType === "diamond" && item.shape?.image) {
-                    imageUrl = `/images/shapes/${item.shape.image}`;
+                    imageUrl = item.image_link
+                      ? item.image_link
+                      : "images/images.jpeg";
                   } else if (
                     item.productType === "combo" &&
                     item.ring?.images?.[0]

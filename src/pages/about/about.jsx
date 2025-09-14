@@ -29,7 +29,7 @@ import React from 'react'
             <h2 className="section-header mb-2">Designed by Dreamers</h2>
             <p>
               Our passionate designers bring your dream to life. Inspired by the
-              constantly evolving trends and innovation of New York City, each creation
+              constantly evolving trends and innovation of Surat City, each creation
               is driven by the aspirational and infectious energy of the city we’re built in.
               With a personalized experience in designing your jewelry, we aim to create
               a symbol that uniquely reflects your story.
@@ -114,7 +114,7 @@ import React from 'react'
               <p className="w-80 text-center m-auto">
                 Committed to eco-friendly practices, sustainability lies at our core. Our mark in
                 the jewelry industry is invaluable to us, and to uphold this commitment we are proud
-                members of the Global Diamond Trade Organization (GDTO). Dilsejewels
+                members of the Global Diamond Trade Organization (GDTO). Dilse Jewels
                 manufacturing process received a green rating, reflecting our standard.
               </p>
               <p className="w-80 text-center m-auto">

@@ -18,7 +18,7 @@ export default function Terms() {
               </div>
               <div className="page-content">
                 <p>
-                  Welcome to https://dilsejewels.com (“Dilsejewels”). If there is
+                  Welcome to https://dilsejewels.com (“Dilse Jewels”). If there is
                   anything at all we can do to improve your experience, please
                   do not hesitate to contact us at&nbsp;&nbsp;
                   <a
@@ -40,10 +40,10 @@ export default function Terms() {
                   </a>
                 </p>
                 <p>
-                  Renaissance FMI Inc. / Dilsejewels (“Dilsejewels,” “we,”
+                  Renaissance FMI Inc. / Dilse Jewels (“Dilse Jewels,” “we,”
                   “us,” “our,” “www.dilsejewels.com”) provides services and
                   products subject to terms and conditions that govern your use
-                  of dilsejewels.com or any related Dilsejewels /
+                  of dilsejewels.com or any related Dilse Jewels /
                   Renaissance FMI Inc. sites.
                 </p>
                 <p>
@@ -51,11 +51,11 @@ export default function Terms() {
                   change, add or delete any portion of these Terms &amp;
                   Conditions without notification. It is your responsibility to
                   periodically review the Terms &amp; Conditions. By visiting or
-                  using Dilsejewels or purchasing Dilsejewels products,
+                  using Dilse Jewels or purchasing Dilse Jewels products,
                   you acknowledge that you have read, understood and agreed to
                   all of the Terms &amp; Conditions outlined on
                   dilsejewels.com. You also agree to comply with all applicable
-                  laws and regulations, including United States Copyright and
+                  laws and regulations, including India Copyright and
                   Trademark laws.
                 </p>
                 <p>
@@ -70,7 +70,7 @@ export default function Terms() {
                   barred. The section titles in the Terms of Use are for
                   convenience only and have no legal or contractual effect.
                   Notices to you may be made via either email or postal mail.
-                  Visitors who choose to access any Dilsejewels website from
+                  Visitors who choose to access any Dilse Jewels website from
                   other locations do so on their own initiative and are
                   responsible for compliance with applicable local law.
                 </p>
@@ -84,16 +84,16 @@ export default function Terms() {
                   other errors. We make every effort to avoid such errors. We
                   reserve the right to correct any and all pricing and product
                   information errors. In the occasion that such an error does
-                  occur, Dilsejewels does not honor erroneous pricing or
+                  occur, Dilse Jewels does not honor erroneous pricing or
                   product information. In the event of an error or
                   misrepresentation, we will employ our best efforts to notify
                   you via email or telephone. If the error is discovered prior
-                  to shipment of a product sold on Dilsejewels, we will
+                  to shipment of a product sold on Dilse Jewels, we will
                   notify you, cancel the order and provide accurate product and
-                  pricing information. Dilsejewels reserves the right to
+                  pricing information. Dilse Jewels reserves the right to
                   cancel an order for any reason such as pricing errors, failure
                   to receive timely payments or any use or cause deemed
-                  appropriate or necessary by Dilsejewels. If the order has
+                  appropriate or necessary by Dilse Jewels. If the order has
                   already shipped, we will require that you return the
                   product(s) unused, pay the difference between the actual and
                   charged price or purchase an alternative product(s).
@@ -120,13 +120,13 @@ export default function Terms() {
                 <h2 className="display-12">Product Returns</h2>
                 <p>
                   Customer must express the return request in writing or via
-                  email to service@dilsejewels.com. Returns must occur within
+                  email to digitalmarketing.dilsejewels@gmail.com. Returns must occur within
                   30 calendar days of receipt of products. Orders are considered
                   final sale after 30 days from receiving the order, as verified
                   by the official FedEx tracking information. Returns must be
                   made in the original condition in which the item was received.
                   All returns are subject to inspection of returned items, help
-                  solely at the discretion of Dilsejewels. Diamonds above
+                  solely at the discretion of Dilse Jewels. Diamonds above
                   1.99 carats are subject to GIA verification and
                   re-certification, which can take up to two weeks or less.
                   Customers are limited to one product return within a six month
@@ -138,7 +138,7 @@ export default function Terms() {
                   Product Descriptions &amp; Crafting
                 </h2>
                 <p>
-                  Dilsejewels makes all reasonable efforts to display the
+                  Dilse Jewels makes all reasonable efforts to display the
                   products listed for sale on its website(s) as accurately as
                   possible. However, the colors we use, as well as the display
                   and color capabilities of your computer monitor, will affect
@@ -147,14 +147,14 @@ export default function Terms() {
                   product color, texture or detail will be accurate. All The
                   Carat Casa product displays and images are intended
                   representations and may contain inaccuracies that differ from
-                  saleable products. Dilsejewels may improve the quality of
+                  saleable products. Dilse Jewels may improve the quality of
                   its products occasionally, which may not be represented in its
-                  on-site product descriptions. In addition, Dilsejewels does
+                  on-site product descriptions. In addition, Dilse Jewels does
                   not warrant that product descriptions or other content are
                   accurate, complete, reliable current or error-free. While The
                   Carat Casa makes every effort to ensure that our products are
                   described and priced accurately, in the event that an item is
-                  deemed to be priced incorrectly, Dilsejewels reserves the
+                  deemed to be priced incorrectly, Dilse Jewels reserves the
                   right to refuse sale that item.
                 </p>
                 <p>
@@ -184,15 +184,15 @@ export default function Terms() {
                 </p>
                 <h2 className="display-12">Use of Website</h2>
                 <p>
-                  Dilsejewels’s website(s) and content are intended solely
+                  Dilse Jewels’s website(s) and content are intended solely
                   for personal and non-commercial use by visitors and online
-                  shoppers. Any use of any Dilsejewels website or its content
+                  shoppers. Any use of any Dilse Jewels website or its content
                   other than for personal and non-commercial purposes is
                   prohibited. You agree not to reproduce, publish, transmit,
                   distribute, modify, create derivative works from, or
                   commercially exploit in any way any of the content of any The
                   Carat Casa website. However, you may download, electronically
-                  copy and print any of the content of a Dilsejewels website
+                  copy and print any of the content of a Dilse Jewels website
                   for your personal, non-commercial use only. This is a
                   revocable license, not a transfer of title, and is subject to
                   the restrictions that you may not (a) modify the content or
@@ -210,9 +210,9 @@ export default function Terms() {
                   the world. The rights granted to you in the Terms are subject
                   to the following restrictions: (a) you shall not frame or
                   utilize framing techniques to enclose any trademark, logo, or
-                  other Dilsejewels Properties (including images, text, page
-                  layout or form) of Dilsejewels; (b) you shall not use any
-                  metatags or other “hidden text” using Dilsejewels’s name or
+                  other Dilse Jewels Properties (including images, text, page
+                  layout or form) of Dilse Jewels; (b) you shall not use any
+                  metatags or other “hidden text” using Dilse Jewels’s name or
                   trademarks; (c) you shall not use any manual or automated
                   software, devices or other processes (including but not
                   limited to spiders, robots, scrapers, crawlers, avatars, data
@@ -223,19 +223,19 @@ export default function Terms() {
                   purpose of and solely to the extent necessary for creating
                   publicly available searchable indices of the materials, but
                   not caches or archives of such materials); (d) you shall not
-                  access Dilsejewels Properties in order to build a similar
+                  access Dilse Jewels Properties in order to build a similar
                   or competitive website, application or service; and (e) except
-                  as expressly stated herein, no part of Dilsejewels
+                  as expressly stated herein, no part of Dilse Jewels
                   Properties may be copied, reproduced, distributed,
                   republished, downloaded, displayed, posted or transmitted in
                   any form or by any means. Any future release, update or other
-                  addition to Dilsejewels Properties shall be subject to the
-                  Terms. Dilsejewels, its suppliers and service providers
+                  addition to Dilse Jewels Properties shall be subject to the
+                  Terms. Dilse Jewels, its suppliers and service providers
                   reserve all rights not granted in the Terms.
                 </p>
                 <h2 className="display-12">Modification of Website</h2>
                 <p>
-                  Dilsejewels reserves the right to change, modify,
+                  Dilse Jewels reserves the right to change, modify,
                   discontinue, add to or delete from any portion, temporarily or
                   permanently, its website or related websites at any time. You
                   agree that by visiting dilsejewels.com, you have read
@@ -246,25 +246,25 @@ export default function Terms() {
                   Should you create an account on dilsejewels.com, it is solely
                   your responsibility to maintain the confidentiality of account
                   and restrict access to electronic devices in which you log
-                  onto Dilsejewels. You are responsible for all activities
+                  onto Dilse Jewels. You are responsible for all activities
                   and website interaction that occur under your username and
                   password. All users under the age of 18 must be accompanied by
-                  a parent or guardian. Dilsejewels reserves the right to
+                  a parent or guardian. Dilse Jewels reserves the right to
                   refuse service, terminate accounts, remove or edit content or
                   cancel orders in its sole discretion.
                 </p>
                 <h2 className="display-12">Privacy</h2>
                 <p>
-                  Please review Dilsejewels’s Privacy Policy , which applies
-                  to your site visit and use of the Dilsejewels website. Our
-                  Privacy Policy discloses how Dilsejewels collects and uses
+                  Please review Dilse Jewels’s Privacy Policy , which applies
+                  to your site visit and use of the Dilse Jewels website. Our
+                  Privacy Policy discloses how Dilse Jewels collects and uses
                   personal or private information from potential and current
                   customers.
                 </p>
                 <h2 className="display-12">Mobile Terms of Service</h2>
                 <p>
-                  The Dilsejewels mobile message service (the "Service") is
-                  operated by Renaissance FMI Inc. (“Dilsejewels”, “we”, or
+                  The Dilse Jewels mobile message service (the "Service") is
+                  operated by Renaissance FMI Inc. (“Dilse Jewels”, “we”, or
                   “us”). Your use of the Service constitutes your agreement to
                   these terms and conditions (“Mobile Terms”). We may modify or
                   cancel the Service or any of its features without notice. To
@@ -274,9 +274,9 @@ export default function Terms() {
                   constitute your acceptance of such changes.
                 </p>
                 <p>
-                  By consenting to Dilsejewels’s SMS/text messaging service,
+                  By consenting to Dilse Jewels’s SMS/text messaging service,
                   you agree to receive recurring SMS/text messages from and on
-                  behalf of Dilsejewels through your wireless provider to the
+                  behalf of Dilse Jewels through your wireless provider to the
                   mobile number you provided, even if your mobile number is
                   registered on any state or federal Do Not Call list. Text
                   messages may be sent using an automatic telephone dialing
@@ -289,7 +289,7 @@ export default function Terms() {
                 <p>
                   You understand that you do not have to sign up for this
                   program in order to make any purchases, and your consent is
-                  not a condition of any purchase with Dilsejewels. Your
+                  not a condition of any purchase with Dilse Jewels. Your
                   participation in this program is completely voluntary.
                 </p>
                 <p>
@@ -317,10 +317,10 @@ export default function Terms() {
                   For Service support or assistance, text HELP to +1 (816) 888-1111
                   or email{" "}
                   <a
-                    href="mailto:service@dilsejewels.com"
+                    href="mailto:digitalmarketing.dilsejewels@gmail.com"
                     aria-describedby="a11y-external-message"
                   >
-                    service@dilsejewels.com.
+                    digitalmarketing.dilsejewels@gmail.com.
                   </a>
                 </p>
                 <p>
@@ -362,17 +362,17 @@ export default function Terms() {
                   Unless otherwise noted, all design and content included on
                   this web site, including text, graphics, logos, icons, images,
                   artwork, audio and video clips and software is the property of
-                  Dilsejewels (or is used under license to Dilsejewels)
-                  and is protected by United States and international copyright
+                  Dilse Jewels (or is used under license to Dilse Jewels)
+                  and is protected by India and international copyright
                   laws.
                 </p>
                 <h2 className="display-12">Infringer Policy</h2>
                 <p>
                   In accordance with the Digital Millennium Copyright Act (DMCA)
-                  and other applicable law, Dilsejewels may terminate and
-                  bar, in appropriate circumstances and at Dilsejewels’s sole
+                  and other applicable law, Dilse Jewels may terminate and
+                  bar, in appropriate circumstances and at Dilse Jewels’s sole
                   discretion, website users or account holders who are deemed to
-                  be repeat infringers. Dilsejewels may also at its sole
+                  be repeat infringers. Dilse Jewels may also at its sole
                   discretion limit access to this site and/or terminate the
                   accounts of any users who infringe any intellectual property
                   rights of others, whether or not there is any repeat
@@ -380,7 +380,7 @@ export default function Terms() {
                 </p>
                 <h2 className="display-12">Comments &amp; Suggestions</h2>
                 <p>
-                  Our goal at Dilsejewels is to provide you with the best
+                  Our goal at Dilse Jewels is to provide you with the best
                   possible service and experience. We encourage comments and
                   suggestions aimed at improving your customer experience. All
                   comments and/or suggestions you submit must not be illegal,
@@ -391,42 +391,42 @@ export default function Terms() {
                   solicitation, chain letters, mass mailings or any form of
                   "spam." You may not use a false email address, impersonate any
                   person, or otherwise mislead us as to the origin of any
-                  comment or suggestion.Dilsejewels is entitled to
+                  comment or suggestion.Dilse Jewels is entitled to
                   unrestricted use, commercial or otherwise, of any comments,
                   suggestions or feedback you provide.
                 </p>
                 <h2 className="display-12">Other Sites</h2>
                 <p>
-                  Dilsejewels’s website(s) contain links to web sites that
-                  are not maintained by Dilsejewels. We try to include links
+                  Dilse Jewels’s website(s) contain links to web sites that
+                  are not maintained by Dilse Jewels. We try to include links
                   to only those web sites that are appropriate, in good standing
                   and safe for our visitors, but we are not responsible for the
                   content or accuracy of any web sites other than our own and
                   cannot guarantee that such websites will not change without
                   our knowledge. The inclusion of a link in this website does
-                  not imply Dilsejewels’s endorsement of the website. If you
+                  not imply Dilse Jewels’s endorsement of the website. If you
                   decide to use any links to access other websites, you do so at
                   your own risk.
                 </p>
                 <h2 className="display-12">Disclaimer of Warranties</h2>
                 <p>
-                  The materials and information provided by Dilsejewels on
+                  The materials and information provided by Dilse Jewels on
                   any of its websites are provided on an "as is" and "as
-                  available" basis. Dilsejewels makes no representations or
+                  available" basis. Dilse Jewels makes no representations or
                   warranties of any kind, express or implied, as to the
                   operation of its website(s)or the information, content,
                   materials or products included on its website(s). You agree
-                  that your access to and use of all Dilsejewels website(s)
+                  that your access to and use of all Dilse Jewels website(s)
                   is at your own risk.
                 </p>
                 <p>
-                  To the fullest extent applicable by law, Dilsejewels
+                  To the fullest extent applicable by law, Dilse Jewels
                   disclaims all warranties, express or implied, including,
                   without limitation, implied warranties of merchant ability and
-                  fitness for particular purpose. Dilsejewels does not
+                  fitness for particular purpose. Dilse Jewels does not
                   warrant that its website(s), its servers, or email sent from
-                  Dilsejewels are free of viruses or other harmful
-                  components. Dilsejewels will not be liable for any damages
+                  Dilse Jewels are free of viruses or other harmful
+                  components. Dilse Jewels will not be liable for any damages
                   of any kind arising from the use of this site including,
                   without limitation, any direct, indirect, incidental, punitive
                   or consequential damages.
@@ -450,10 +450,10 @@ export default function Terms() {
                   warranties or damages as described above. If such law applies
                   to you, some or all of the above disclaimers, exclusions or
                   warranties may not apply to you and you may have additional
-                  rights. However, in no event shall Dilsejewels’s aggregate
+                  rights. However, in no event shall Dilse Jewels’s aggregate
                   liability to you for all claims, damages, losses, and causes
-                  of action exceed the amount paid to Dilsejewels by you for
-                  accessing Dilsejewels’s website(s).
+                  of action exceed the amount paid to Dilse Jewels by you for
+                  accessing Dilse Jewels’s website(s).
                 </p>
                 <h2 className="display-12">Indemnity</h2>
                 <p>
@@ -461,7 +461,7 @@ export default function Terms() {
                   Casa and its officers, directors, stockholders, affiliates,
                   employees and agents from and against any claims, actions, or
                   demands, including without limitation reasonable legal and
-                  accounting fees, arising from your use of any Dilsejewels
+                  accounting fees, arising from your use of any Dilse Jewels
                   website or your breach of these Terms of Use. If you are a
                   California resident, you waive California Civil Code §1542,
                   which says: “A general release does not extend to claims which
@@ -480,26 +480,26 @@ export default function Terms() {
                 <p>
                   These Terms and Conditions and your use of this site will be
                   governed by and construed in accordance with the laws of the
-                  State of New York, applicable to agreements made and to be
-                  entirely performed within the State of New York, without
+                  State of Surat, applicable to agreements made and to be
+                  entirely performed within the State of Surat, without
                   resort to its conflict of law provisions. You agree that any
                   action at law or in equity arising out of or relating to these
                   Terms and Conditions shall be filed only in the state and
-                  federal courts located in New York County, New York and you
+                  federal courts located in Surat County, Surat and you
                   hereby irrevocably and unconditionally consent and submit to
                   the exclusive jurisdiction of such courts over any suit,
                   action or proceeding arising out of your use of this site, any
                   purchase from this site, or these Terms and Conditions.
                 </p>
                 <p>
-                  Once again, we thank you for your interest in Dilsejewels.
-                  We hope that your experience at any Dilsejewels website is
+                  Once again, we thank you for your interest in Dilse Jewels.
+                  We hope that your experience at any Dilse Jewels website is
                   enjoyable. Please contact us at{" "}
                   <a
-                    href="mailto:service@dilsejewels.com"
+                    href="mailto:digitalmarketing.dilsejewels@gmail.com"
                     aria-describedby="a11y-external-message"
                   >
-                    service@dilsejewels.com
+                    digitalmarketing.dilsejewels@gmail.com
                   </a>{" "}
                   to report any violations of the Terms of Use or to pose any
                   questions regarding these Terms of Use or the Site.
@@ -514,7 +514,7 @@ export default function Terms() {
                 </p>
                 <h2 className="display-12">Home Preview</h2>
                 <p>
-                  By utilizing Dilsejewels’s Home Preview program, the
+                  By utilizing Dilse Jewels’s Home Preview program, the
                   customer agrees to all of the following:
                 </p>
                 <ul>
@@ -526,14 +526,14 @@ export default function Terms() {
                     purpose of incidentals billing and identity verification.
                     The $100.00 per home preview ring USD charge will be
                     processed for refund after the replica rings are returned to
-                    Dilsejewels, inspected and deemed undamaged and in their
+                    Dilse Jewels, inspected and deemed undamaged and in their
                     original condition.
                   </li>
                   <li data-uw-rm-sr="">
                     The customer accepts a $100 USD charge per replica ring in
                     the event that the customer fails to return the replica
                     rings for any reason or returns the rings damaged and not in
-                    the original condition they were received. Dilsejewels
+                    the original condition they were received. Dilse Jewels
                     will repair damages at best efforts and will bill the
                     customer the lesser cost of repair or replacement. Home
                     Preview rings are not for sale and are not eligible for
@@ -552,7 +552,7 @@ export default function Terms() {
                     customer. Should the customer require rush delivery or any
                     non-standard shipping method, additional fees may apply.
                     Shipping upgrades are possible for an additional applicable
-                    fee. Please contact Dilsejewels at
+                    fee. Please contact Dilse Jewels at
                   </li>
                   <li>
                     The replica rings must be returned in their original
@@ -563,7 +563,7 @@ export default function Terms() {
                     The customer may possess the replicas for a period of three
                     days from receipt. Failure to return replicas after a three
                     day rental period may result in a charge of $100 USD per
-                    replica ring. Dilsejewels maintains discretion on
+                    replica ring. Dilse Jewels maintains discretion on
                     extending the replica rental period for the customer.
                   </li>
                   <li>
@@ -571,10 +571,10 @@ export default function Terms() {
                     incidentals for each replica ring in his/her possession. The
                     customer is not liable for loss or theft during shipping to
                     or from the customer. Damage inspection and determination is
-                    solely the discretion of Dilsejewels.
+                    solely the discretion of Dilse Jewels.
                   </li>
                   <li>
-                    All replica rings mimic Dilsejewels engagement rings and
+                    All replica rings mimic Dilse Jewels engagement rings and
                     may vary slightly from the final product. Each ring is a
                     silver-based metallic alloy and all center and accent
                     gemstones are diamond simulants. Replica rings are intended
@@ -660,10 +660,10 @@ export default function Terms() {
                   If you have any questions, please do not hesitate to contact
                   one of our representatives at{" "}
                   <a
-                    href="mailto:service@dilsejewels.com"
+                    href="mailto:digitalmarketing.dilsejewels@gmail.com"
                     aria-describedby="a11y-external-message"
                   >
-                    service@dilsejewels.com
+                    digitalmarketing.dilsejewels@gmail.com
                   </a>{" "}
                   or{" "}
                   <a

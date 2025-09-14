@@ -19,8 +19,6 @@ const DiamondTable = ({
     });
   };
 
-  const imageBaseUrl = "images/shapes/";
-
   const [error, setError] = useState(null);
   const [selectedRows, setSelectedRows] = useState([]);
 
@@ -78,7 +76,11 @@ const DiamondTable = ({
                 <div className="featured-banner">FEATURED DEAL</div>
               )}
               <img
-                src={`${imageBaseUrl}${diamond.shape.image}`} // Constructing the full image URL
+                src={
+                  diamond.image_link
+                    ? diamond.image_link
+                    : "images/images.jpeg" 
+                } 
                 alt={diamond.shape.name || "NA"}
                 className="diamond-img"
               />
@@ -109,7 +111,7 @@ const DiamondTable = ({
                 <div>{diamond.depth ? diamond.depth : "NA"}</div>
               </>
             )}
-            <div className="price">{diamond.price}</div>
+            <div className="price">${diamond.price.toFixed(2)}</div>
             <div>
               <button
                 className="select-btn"

@@ -356,7 +356,7 @@ export default function Contact() {
                   aria-expanded="false"
                   aria-controls="collapseFour"
                 >
-                  Where can I learn more about Dilsejewels policies?
+                  Where can I learn more about Dilse Jewels policies?
                 </button>
               </h2>
               <div
@@ -420,7 +420,7 @@ export default function Contact() {
                   aria-expanded="false"
                   aria-controls="collapseSix"
                 >
-                  Why should I choose CARATCASA?
+                  Why should I choose Dilse Jewels?
                 </button>
               </h2>
               <div

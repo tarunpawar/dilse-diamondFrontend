@@ -122,12 +122,12 @@
   right: -40px;
 }
 
-.ring-description_h {
+.ring-description h3 {
   font-size: 20px;
   margin-bottom: 8px;
 }
 
-.ring-description_p {
+.ring-description p {
   font-size: 14px;
   max-width: 500px;
   margin: 0 auto;
