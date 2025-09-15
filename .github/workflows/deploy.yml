@@ -2,27 +2,38 @@ name: Deploy Frontend
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Setup SSH
+      - name: Start ssh-agent and add key
         uses: webfactory/ssh-agent@v0.7.0
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-      - name: Deploy to Server
+      - name: Deploy to server
+        env:
+          SERVER_HOST: ${{ secrets.SERVER_HOST }}
+          SERVER_USER: ${{ secrets.SERVER_USER }}
+          SERVER_PORT: ${{ secrets.SERVER_PORT }}
         run: |
-          ssh -o StrictHostKeyChecking=no -p ${{ secrets.SERVER_PORT }} ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} "
-            cd /var/www/html/diamondFrontend && \
-            git pull origin main && \
-            npm install && \
+          ssh -o StrictHostKeyChecking=no -p $SERVER_PORT $SERVER_USER@$SERVER_HOST "
+            # mark directory safe for git (avoids dubious ownership error)
+            git config --global --add safe.directory /var/www/html/diamondFrontend || true
+
+            cd /var/www/html/diamondFrontend || exit 2
+
+            # ensure we are exactly on latest main (safer than merge conflicts)
+            git fetch --all --prune
+            git reset --hard origin/main
+
+            # build steps
+            npm ci
             npm run build
           "
