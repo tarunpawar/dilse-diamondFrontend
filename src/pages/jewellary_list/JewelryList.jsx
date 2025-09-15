@@ -931,7 +931,7 @@ const JewelryList = () => {
             const image =
               Array.isArray(selectedVariation?.images) &&
               selectedVariation.images.length > 0
-                ? `${
+                ? `${import.meta.env.VITE_BACKEND_URL}${
                     selectedVariation.images[0]
                   }`
                 : `${
@@ -942,7 +942,7 @@ const JewelryList = () => {
             const originalPrice = selectedVariation?.original_price || "";
             const sku = selectedVariation?.sku || "NA";
             const discount = selectedVariation?.discount || "";
-
+console.log(selectedVariations);
             return (
               <div className="col" key={group.id}>
                 <div className="h-100 d-flex flex-column">
