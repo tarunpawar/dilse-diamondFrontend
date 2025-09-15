@@ -9,7 +9,7 @@ import React from 'react'
     <img
       src="images/Header_Banner.png"
       alt="Engagement Rings Banner"
-      className="img-fluid w-100 aa" 
+      className="img-fluid w-100 about-test" 
     />
   </div>
 </section>
