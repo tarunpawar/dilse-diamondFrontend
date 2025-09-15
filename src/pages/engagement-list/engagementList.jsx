@@ -784,7 +784,9 @@ const EngagementList = () => {
             const image =
               Array.isArray(selectedVariation?.images) &&
               selectedVariation.images.length > 0
-                ? `${selectedVariation.images[0]}`
+                ? `${
+                    import.meta.env.VITE_BACKEND_URL
+                  }${selectedVariation.images[0]}`
                 : `${
                     import.meta.env.VITE_BACKEND_URL
                   }/storage/variation_images/No_Image_Available.jpg`;
