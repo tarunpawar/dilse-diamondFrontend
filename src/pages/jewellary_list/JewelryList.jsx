@@ -942,7 +942,7 @@ const JewelryList = () => {
             const originalPrice = selectedVariation?.original_price || "";
             const sku = selectedVariation?.sku || "NA";
             const discount = selectedVariation?.discount || "";
-console.log(selectedVariations);
+console.log(selectedVariation);
             return (
               <div className="col" key={group.id}>
                 <div className="h-100 d-flex flex-column">
