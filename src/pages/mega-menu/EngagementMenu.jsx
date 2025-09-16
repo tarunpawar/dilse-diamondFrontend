@@ -115,9 +115,9 @@ const EngagementMenu = ({
           <ul className="jwl-list">
             {[
               { name: "Lab Diamond" },
-              { name: "Natural Diamond" },
-              { name: "Colored Lab Diamond" },
-              { name: "Featured Deals" },
+              // { name: "Natural Diamond" },
+              // { name: "Colored Lab Diamond" },
+              // { name: "Featured Deals" },
             ].map((item, index) => (
               <li key={index}>
                 <a
