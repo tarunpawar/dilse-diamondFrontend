@@ -5,7 +5,6 @@ import JewelryMenu from "./JewelryMenu";
 import EngagementMenu from "./EngagementMenu";
 import CollectionMenu from "./CollectionMenu";
 import HighJewelryMenu from "./HighJewelryMenu";
-import Wedding from "./Wedding";
 import "./megaMenu.css";
 
 const slugify = (text = "") =>
@@ -132,14 +131,6 @@ const MegaMenu = ({ type = "engagement", closeMegaMenu = () => {} }) => {
           loadingJewelry={loadingJewelry}
           handleClick={handleClick}
           handleCollectionClick={handleCollectionClick}
-          closeMegaMenu={closeMegaMenu}
-          navigate={navigate}
-        />
-      )}
-
-      {type === "wedding" && (
-        <Wedding
-          handleClick={handleClick}
           closeMegaMenu={closeMegaMenu}
           navigate={navigate}
         />

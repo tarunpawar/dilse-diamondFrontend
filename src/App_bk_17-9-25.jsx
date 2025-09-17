@@ -34,8 +34,6 @@ import EngagementDetails from "./pages/engagement-details/engDetails";
 import CompleteRing from "./pages/completeRing/completeRing";
 import PageNotFound from "./pages/PageNotFound/PageNotFound";
 import WhiteClarityNav from "./pages/header/WhiteClarityNav";
-// Footer pages
-import Press from "./pages/footerpages/Press";
 
 export default function App() {
   const location = useLocation();
@@ -86,8 +84,6 @@ export default function App() {
             path="/engagment-details/:id"
             element={<EngagementDetails />}
           />
-          {/* footer Pages */}
-          <Route path="/press" element={<Press />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </main>
