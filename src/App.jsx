@@ -35,7 +35,8 @@ import CompleteRing from "./pages/completeRing/completeRing";
 import PageNotFound from "./pages/PageNotFound/PageNotFound";
 import WhiteClarityNav from "./pages/header/WhiteClarityNav";
 // Footer pages
-import Press from "./pages/footerpages/Press";
+import Press from "./pages/footerpages/company/Press";
+import Metal from "./pages/footerpages/education/Metal";
 
 export default function App() {
   const location = useLocation();
@@ -88,6 +89,7 @@ export default function App() {
           />
           {/* footer Pages */}
           <Route path="/press" element={<Press />} />
+          <Route path="/metal" element={<Metal />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </main>

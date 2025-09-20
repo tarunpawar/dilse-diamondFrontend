@@ -1,5 +1,4 @@
 import { BsChatDots, BsEnvelope, BsTelephone } from "react-icons/bs";
-
 function Info() {
   return (
     <div className="container my-5">

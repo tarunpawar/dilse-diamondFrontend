@@ -17,62 +17,50 @@ const BestsellingRings = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const fetchProducts = async () => {
+    const fetchRings = async () => {
       try {
-        const response = await axiosClient.get("/api/get-all-products", {
-          params: {
-            page: 1,
-            perPage: 100,
-          },
-        });
-
-        const products = response.data?.data || [];
-
-        const updatedData = {
-          "ANNIVERSARY RINGS": [],
-          "ETERNITY RINGS": [],
-          "STACKABLE RINGS": [],
+        // Map frontend keys to backend categoryType
+        const categoryMap = {
+          "ANNIVERSARY RINGS": "anniversary",
+          "ETERNITY RINGS": "eternity",
+          "STACKABLE RINGS": "stackable",
         };
 
-        products.forEach((group) => {
-          const subCat = group.category?.name?.toUpperCase();
-          const parentCat = group.category?.parent?.name?.toUpperCase();
-
-          let tabKey = null;
-          if (parentCat === "RINGS") {
-            if (subCat === "ANNIVERSARY") tabKey = "ANNIVERSARY RINGS";
-            else if (subCat === "ETERNITY") tabKey = "ETERNITY RINGS";
-            else if (subCat === "STACKABLE") tabKey = "STACKABLE RINGS";
+        const requests = Object.entries(categoryMap).map(
+          async ([tabKey, apiCategory]) => {
+            const response = await axiosClient.get(
+              `/api/best-selling-rings/${apiCategory}`
+            );
+            return { tabKey, data: response.data.data || [] };
           }
+        );
 
-          if (tabKey) {
-            const metalKeys = Object.keys(group.metal_variations || {});
-            const defaultMetal = metalKeys[0];
-            const variation = group.metal_variations[defaultMetal]?.[0];
+        const results = await Promise.all(requests);
 
-            if (!variation) return;
-
-            const image = variation?.images?.[0]
-              ? `${import.meta.env.VITE_BACKEND_URL}/storage/${variation.images[0]}`
-              : `${import.meta.env.VITE_BACKEND_URL}/storage/variation_images/No_Image_Available.jpg`;
-
-            updatedData[tabKey].push({
-              image,
-              title: group.product?.name || "Untitled",
-              sku: group.product?.master_sku,
-            });
-          }
+        const updatedData = { ...ringData };
+        results.forEach(({ tabKey, data }) => {
+          updatedData[tabKey] = data.map((item) => ({
+            image: item.images?.[0]
+              ? `${import.meta.env.VITE_BACKEND_URL}${item.images[0]}`
+              : `${
+                  import.meta.env.VITE_BACKEND_URL
+                }/storage/variation_images/No_Image_Available.jpg`,
+            title: item.product_name || "Untitled",
+            sku: item.sku,
+            price: item.price,
+            regular_price: item.regular_price,
+          }));
         });
 
         setRingData(updatedData);
       } catch (error) {
-        console.error("Error fetching ring data:", error);
+        console.error("Error fetching rings:", error);
       } finally {
         setLoading(false);
       }
     };
 
-    fetchProducts();
+    fetchRings();
   }, []);
 
   const settings = {
