@@ -20,7 +20,7 @@ export default function Help() {
           </div>
  <div className="help-grid absolute-link-wrapper">
  <a
-  href="https://mail.google.com/mail/?view=cm&to=digitalmarketing.dilsejewels@gmail.com"
+  href="https://mail.google.com/mail/?view=cm&to=service@TheCaratecasa.com"
   target="_blank"
   rel="noopener noreferrer"
   className="button-email"

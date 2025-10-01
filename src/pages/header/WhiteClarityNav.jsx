@@ -73,8 +73,8 @@ const WhiteClarityNav = () => {
     "HIGH JEWELRY": "/high-jewelry",
     JEWELRY: "/jewelry-list",
     COLLECTIONS: "/collections",
-    GIFTS: "/gifts",
-    SALE: "/sale",
+    GIFTS: "/collections/jewelry-gifts",
+    SALE: "/collections/diamond-jewelry-sale",
   };
 
   let headerClass = "custom-navbar";
@@ -138,7 +138,7 @@ const WhiteClarityNav = () => {
           <div className="nav-right d-flex align-items-center gap-3">
             <div className="icon-text d-flex align-items-center gap-1">
               <span className="material-symbols-outlined">call</span>
-              <span className="text">1.844.234.6463</span>
+              <span className="text">+91 85115 44005</span>
             </div>
 
             <div
@@ -228,10 +228,20 @@ const WhiteClarityNav = () => {
             setHoveredMenu(null); // Close on mouse leave
           }}
         >
-          <MegaMenu
-            type="wedding"
-            closeMegaMenu={() => setHoveredMenu(null)}
-          />
+          <MegaMenu type="wedding" closeMegaMenu={() => setHoveredMenu(null)} />
+        </div>
+      )}
+
+      {hoveredMenu === "DIAMONDS" && (
+        <div
+          className={`mega-menu-overlay ${scrolled ? "scrolled-menu" : ""}`}
+          onMouseEnter={() => setHoveringMegaMenu(true)}
+          onMouseLeave={() => {
+            setHoveringMegaMenu(false);
+            setHoveredMenu(null); // Close on mouse leave
+          }}
+        >
+          <MegaMenu type="diamond" closeMegaMenu={() => setHoveredMenu(null)} />
         </div>
       )}
 
@@ -277,6 +287,19 @@ const WhiteClarityNav = () => {
             type="collection"
             closeMegaMenu={() => setHoveredMenu(null)}
           />
+        </div>
+      )}
+
+      {hoveredMenu === "GIFTS" && (
+        <div
+          className={`mega-menu-overlay ${scrolled ? "scrolled-menu" : ""}`}
+          onMouseEnter={() => setHoveringMegaMenu(true)}
+          onMouseLeave={() => {
+            setHoveringMegaMenu(false);
+            setHoveredMenu(null); // Close on mouse leave
+          }}
+        >
+          <MegaMenu type="gift" closeMegaMenu={() => setHoveredMenu(null)} />
         </div>
       )}
 

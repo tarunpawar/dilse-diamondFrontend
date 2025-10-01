@@ -2,6 +2,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import ScrollToTop from "./pages/scrolltop/ScrollToTop";
 import Footer from "./pages/footer/footer";
 import HeaderWrapper from "./pages/header/HeaderWrapper";
+
 // All your page imports
 import Home from "./pages/home/home";
 import Contact from "./pages/contact/contact";
@@ -24,19 +25,26 @@ import ThankYou from "./pages/order-success/thankyou";
 import PaymentFailed from "./pages/payment_failed/PaymentFailed";
 import OrderDetails from "./pages/order_details/OrderDetails";
 import JewelryList from "./pages/jewellary_list/JewelryList";
-import EngagementList from "./pages/engagement-list/engagementList";
 import JewelryDetailsPage from "./pages/jewellary-details/JewellaryDetails";
 import MegaMenu from "./pages/mega-menu/megaMenu";
 import Luxe from "./pages/Luxe/luxe";
 import Reserve from "./pages/reserve-collections/reserve";
 import Signature from "./pages/w-signature/signature";
 import EngagementDetails from "./pages/engagement-details/engDetails";
+import EngagementList from "./pages/engagement-list/engagementList";
+import WeddingList from "./pages/wedding-brands/WeddingList";
 import CompleteRing from "./pages/completeRing/completeRing";
 import PageNotFound from "./pages/PageNotFound/PageNotFound";
 import WhiteClarityNav from "./pages/header/WhiteClarityNav";
+import PrivateRoute from "./routes/PrivateRoute";
+import CollectionsRouter from "./pages/collectionsRouter/CollectionsRouter";
+
 // Footer pages
 import Press from "./pages/footerpages/company/Press";
+// Education
 import Metal from "./pages/footerpages/education/Metal";
+import Blog from "./pages/footerpages/education/blog/Blog";
+import LabGrownDiamonds from "./pages/footerpages/education/LabGrownDiamonds/LabGrownDiamonds";
 
 export default function App() {
   const location = useLocation();
@@ -66,31 +74,44 @@ export default function App() {
             path="/reset-password/:token"
             element={<ResetPasswordForm />}
           />
-          <Route path="/profile" element={<Profile />} />
+          <Route
+            path="/profile"
+            element={
+              <PrivateRoute>
+                <Profile />
+              </PrivateRoute>
+            }
+          />
+
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/thankyou" element={<ThankYou />} />
           <Route path="/paymnet-failed" element={<PaymentFailed />} />
           <Route path="/order-details/:orderId" element={<OrderDetails />} />
           <Route path="/jewelry-list" element={<JewelryList />} />
           <Route path="/engagement-rings/:slug?" element={<EngagementList />} />
-          <Route path="/product/:slug?" element={<CompleteRing />} />
+          <Route path="/wedding/:slug?" element={<WeddingList />} />
+                    <Route path="/collections/:slug" element={<CollectionsRouter />} />
           <Route
             path="/jewellary-details/:id"
             element={<JewelryDetailsPage />}
           />
-          <Route path="/megamenu" element={<MegaMenu />} />
-
-          <Route path="/luxe" element={<Luxe />} />
-          <Route path="/reserve" element={<Reserve />} />
-          <Route path="/signature" element={<Signature />} />
+          <Route path="/product/:slug?" element={<CompleteRing />} />
           <Route
             path="/engagment-details/:id"
             element={<EngagementDetails />}
           />
-          {/* footer Pages */}
-          <Route path="/press" element={<Press />} />
-          <Route path="/metal" element={<Metal />} />
+          <Route path="/megamenu" element={<MegaMenu />} />
+          <Route path="/luxe" element={<Luxe />} />
+          <Route path="/reserve" element={<Reserve />} />
+          <Route path="/signature" element={<Signature />} />
+          {/* 404 page */}
           <Route path="*" element={<PageNotFound />} />
+          {/* Footer pages start*/}
+          <Route path="/press" element={<Press />} />
+          {/* footer Education */}
+          <Route path="/metal" element={<Metal />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/lab-diamonds" element={<LabGrownDiamonds />} />
         </Routes>
       </main>
       <Footer />

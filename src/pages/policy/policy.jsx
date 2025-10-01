@@ -23,8 +23,8 @@ export default function Policy() {
                 collect, use, store and disclose your information. Please feel
                 free to contact a service representative for more information
                 regarding our Privacy Policy at{" "}
-                <a href="mailto:digitalmarketing.dilsejewels@gmail.com">
-                  digitalmarketing.dilsejewels@gmail.com
+                <a href="mailto:service@dilsejewels.com">
+                  service@dilsejewels.com
                 </a>{" "}
                 or <a href="tel:+1 (816) 888-1111">+1 (816) 888-1111</a>
               </p>
@@ -53,7 +53,7 @@ export default function Policy() {
                 personally non-identifiable information. Such information, which
                 is collected by various third-party providers and technologies,
                 cannot be used to specifically identify you personally. The
-                Carat Casa may store such information or such information may be
+                Dilse Jewels may store such information or such information may be
                 included in databases owned and maintained by Dilse Jewels
                 affiliates, agents or service providers. This information is
                 used to provide valuable information such as number of site

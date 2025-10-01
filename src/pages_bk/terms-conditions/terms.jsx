@@ -60,7 +60,7 @@ export default function Terms() {
                 </p>
                 <p>
                   These Terms &amp; Conditions an agreement between you and The
-                  Carat Casa and govern your use of the website. The Carat
+                  Dilse Jewels and govern your use of the website. The Carat
                   Casa’s failure to enforce any of the Terms &amp; Conditions
                   shall not constitute a waiver of such right or provision. You
                   agree that regardless of any statute or law to the contrary,
@@ -112,7 +112,7 @@ export default function Terms() {
                 <p>
                   Orders created with bank wire transfer are only confirmed or
                   deemed valid orders once a payment is made and received by The
-                  Carat Casa. Diamonds are placed on hold for a period of no
+                  Dilse Jewels. Diamonds are placed on hold for a period of no
                   more than 24 hours after the bank wire order is created.
                   Diamonds are then made available to other customers for
                   purchase or sale.
@@ -145,14 +145,14 @@ export default function Terms() {
                   the colors that you actually see on your screen. The Carat
                   Casa cannot guarantee that your monitor's display of any
                   product color, texture or detail will be accurate. All The
-                  Carat Casa product displays and images are intended
+                  Dilse Jewels product displays and images are intended
                   representations and may contain inaccuracies that differ from
                   saleable products. Dilsejewels may improve the quality of
                   its products occasionally, which may not be represented in its
                   on-site product descriptions. In addition, Dilsejewels does
                   not warrant that product descriptions or other content are
                   accurate, complete, reliable current or error-free. While The
-                  Carat Casa makes every effort to ensure that our products are
+                  Dilse Jewels makes every effort to ensure that our products are
                   described and priced accurately, in the event that an item is
                   deemed to be priced incorrectly, Dilsejewels reserves the
                   right to refuse sale that item.
@@ -191,7 +191,7 @@ export default function Terms() {
                   prohibited. You agree not to reproduce, publish, transmit,
                   distribute, modify, create derivative works from, or
                   commercially exploit in any way any of the content of any The
-                  Carat Casa website. However, you may download, electronically
+                  Dilse Jewels website. However, you may download, electronically
                   copy and print any of the content of a Dilsejewels website
                   for your personal, non-commercial use only. This is a
                   revocable license, not a transfer of title, and is subject to
@@ -441,7 +441,7 @@ export default function Terms() {
                   alteration of, or use of record, whether for breach of
                   contract, tortuous behavior, negligence, or under any other
                   cause of action. You also specifically acknowledge that The
-                  Carat Casa is not liable for your defamatory, offensive,
+                  Dilse Jewels is not liable for your defamatory, offensive,
                   infringing or illegal materials or conduct or that of third
                   parties.
                 </p>
@@ -544,7 +544,7 @@ export default function Terms() {
                     a limitation of two home preview orders over a six month
                     period. After six months, the customer may order additional
                     replicas, subject to the same aforementioned rules. The
-                    Carat Casa may allow additional replica orders beyond two
+                    Dilse Jewels may allow additional replica orders beyond two
                     orders on its own discretion.
                   </li>
                   <li>

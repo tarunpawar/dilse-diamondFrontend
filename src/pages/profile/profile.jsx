@@ -1,99 +1,189 @@
-import React, { useState } from "react";
-// import "bootstrap/dist/css/bootstrap.min.css";
+import React, { useEffect, useRef, useState } from "react";
 import { useAuth } from "../../context/AuthContext";
 import { useNavigate } from "react-router-dom";
+import axiosClient from "../../api/axios";
 import "./profile.css";
 
 const Profile = () => {
   const [activeTab, setActiveTab] = useState("orders");
   const [logoutLoading, setLogoutLoading] = useState(false);
   const { user, logout } = useAuth();
+  const [loading, setLoading] = useState(false);
+  const [orders, setOrders] = useState([]);
+  const [selectedOrder, setSelectedOrder] = useState(null);
+  const [pagination, setPagination] = useState({
+    current_page: 1,
+    last_page: 1,
+    next_page_url: null,
+  });
+  const ordersCache = useRef({});
   const navigate = useNavigate();
 
-  const orders = [
-    {
-      id: "ORD-60740a91",
-      items: 4,
-      price: 584.5,
-      status: "pending",
-      date: "9/19/2025",
-      payment: "COD (pending)",
-      image: "https://via.placeholder.com/60",
-    },
-    {
-      id: "ORD-6b90797d",
-      items: 4,
-      price: 584.5,
-      status: "pending",
-      date: "9/19/2025",
-      payment: "COD (pending)",
-      image: "https://via.placeholder.com/60",
-    },
-    {
-      id: "ORD-75c0294e",
-      items: 4,
-      price: 514.66,
-      status: "pending",
-      date: "9/19/2025",
-      payment: "COD (pending)",
-      image: "https://via.placeholder.com/60",
-    },
-    {
-      id: "ORD-60740a91",
-      items: 4,
-      price: 584.5,
-      status: "pending",
-      date: "9/19/2025",
-      payment: "COD (pending)",
-      image: "https://via.placeholder.com/60",
-    },
-    {
-      id: "ORD-6b90797d",
-      items: 4,
-      price: 584.5,
-      status: "pending",
-      date: "9/19/2025",
-      payment: "COD (pending)",
-      image: "https://via.placeholder.com/60",
-    },
-    {
-      id: "ORD-75c0294e",
-      items: 4,
-      price: 514.66,
-      status: "pending",
-      date: "9/19/2025",
-      payment: "COD (pending)",
-      image: "https://via.placeholder.com/60",
-    },
-  ];
+  const fetchOrders = async (page = 1) => {
+    if (ordersCache.current[page]) {
+      setOrders((prev) => [...prev, ...ordersCache.current[page]]);
+      setPagination((prev) => ({ ...prev, current_page: page }));
+      return;
+    }
+
+    try {
+      setLoading(true);
+      const response = await axiosClient.get(`/api/get-orders?page=${page}`);
+      const data = response.data.data || [];
+
+      ordersCache.current[page] = data;
+      setOrders((prev) => [...prev, ...data]);
+      setPagination({
+        current_page: response.data.current_page,
+        last_page: response.data.last_page,
+        next_page_url: response.data.next_page_url,
+      });
+    } catch (err) {
+      console.error("Error fetching orders:", err);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  // Initial fetch
+  useEffect(() => {
+    if (activeTab === "orders") {
+      if (orders.length === 0) fetchOrders(1);
+    }
+  }, [activeTab]);
+
+  // Infinite scroll
+  const handleScroll = (e) => {
+    const bottom =
+      e.target.scrollHeight - e.target.scrollTop === e.target.clientHeight;
+    if (bottom && !loading && pagination.current_page < pagination.last_page) {
+      fetchOrders(pagination.current_page + 1);
+    }
+  };
+
+  const formatDate = (dateString) => {
+    if (!dateString) return "N/A";
+    const options = { year: "numeric", month: "short", day: "numeric" };
+    return new Date(dateString).toLocaleDateString(undefined, options);
+  };
+
+  const renderOrders = () => {
+    return orders.map((order, index) => (
+      <div
+        className="order-card shadow-sm"
+        key={index}
+        onClick={() => setSelectedOrder(order)}
+        style={{ cursor: "pointer" }}
+      >
+        <div className="d-flex align-items-center order-left">
+          <img
+            src={order.image || "https://via.placeholder.com/60"}
+            alt="diamond"
+            className="order-img"
+          />
+          <div className="ms-3">
+            <p className="mb-1 fw-bold">Order Id: {order.order_id}</p>
+            <small>Items: {order.total_quantity || 0}</small>
+          </div>
+        </div>
+        <div className="ms-auto text-end order-right">
+          <p className="text-success fw-bold mb-1">
+            ${order.total_price || "0.00"}
+          </p>
+          <p className="text-danger mb-0">
+            Order on : {formatDate(order.created_at)}
+            <br />
+            <span className="text-muted">
+              Status: {order.order_status || "NA"}
+            </span>
+            <br />
+            <span className="text-muted">
+              Payment: {order.payment_status || "NA"}
+            </span>
+          </p>
+        </div>
+      </div>
+    ));
+  };
+  const renderOrderDetails = (order) => {
+    if (!order) return null;
+
+    let items = [];
+    try {
+      items = JSON.parse(order.item_details)?.items || [];
+    } catch (err) {
+      console.error("Error parsing order items", err);
+    }
+
+    return (
+      <div className="order-details p-3 shadow-sm">
+        <button
+          className="btn btn-sm btn-outline-secondary mb-3"
+          onClick={() => setSelectedOrder(null)}
+        >
+          ← Back to Orders
+        </button>
+
+        <h4 className="mb-3">Order Details</h4>
+        <p>
+          <strong>Order ID:</strong> {order.order_id}
+        </p>
+        <p>
+          <strong>Date:</strong> {formatDate(order.created_at)}
+        </p>
+        <p>
+          <strong>Status:</strong> {order.order_status}
+        </p>
+        <p>
+          <strong>Payment:</strong> {order.payment_status}
+        </p>
+        <p>
+          <strong>Total:</strong> ${order.total_price}
+        </p>
+
+        <h5 className="mt-4">Items:</h5>
+        <div className="order-items-list">
+          {items.map((item, i) => (
+            <div className="d-flex align-items-center mb-3" key={i}>
+              <img
+                src={item.images?.[0] || "https://via.placeholder.com/60"}
+                alt={item.name}
+                width="60"
+                className="rounded"
+              />
+              <div className="ms-3">
+                <p className="fw-bold mb-1">{item.name}</p>
+                <small>Price: ${item.price}</small>
+                <br />
+                <small>Qty: {item.itemQuantity || item.quantity}</small>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    );
+  };
 
   const renderContent = () => {
     switch (activeTab) {
       case "orders":
         return (
-          <div className="tab-content-box">
-            <h4 className="mb-3">Order History</h4>
-            {orders.map((order, i) => (
-              <div className="order-card shadow-sm" key={i}>
-                <div className="d-flex align-items-center order-left">
-                  <img src={order.image} alt="diamond" className="order-img" />
-                  <div className="ms-3">
-                    <p className="mb-1 fw-bold">Order Id: {order.id}</p>
-                    <small>Items: {order.items}</small>
-                  </div>
-                </div>
-                <div className="ms-auto text-end order-right">
-                  <p className="text-success fw-bold mb-1">
-                    ${order.price.toFixed(2)}
-                  </p>
-                  <p className="text-danger mb-0">
-                    ● {order.status} on {order.date} <br />
-                    <span className="text-muted">Payment: {order.payment}</span>
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
+          <>
+            <div
+              className="tab-content-box scrollable-orders"
+              // onScroll={handleScroll}
+              onScroll={selectedOrder ? null : handleScroll}
+              style={{ maxHeight: "70vh", overflowY: "auto" }}
+            >
+              <h4 className="mb-3">Order History</h4>
+              {/* {renderOrders()} */}
+              {selectedOrder
+                ? renderOrderDetails(selectedOrder)
+                : renderOrders()}
+              {loading && !selectedOrder && <p>Loading more orders...</p>}
+              {/* {loading && <p>Loading more orders...</p>} */}
+            </div>
+          </>
         );
 
       case "account":
@@ -119,8 +209,8 @@ const Profile = () => {
                   <span className="default-badge">Default</span>
                 </div>
                 <div className="address-actions">
-                  <button className="btn edit">Edit</button>
-                  <button className="btn delete">Delete</button>
+                  <button className="btn btn-profile edit">Edit</button>
+                  <button className="btn btn-profile delete">Delete</button>
                 </div>
               </div>
 
@@ -238,7 +328,7 @@ const Profile = () => {
               <div className="text-center mt-5">
                 <a
                   href="#"
-                  className="btn btn-dark btn-lg px-5 rounded-pill shadow-sm"
+                  className="btn btn-profile btn-dark btn-lg px-5 rounded-pill shadow-sm"
                 >
                   Apply Now
                 </a>
@@ -305,7 +395,7 @@ const Profile = () => {
           </ul>
 
           <button
-            className="btn btn-dark w-100 mt-4"
+            className="btn btn-profile btn-dark w-100 mt-4"
             onClick={handleLogout}
             disabled={logoutLoading}
           >

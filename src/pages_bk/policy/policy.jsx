@@ -53,7 +53,7 @@ export default function Policy() {
                 personally non-identifiable information. Such information, which
                 is collected by various third-party providers and technologies,
                 cannot be used to specifically identify you personally. The
-                Carat Casa may store such information or such information may be
+                Dilse Jewels may store such information or such information may be
                 included in databases owned and maintained by Dilsejewels
                 affiliates, agents or service providers. This information is
                 used to provide valuable information such as number of site

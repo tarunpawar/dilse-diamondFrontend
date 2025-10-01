@@ -18,7 +18,7 @@ const details = [
   {
     title: "The W Signature—Where Form Meets Feeling",
     description:
-      "Inspired by our name Dilse JewelsCasa, each ring features a distinctive “W”-shaped basket—an elegant, architectural design that cradles the center stone in light. More than a signature detail, it’s a symbol of brilliance, engineered to maximize sparkle from every angle. Finished with knife-edged prongs, each ring balances innovation with timeless design.",
+      "Inspired by our name The CarateCasa, each ring features a distinctive “W”-shaped basket—an elegant, architectural design that cradles the center stone in light. More than a signature detail, it’s a symbol of brilliance, engineered to maximize sparkle from every angle. Finished with knife-edged prongs, each ring balances innovation with timeless design.",
     image: "https://www.withclarity.com/cdn/shop/files/w_r_1_480x.jpg?v=1746013571",
   },
   {

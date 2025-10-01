@@ -22,10 +22,10 @@ export default function Terms() {
                   anything at all we can do to improve your experience, please
                   do not hesitate to contact us at&nbsp;&nbsp;
                   <a
-                    href="mailto:digitalmarketing.dilsejewels@gmail.com"
+                    href="mailto:service@TheCaratecasa.com"
                     aria-describedby="a11y-external-message"
                   >
-                    digitalmarketing.dilsejewels@gmail.com
+                    service@TheCaratecasa.com
                   </a>
                   &nbsp; or&nbsp;&nbsp;
                   <a
@@ -55,12 +55,12 @@ export default function Terms() {
                   you acknowledge that you have read, understood and agreed to
                   all of the Terms &amp; Conditions outlined on
                   dilsejewels.com. You also agree to comply with all applicable
-                  laws and regulations, including India Copyright and
+                  laws and regulations, including United States Copyright and
                   Trademark laws.
                 </p>
                 <p>
                   These Terms &amp; Conditions an agreement between you and The
-                  Carat Casa and govern your use of the website. The Carat
+                  Dilse Jewels and govern your use of the website. The Carat
                   Casa’s failure to enforce any of the Terms &amp; Conditions
                   shall not constitute a waiver of such right or provision. You
                   agree that regardless of any statute or law to the contrary,
@@ -112,7 +112,7 @@ export default function Terms() {
                 <p>
                   Orders created with bank wire transfer are only confirmed or
                   deemed valid orders once a payment is made and received by The
-                  Carat Casa. Diamonds are placed on hold for a period of no
+                  Dilse Jewels. Diamonds are placed on hold for a period of no
                   more than 24 hours after the bank wire order is created.
                   Diamonds are then made available to other customers for
                   purchase or sale.
@@ -120,7 +120,7 @@ export default function Terms() {
                 <h2 className="display-12">Product Returns</h2>
                 <p>
                   Customer must express the return request in writing or via
-                  email to digitalmarketing.dilsejewels@gmail.com. Returns must occur within
+                  email to service@dilsejewels.com. Returns must occur within
                   30 calendar days of receipt of products. Orders are considered
                   final sale after 30 days from receiving the order, as verified
                   by the official FedEx tracking information. Returns must be
@@ -145,14 +145,14 @@ export default function Terms() {
                   the colors that you actually see on your screen. The Carat
                   Casa cannot guarantee that your monitor's display of any
                   product color, texture or detail will be accurate. All The
-                  Carat Casa product displays and images are intended
+                  Dilse Jewels product displays and images are intended
                   representations and may contain inaccuracies that differ from
                   saleable products. Dilse Jewels may improve the quality of
                   its products occasionally, which may not be represented in its
                   on-site product descriptions. In addition, Dilse Jewels does
                   not warrant that product descriptions or other content are
                   accurate, complete, reliable current or error-free. While The
-                  Carat Casa makes every effort to ensure that our products are
+                  Dilse Jewels makes every effort to ensure that our products are
                   described and priced accurately, in the event that an item is
                   deemed to be priced incorrectly, Dilse Jewels reserves the
                   right to refuse sale that item.
@@ -191,7 +191,7 @@ export default function Terms() {
                   prohibited. You agree not to reproduce, publish, transmit,
                   distribute, modify, create derivative works from, or
                   commercially exploit in any way any of the content of any The
-                  Carat Casa website. However, you may download, electronically
+                  Dilse Jewels website. However, you may download, electronically
                   copy and print any of the content of a Dilse Jewels website
                   for your personal, non-commercial use only. This is a
                   revocable license, not a transfer of title, and is subject to
@@ -317,10 +317,10 @@ export default function Terms() {
                   For Service support or assistance, text HELP to +1 (816) 888-1111
                   or email{" "}
                   <a
-                    href="mailto:digitalmarketing.dilsejewels@gmail.com"
+                    href="mailto:service@dilsejewels.com"
                     aria-describedby="a11y-external-message"
                   >
-                    digitalmarketing.dilsejewels@gmail.com.
+                    service@dilsejewels.com.
                   </a>
                 </p>
                 <p>
@@ -363,7 +363,7 @@ export default function Terms() {
                   this web site, including text, graphics, logos, icons, images,
                   artwork, audio and video clips and software is the property of
                   Dilse Jewels (or is used under license to Dilse Jewels)
-                  and is protected by India and international copyright
+                  and is protected by United States and international copyright
                   laws.
                 </p>
                 <h2 className="display-12">Infringer Policy</h2>
@@ -441,7 +441,7 @@ export default function Terms() {
                   alteration of, or use of record, whether for breach of
                   contract, tortuous behavior, negligence, or under any other
                   cause of action. You also specifically acknowledge that The
-                  Carat Casa is not liable for your defamatory, offensive,
+                  Dilse Jewels is not liable for your defamatory, offensive,
                   infringing or illegal materials or conduct or that of third
                   parties.
                 </p>
@@ -480,12 +480,12 @@ export default function Terms() {
                 <p>
                   These Terms and Conditions and your use of this site will be
                   governed by and construed in accordance with the laws of the
-                  State of Surat, applicable to agreements made and to be
-                  entirely performed within the State of Surat, without
+                  State of New York, applicable to agreements made and to be
+                  entirely performed within the State of New York, without
                   resort to its conflict of law provisions. You agree that any
                   action at law or in equity arising out of or relating to these
                   Terms and Conditions shall be filed only in the state and
-                  federal courts located in Surat County, Surat and you
+                  federal courts located in New York County, New York and you
                   hereby irrevocably and unconditionally consent and submit to
                   the exclusive jurisdiction of such courts over any suit,
                   action or proceeding arising out of your use of this site, any
@@ -496,10 +496,10 @@ export default function Terms() {
                   We hope that your experience at any Dilse Jewels website is
                   enjoyable. Please contact us at{" "}
                   <a
-                    href="mailto:digitalmarketing.dilsejewels@gmail.com"
+                    href="mailto:service@dilsejewels.com"
                     aria-describedby="a11y-external-message"
                   >
-                    digitalmarketing.dilsejewels@gmail.com
+                    service@dilsejewels.com
                   </a>{" "}
                   to report any violations of the Terms of Use or to pose any
                   questions regarding these Terms of Use or the Site.
@@ -544,7 +544,7 @@ export default function Terms() {
                     a limitation of two home preview orders over a six month
                     period. After six months, the customer may order additional
                     replicas, subject to the same aforementioned rules. The
-                    Carat Casa may allow additional replica orders beyond two
+                    Dilse Jewels may allow additional replica orders beyond two
                     orders on its own discretion.
                   </li>
                   <li>
@@ -660,10 +660,10 @@ export default function Terms() {
                   If you have any questions, please do not hesitate to contact
                   one of our representatives at{" "}
                   <a
-                    href="mailto:digitalmarketing.dilsejewels@gmail.com"
+                    href="mailto:service@dilsejewels.com"
                     aria-describedby="a11y-external-message"
                   >
-                    digitalmarketing.dilsejewels@gmail.com
+                    service@dilsejewels.com
                   </a>{" "}
                   or{" "}
                   <a

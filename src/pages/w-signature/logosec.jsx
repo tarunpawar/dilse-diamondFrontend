@@ -64,7 +64,7 @@ const Logosec = () => {
       <p className="description">
         {hoveredIndex !== null
           ? logos[hoveredIndex].description
-          : "NFL Releases Wedding Bands Collection With Fine Jewelry Label Dilse JewelsCasa."}
+          : "NFL Releases Wedding Bands Collection With Fine Jewelry Label The CarateCasa."}
       </p>
     </div>
   )

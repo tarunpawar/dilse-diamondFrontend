@@ -9,7 +9,7 @@ import React from 'react'
     <img
       src="images/Header_Banner.png"
       alt="Engagement Rings Banner"
-      className="img-fluid w-100 about-test" 
+      className="img-fluid w-100"
     />
   </div>
 </section>
@@ -29,7 +29,7 @@ import React from 'react'
             <h2 className="section-header mb-2">Designed by Dreamers</h2>
             <p>
               Our passionate designers bring your dream to life. Inspired by the
-              constantly evolving trends and innovation of Surat City, each creation
+              constantly evolving trends and innovation of New York City, each creation
               is driven by the aspirational and infectious energy of the city we’re built in.
               With a personalized experience in designing your jewelry, we aim to create
               a symbol that uniquely reflects your story.

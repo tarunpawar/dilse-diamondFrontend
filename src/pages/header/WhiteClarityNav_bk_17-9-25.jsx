@@ -138,7 +138,7 @@ const WhiteClarityNav = () => {
           <div className="nav-right d-flex align-items-center gap-3">
             <div className="icon-text d-flex align-items-center gap-1">
               <span className="material-symbols-outlined">call</span>
-              <span className="text">1.844.234.6463</span>
+              <span className="text">+91 85115 44005</span>
             </div>
 
             <div

@@ -24,9 +24,9 @@ const Footer = () => {
     { label: "Gemstones", to: "#" },
     { label: "Jewelry", to: "#" },
     { label: "Conflict diamond policy", to: "#" },
-    { label: "Lab grown diamonds", to: "#" },
+    { label: "Lab grown diamonds", to: "/lab-diamonds" },
     { label: "Metals", to: "/metal" },
-    { label: "Blog", to: "#" },
+    { label: "Blog", to: "/blog" },
   ];
 
   const shopLinks = [
@@ -54,13 +54,13 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: "fa-instagram", href: "https://www.instagram.com/thecaratcasa/#" },
+    { icon: "fa-instagram", href: "https://www.instagram.com/dilse_jewels/#" },
     { icon: "fa-tiktok", href: "#" },
     {
       icon: "fa-facebook-f",
-      href: "https://www.facebook.com/share/194gTHJY21/?mibextid=wwXIfr",
+      href: "https://www.facebook.com/people/dilse_jewels/100083864271889/#",
     },
-    { icon: "fa-twitter", href: "#" },
+    { icon: "fa-twitter", href: "https://x.com/DilseJewels" },
     { icon: "fa-youtube", href: "#" },
     { icon: "fa-pinterest-p", href: "#" },
   ];
