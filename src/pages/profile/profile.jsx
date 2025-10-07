@@ -138,7 +138,7 @@ const Profile = () => {
           <strong>Payment:</strong> {order.payment_status}
         </p>
         <p>
-          <strong>Total:</strong> ${order.total_price}
+          <strong>Total:</strong> ₹{order.total_price}
         </p>
 
         <h5 className="mt-4">Items:</h5>
@@ -153,7 +153,7 @@ const Profile = () => {
               />
               <div className="ms-3">
                 <p className="fw-bold mb-1">{item.name}</p>
-                <small>Price: ${item.price}</small>
+                <small>Price: ₹{item.price}</small>
                 <br />
                 <small>Qty: {item.itemQuantity || item.quantity}</small>
               </div>

@@ -891,7 +891,7 @@ const EngagementList = () => {
                   </div>
 
                   <p className="mt-1">
-                    <span className="fw-bold">${price}</span>
+                    <span className="fw-bold">₹{price}</span>
                     {originalPrice && (
                       <span className="original-price text-muted text-decoration-line-through ms-2">
                         ${originalPrice}
