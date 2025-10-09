@@ -3,6 +3,11 @@ import { useNavigate } from "react-router-dom";
 import { useMegaMenu } from "../../context/MegaMenuContext";
 import JewelryMenu from "./JewelryMenu";
 import EngagementMenu from "./EngagementMenu";
+import CollectionMenu from "./CollectionMenu";
+import HighJewelryMenu from "./HighJewelryMenu";
+import DiamondMenu from "./DiamondMenu";
+import Wedding from "./Wedding";
+import GiftMenu from "./GiftMenu";
 import "./megaMenu.css";
 
 const slugify = (text = "") =>
@@ -27,7 +32,7 @@ const MegaMenu = ({ type = "engagement", closeMegaMenu = () => {} }) => {
   } = useMegaMenu() || {};
 
   const navigate = useNavigate();
-  const [hoveredOption, setHoveredOption] = useState("diamond");
+  const [hoveredOption, setHoveredOption] = useState("diamond"); // in Engagement mega menu
 
   const handleClick = (main, sub = null) => {
     const mainParam = `${slugify(main.name)}-${main.id}`;
@@ -70,6 +75,16 @@ const MegaMenu = ({ type = "engagement", closeMegaMenu = () => {} }) => {
   const handleStartEngagement = (startType) => {
     closeMegaMenu();
     navigate(`/engagement-rings/${startType}`);
+  };
+
+  const handleStartWedding = (startType) => {
+    closeMegaMenu();
+    navigate(`/wedding/${startType}`);
+  };
+
+  const handleStartGift = (startType) => {
+    closeMegaMenu();
+    navigate(`/collections/${startType}`);
   };
 
   const handleShapeClick = (shape) => {
@@ -121,19 +136,6 @@ const MegaMenu = ({ type = "engagement", closeMegaMenu = () => {} }) => {
 
   return (
     <div className="jwl-mega-menu-dropdown">
-      {type === "jewelry" && (
-        <JewelryMenu
-          mainCategories={mainCategories}
-          categoryMap={categoryMap}
-          collections={collections}
-          loadingJewelry={loadingJewelry}
-          handleClick={handleClick}
-          handleCollectionClick={handleCollectionClick}
-          closeMegaMenu={closeMegaMenu}
-          navigate={navigate}
-        />
-      )}
-
       {type === "engagement" && (
         <EngagementMenu
           styles={styles}
@@ -149,6 +151,53 @@ const MegaMenu = ({ type = "engagement", closeMegaMenu = () => {} }) => {
           handleDiamondClick={handleDiamondClick}
           navigate={navigate}
           slugify={slugify}
+        />
+      )}
+      {type === "wedding" && (
+        <Wedding
+          closeMegaMenu={closeMegaMenu}
+          navigate={navigate}
+          handleStartWedding={handleStartWedding}
+        />
+      )}
+
+      {type === "diamond" && (
+        <DiamondMenu closeMegaMenu={closeMegaMenu} navigate={navigate} />
+      )}
+      {type === "highJewelry" && (
+        <HighJewelryMenu
+          closeMegaMenu={closeMegaMenu}
+          navigate={navigate}
+          slugify={slugify}
+        />
+      )}
+
+      {type === "jewelry" && (
+        <JewelryMenu
+          mainCategories={mainCategories}
+          categoryMap={categoryMap}
+          collections={collections}
+          loadingJewelry={loadingJewelry}
+          handleClick={handleClick}
+          handleCollectionClick={handleCollectionClick}
+          closeMegaMenu={closeMegaMenu}
+          navigate={navigate}
+        />
+      )}
+
+      {type === "collection" && (
+        <CollectionMenu
+          closeMegaMenu={closeMegaMenu}
+          navigate={navigate}
+          slugify={slugify}
+        />
+      )}
+
+      {type === "gift" && (
+        <GiftMenu
+          handleStartGift={handleStartGift}
+          closeMegaMenu={closeMegaMenu}
+          navigate={navigate}
         />
       )}
     </div>

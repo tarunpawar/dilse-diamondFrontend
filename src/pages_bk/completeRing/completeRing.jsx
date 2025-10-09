@@ -72,7 +72,7 @@ const CompleteRing = () => {
       ring: ringCartItem, // ring details
       diamond: diamond, // diamond details
       size: selectedSize, // ring size
-      itemQuantity: 1,
+      itemQuantity:1,
       totalPrice, // computed total
     };
     addToCart(cartItem);
@@ -94,7 +94,7 @@ const CompleteRing = () => {
             <div className="d-flex flex-column flex-md-row gap-3">
               <div className="w-100">
                 <img
-                  src={`/images/shapes/${diamond.shape.image}`}
+                  src={diamond.image_link}
                   alt="Diamond"
                   className="img-fluid rounded shadow"
                 />

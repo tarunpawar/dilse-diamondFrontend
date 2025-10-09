@@ -121,7 +121,6 @@ const DiamondHeader = ({
             <input
               type="checkbox"
               checked={featuredDealChecked}
-              // onChange={(e) => setFeaturedDealChecked(e.target.checked)}
               onChange={(e) => {
                 const isChecked = e.target.checked;
                 setFeaturedDealChecked(isChecked);

@@ -423,29 +423,9 @@ const JewelryList = () => {
       key !== "category" && key !== "subcategory" && key !== "menucollection"
   );
 
-  // this function support both
-  // function normalizeVariations(group) {
-  //   const normalized = {};
-  //   const isBuild = group.product?.is_build;
-  //   const metalVariations = group.metal_variations || {};
-
-  //   Object.entries(metalVariations).forEach(([metalId, variations]) => {
-  //     if (isBuild === 1) {
-  //       // metalVariations[metalId][shapeId] = [variation, ...]
-  //       const flat = Object.values(variations).flat();
-  //       normalized[metalId] = flat;
-  //     } else {
-  //       // metalVariations[metalId] = [variation, ...]
-  //       normalized[metalId] = variations;
-  //     }
-  //   });
-
-  //   return normalized;
-  // }
-
   return (
     <>
-      <section className="hero_section_wrapper">
+      <section className="hero_section_wrapper_jewelry">
         <div className="container-fluid p-0 position-relative">
           {bannerVideo ? (
             <video
@@ -762,7 +742,6 @@ const JewelryList = () => {
         <div className="row row-cols-1 row-cols-md-4 g-4">
           {loading && <Loader />}
 
-
           {products.map((group) => {
             const metalKeys = Object.keys(group.metal_variations).sort(
               (a, b) => {
@@ -790,7 +769,7 @@ const JewelryList = () => {
             const image =
               Array.isArray(selectedVariation?.images) &&
               selectedVariation.images.length > 0
-                ? `${import.meta.env.VITE_BACKEND_URL}/storage/variation_images/${
+                ? `${import.meta.env.VITE_BACKEND_URL}${
                     selectedVariation.images[0]
                   }`
                 : `${
@@ -798,7 +777,7 @@ const JewelryList = () => {
                   }/storage/variation_images/No_Image_Available.jpg`;
 
             const price = selectedVariation?.price || "NA";
-            const originalPrice = selectedVariation?.original_price || "NA";
+            const originalPrice = selectedVariation?.original_price || "";
             const sku = selectedVariation?.sku || "NA";
             const discount = selectedVariation?.discount || "";
 
@@ -886,7 +865,7 @@ const JewelryList = () => {
                   </div>
 
                   <p className="mt-auto">
-                    <span className="fw-bold">${price}</span>
+                    <span className="fw-bold">₹{price}</span>
                     {originalPrice && (
                       <span className="original-price text-muted text-decoration-line-through ms-2">
                         ${originalPrice}

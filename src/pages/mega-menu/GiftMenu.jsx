@@ -38,7 +38,7 @@ const GiftMenu = ({ handleStartGift }) => {
         { label: "Gift Sets", slug: "jewelry-gift-sets" },
         { label: "Ready to Ship", slug: "ready-to-ship-diamond-jewelry-gifts" },
         { label: "For Him", slug: "jewelry-gifts-for-him" },
-        { label: "Gift Cards", slug: "Dilse Jewels-gift-card" },
+        { label: "Gift Cards", slug: "caratcasa-gift-card" },
       ],
     },
   ];

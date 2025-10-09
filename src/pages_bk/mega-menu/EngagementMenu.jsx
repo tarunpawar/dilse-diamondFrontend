@@ -33,7 +33,7 @@ const EngagementMenu = ({
               href="#"
               onClick={(e) => {
                 e.preventDefault();
-                handleStartEngagement("rings");
+                handleStartEngagement("engagement-rings");
               }}
             >
               Start With A Setting &gt;
@@ -140,13 +140,13 @@ const EngagementMenu = ({
         <h6 className="jwl-menu-title">FEATURED</h6>
         <ul className="jwl-list">
           {[
-            { label: "Wave" },
-            { label: "W Signature" },
-            { label: "Fully Custom" },
-            { label: "New Arrivals" },
-            { label: "Best Sellers" },
-            { label: "Ready To Ship" },
-            { label: "Home Preview" },
+            { label: "Wave", path: "/engagement-wave" },
+            { label: "W Signature", path: "/engagement-signature" },
+            { label: "Fully Custom", path: "/fully-custom" },
+            { label: "New Arrivals", path: "/new-arrivals" },
+            { label: "Best Sellers", path: "/best-sellers" },
+            { label: "Ready To Ship", path: "/ready-to-ship" },
+            { label: "Home Preview", path: "/home-preview" },
           ].map((item) => (
             <li key={item.label}>
               <a

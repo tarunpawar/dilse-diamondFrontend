@@ -874,7 +874,7 @@ export default function RingStyle() {
                                     className="article__link"
                                     data-uw-rm-brl="PR"
                                   >
-                                    The Luxe Collection by With Dilse Jewels - it's
+                                    The Luxe Collection by With dilse jewels - it's
                                     Big, it's Bold and it's New
                                   </a>
 

@@ -425,51 +425,35 @@ const JewelryList = () => {
 
   return (
     <>
-      <section className="hero_section_wrapper_jewelry">
-        <div className="container-fluid p-0 position-relative">
-          {bannerVideo ? (
-            <video
-              className="w-100"
-              autoPlay
-              muted
-              loop
-              playsInline
-              src={`${import.meta.env.VITE_BACKEND_URL}/storage/${bannerVideo}`}
-            >
-              Your browser does not support the video tag.
-            </video>
-          ) : (
-            <img
-              src={
-                bannerImage
-                  ? `${import.meta.env.VITE_BACKEND_URL}/storage/${bannerImage}`
-                  : "https://www.withclarity.com/cdn/shop/files/Women_s_Diamond_Gemstone_Jewelry_1366x.jpg?v=1729163233"
-              }
-              alt="banner"
-              className="img-fluid w-100"
-            />
-          )}
-
-          <div className="wrapper position-absolute text-center w-100 mb-5">
-            <h2 className="fs-1 slide-title text-white">
-              ENGAGEMENT RING EDUCATION
-            </h2>
-            <div className="content">
-              <p className="text-white">
-                Learn about engagement ring setting styles, metal options, ring
-                sizing and more.
-              </p>
-            </div>
-            <div className="slide-btn-wrapper justify-content-center align-items-center gap-5">
-              <a
-                title="SHOP ENGAGEMENT RINGS"
-                href="#"
-                className="text-white btn border-button border my-2 p-2 rounded-0 fw-bold border-white"
-              >
-                SHOP ENGAGEMENT RINGS
-              </a>
-            </div>
-          </div>
+      <section className="hero-wrapper">
+        {bannerVideo ? (
+          <video
+            className="hero-img img-fluid"
+            autoPlay
+            muted
+            loop
+            playsInline
+            src={`${import.meta.env.VITE_BACKEND_URL}/storage/${bannerVideo}`}
+          >
+            Your browser does not support the video tag.
+          </video>
+        ) : (
+          <img
+            src={
+              bannerImage
+                ? `${import.meta.env.VITE_BACKEND_URL}/storage/${bannerImage}`
+                : "https://www.withclarity.com/cdn/shop/files/Women_s_Diamond_Gemstone_Jewelry_1366x.jpg?v=1729163233"
+            }
+            alt="banner"
+            className="hero-img img-fluid"
+          />
+        )}
+        <div className="hero-text text-center">
+          <h1 className="fw-bold">ENGAGEMENT RING EDUCATION</h1>
+          <p>
+            Learn about engagement ring setting styles, metal options, ring
+            sizing and more.
+          </p>
         </div>
       </section>
       <div className="container my-4">
@@ -865,7 +849,7 @@ const JewelryList = () => {
                   </div>
 
                   <p className="mt-auto">
-                    <span className="fw-bold">₹{price}</span>
+                    <span className="fw-bold">${price}</span>
                     {originalPrice && (
                       <span className="original-price text-muted text-decoration-line-through ms-2">
                         ${originalPrice}

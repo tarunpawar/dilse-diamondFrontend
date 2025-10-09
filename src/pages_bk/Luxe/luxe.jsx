@@ -5,7 +5,7 @@ import LuxeCollectionsSection from './Luxe-collections/luxeCOllections';
 const Luxe = () => {
   return (
   <>
-      <section className="hero_section_wrapper">
+      <section className="hero_section_wrapper_luxe">
   <div className="container-fluid p-0 position-relative">
     <img
       src="https://www.withclarity.com/cdn/shop/files/luxe-home2x_3000x.png?v=1711447963"
@@ -23,7 +23,7 @@ const Luxe = () => {
   <div className="luxe-quote-container">
       <p className="luxe-quote-text">
         <em>
-          Join our Surat woman as she embarks on an unforgettable getaway,
+          Join our New York woman as she embarks on an unforgettable getaway,
           <br />
           embracing the warmth of the new season and the unmatched feeling of
           fresh diamonds.

@@ -9,7 +9,7 @@ function LabGrownDiamonds() {
           <div className="row pb-4">
             <div className="col-md-6">
               <div className="hero-image">
-                <img src="images/LabGrownDiamonds/Diamond_Vid_990x.webp" alt="" width={650} />
+                <img src="/images/labGrownDiamonds/Diamond_Vid_990x.webp" alt="" width={650} />
               </div>
             </div>
             <div className="col-md-6">
@@ -25,42 +25,42 @@ function LabGrownDiamonds() {
           <div className="row">
             <div className="col-6 col-sm-4 col-md-2 text-center mb-3">
               <a href="#" className="text-decoration-none">
-                <img src="images/LabGrownDiamonds/Round_Shape-icon_fb1f11ce-66d0-4f90-8478-d27cf9f40525.png" alt="Round" className="img-fluid" width={150} />
+                <img src="/images/labGrownDiamonds/Round_Shape-icon_fb1f11ce-66d0-4f90-8478-d27cf9f40525.png" alt="Round" className="img-fluid" width={150} />
                 <p>Round</p>
               </a>
             </div>
 
             <div className="col-6 col-sm-4 col-md-2 text-center mb-3">
               <a href="#" className="text-decoration-none">
-                <img src="images/LabGrownDiamonds/Princess_Shape-icion_86fa796c-38c5-4006-a5f0-180e1f1e7560.png" alt="Princess" className="img-fluid" width={150} />
+                <img src="/images/labGrownDiamonds/Princess_Shape-icion_86fa796c-38c5-4006-a5f0-180e1f1e7560.png" alt="Princess" className="img-fluid" width={150} />
                 <p>Princess</p>
               </a>
             </div>
 
             <div className="col-6 col-sm-4 col-md-2 text-center mb-3">
               <a href="#" className="text-decoration-none">
-                <img src="images/LabGrownDiamonds/Cushion_Shape-icon_4a8377f1-e2bf-4068-8d98-8925167123ea.png" alt="Cushion" className="img-fluid" width={150} />
+                <img src="/images/labGrownDiamonds/Cushion_Shape-icon_4a8377f1-e2bf-4068-8d98-8925167123ea.png" alt="Cushion" className="img-fluid" width={150} />
                 <p>Cushion</p>
               </a>
             </div>
 
             <div className="col-6 col-sm-4 col-md-2 text-center mb-3">
               <a href="#" className="text-decoration-none">
-                <img src="images/LabGrownDiamonds/Radiant_Shape-icon_33a74998-113b-45da-8a0f-b3c08154ff81.png" alt="Radiant" className="img-fluid" width={150} />
+                <img src="/images/labGrownDiamonds/Radiant_Shape-icon_33a74998-113b-45da-8a0f-b3c08154ff81.png" alt="Radiant" className="img-fluid" width={150} />
                 <p>Radiant</p>
               </a>
             </div>
 
             <div className="col-6 col-sm-4 col-md-2 text-center mb-3">
               <a href="#" className="text-decoration-none">
-                <img src="images/LabGrownDiamonds/Asscher_Shape-icon.avif" alt="Asscher" className="img-fluid" width={150} />
+                <img src="/images/labGrownDiamonds/Asscher_Shape-icon.avif" alt="Asscher" className="img-fluid" width={150} />
                 <p>Asscher</p>
               </a>
             </div>
 
             <div className="col-6 col-sm-4 col-md-2 text-center mb-3">
               <a href="#" className="text-decoration-none">
-                <img src="images/LabGrownDiamonds/Emerald_Shape-icon.avif" alt="Emerald" className="img-fluid" width={150} />
+                <img src="/images/labGrownDiamonds/Emerald_Shape-icon.avif" alt="Emerald" className="img-fluid" width={150} />
                 <p>Emerald</p>
               </a>
             </div>
@@ -69,14 +69,14 @@ function LabGrownDiamonds() {
           <div className="row mt-3">
             <div className="col-6 col-sm-6 col-md-6 text-right mb-3">
               <a href="#" className="text-decoration-none">
-                <img src="images/LabGrownDiamonds/Oval_Shape-icon_7aee2647-81e1-40c1-a37c-392fcbe84a89.png" alt="Oval" className="img-fluid" width={150} />
+                <img src="/images/labGrownDiamonds/Oval_Shape-icon_7aee2647-81e1-40c1-a37c-392fcbe84a89.png" alt="Oval" className="img-fluid" width={150} />
                 <p >Oval</p>
               </a>
             </div>
 
             <div className="col-6 col-sm-6 col-md-6 text-left mb-3">
               <a href="#" className="text-decoration-none">
-                <img src="images/LabGrownDiamonds/Pear_Shape-icon.avif" alt="Pear" className="img-fluid" width={150} />
+                <img src="/images/labGrownDiamonds/Pear_Shape-icon.avif" alt="Pear" className="img-fluid" width={150} />
                 <p>Pear</p>
               </a>
             </div>
@@ -92,7 +92,7 @@ function LabGrownDiamonds() {
               <div className="col-md-4">
                 <div className="text-center">
                   <img
-                    src="images/LabGrownDiamonds/01.avif"
+                    src="/images/labGrownDiamonds/01.avif"
                     alt="GIA"
                     width={100}
                     className="mb-3"
@@ -109,7 +109,7 @@ function LabGrownDiamonds() {
               <div className="col-md-4">
                 <div className="text-center">
                   <img
-                    src="images/LabGrownDiamonds/03.avif"
+                    src="/images/labGrownDiamonds/03.avif"
                     alt="AWDC"
                     width={100}
                     className="mb-3"
@@ -127,7 +127,7 @@ function LabGrownDiamonds() {
               <div className="col-md-4">
                 <div className="text-center">
                   <img
-                    src="images/LabGrownDiamonds/02.avif"
+                    src="/images/labGrownDiamonds/02.avif"
                     alt="AGS"
                     width={100}
                     className="mb-3"
@@ -149,7 +149,7 @@ function LabGrownDiamonds() {
               </div>
               <div className="col-md-6">
                 <div className="hero-image">
-                  <img src="images/LabGrownDiamonds/lab-created_990x.webp" alt="" width={650} />
+                  <img src="/images/labGrownDiamonds/lab-created_990x.webp" alt="" width={650} />
                 </div>
               </div>
 
@@ -212,7 +212,7 @@ function LabGrownDiamonds() {
               <div className="col-md-4">
                 <div className="text-center">
                   <img
-                    src="images/LabGrownDiamonds/GIA-logo-2.png"
+                    src="/images/labGrownDiamonds/GIA-logo-2.png"
                     alt="GIA"
                     width={100}
                     className="mb-3"
@@ -235,7 +235,7 @@ function LabGrownDiamonds() {
               <div className="col-md-4">
                 <div className="text-center">
                   <img
-                    src="images/LabGrownDiamonds/logo-AWDC-HR.png"
+                    src="/images/labGrownDiamonds/logo-AWDC-HR.png"
                     alt="AWDC"
                     width={100}
                     className="mb-3"
@@ -258,7 +258,7 @@ function LabGrownDiamonds() {
               <div className="col-md-4">
                 <div className="text-center">
                   <img
-                    src="images/LabGrownDiamonds/ags_logo.png"
+                    src="/images/labGrownDiamonds/ags_logo.png"
                     alt="AGS"
                     width={100}
                     className="mb-3"
@@ -282,7 +282,7 @@ function LabGrownDiamonds() {
               <div className="col-md-6">
                 <div className="text-center">
                   <img
-                    src="images/LabGrownDiamonds/igi-logo-png-transparent.avif"
+                    src="/images/labGrownDiamonds/igi-logo-png-transparent.avif"
                     alt="IGI"
                     width={100}
                     className="mb-3"
@@ -304,7 +304,7 @@ function LabGrownDiamonds() {
               <div className="col-md-6">
                 <div className="text-center">
                   <img
-                    src="images/LabGrownDiamonds/GSI_Logo.avif"
+                    src="/images/labGrownDiamonds/GSI_Logo.avif"
                     alt="GSI"
                     width={100}
                     className="mb-3"

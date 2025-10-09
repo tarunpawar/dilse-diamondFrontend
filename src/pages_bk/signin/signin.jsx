@@ -26,7 +26,7 @@ const Signin = () => {
 
     try {
       await login({ email, password });
-      navigate(redirectPath,{ replace: true });
+      navigate(redirectPath);
     } catch (err) {
       console.error(err);
       let message = "Login failed. Please try again.";

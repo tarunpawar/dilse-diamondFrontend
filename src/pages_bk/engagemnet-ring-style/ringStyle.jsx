@@ -42,12 +42,20 @@ export default function RingStyle() {
                 {/* Education section  */}
                 <ul className="education-menu default-slick-slider d-flex list-style-none flex-md justify-content_center text-center">
                   <li className="active">
-                    <a href="#" className="" data-uw-rm-brl="PR">
+                    <a
+                      href="#"
+                      className=""
+                      data-uw-rm-brl="PR"
+                    >
                       Engagement Rings
                     </a>
                   </li>
                   <li className="">
-                    <a href="#" className="" data-uw-rm-brl="PR">
+                    <a
+                      href="#"
+                      className=""
+                      data-uw-rm-brl="PR"
+                    >
                       Diamonds
                     </a>
                   </li>
@@ -61,12 +69,20 @@ export default function RingStyle() {
                     </a>
                   </li>
                   <li className="">
-                    <a href="#" className="" data-uw-rm-brl="PR">
+                    <a
+                      href="#"
+                      className=""
+                      data-uw-rm-brl="PR"
+                    >
                       Fine Jewelry
                     </a>
                   </li>
                   <li className="">
-                    <a href="#" className="" data-uw-rm-brl="PR">
+                    <a
+                      href="#"
+                      className=""
+                      data-uw-rm-brl="PR"
+                    >
                       Gemstone
                     </a>
                   </li>
@@ -77,43 +93,64 @@ export default function RingStyle() {
                   <div className="education-sidebar">
                     <ul className="flex-sm text-uppercase">
                       <li className="active">
-                        <a href="#" data-uw-rm-brl="PR">
+                        <a
+                          href="#"
+                          data-uw-rm-brl="PR"
+                        >
                           Style
                         </a>
                       </li>
 
                       <li className="">
-                        <a href="#" data-uw-rm-brl="PR">
+                        <a
+                          href="#"
+                          data-uw-rm-brl="PR"
+                        >
                           Settings
                         </a>
                       </li>
 
                       <li className="">
-                        <a href="#" data-uw-rm-brl="PR">
+                        <a
+                          href="#"
+                          data-uw-rm-brl="PR"
+                        >
                           Diamond Types
                         </a>
                       </li>
 
                       <li className="">
-                        <a href="#" data-uw-rm-brl="PR">
+                        <a
+                          href="#"
+                          data-uw-rm-brl="PR"
+                        >
                           Diamond Shapes
                         </a>
                       </li>
 
                       <li className="">
-                        <a href="#" data-uw-rm-brl="PR">
+                        <a
+                          href="#"
+                          data-uw-rm-brl="PR"
+                        >
                           Metal
                         </a>
                       </li>
 
                       <li className="">
-                        <a href="#" data-uw-rm-brl="PR">
+                        <a
+                          href="#"
+                          data-uw-rm-brl="PR"
+                        >
                           Ring Sizing
                         </a>
                       </li>
 
                       <li className="">
-                        <a href="#" data-uw-rm-brl="PR">
+                        <a
+                          href="#"
+                          data-uw-rm-brl="PR"
+                        >
                           Budgeting
                         </a>
                       </li>
@@ -134,6 +171,7 @@ export default function RingStyle() {
                               <div className="image-wrapper">
                                 <img
                                   className="d-block ls-is-cached lazyloaded"
+                             
                                   alt="SHOP SOLITAIRE RINGS"
                                   src="/images/product.webp"
                                   data-uw-rm-alt-original=""
@@ -213,6 +251,7 @@ export default function RingStyle() {
                               <div className="image-wrapper">
                                 <img
                                   className="d-block ls-is-cached lazyloaded"
+                                 
                                   alt="SHOP HALLO RINGS"
                                   src="/images/product.webp"
                                   data-uw-rm-alt-original=""
@@ -294,6 +333,7 @@ export default function RingStyle() {
                               <div className="image-wrapper">
                                 <img
                                   className="d-block ls-is-cached lazyloaded"
+                                  
                                   alt="SHOP VINTAGE RINGS"
                                   src="/images/solitaire_540x.webp"
                                   data-uw-rm-alt-original=""
@@ -374,6 +414,7 @@ export default function RingStyle() {
                               <div className="image-wrapper">
                                 <img
                                   className="d-block ls-is-cached lazyloaded"
+                             
                                   alt="SHOP SIDE STONE RINGS"
                                   src="/images/STUDS.webp"
                                   data-uw-rm-alt-original=""
@@ -455,8 +496,9 @@ export default function RingStyle() {
                               <div className="image-wrapper">
                                 <img
                                   className="d-block ls-is-cached lazyloaded"
+                               
                                   alt="RELATED POSTS"
-                                  src="/images/solitaire_540x.webp"
+                                 src="/images/solitaire_540x.webp"
                                   data-uw-rm-alt-original=""
                                   data-uw-rm-alt="CT"
                                 />
@@ -537,6 +579,7 @@ export default function RingStyle() {
                               <div className="image-wrapper">
                                 <img
                                   className="d-block ls-is-cached lazyloaded"
+                                
                                   alt="RELATED POSTS"
                                   src="/images/product.webp"
                                   data-uw-rm-alt-original=""
@@ -618,6 +661,7 @@ export default function RingStyle() {
                               <div className="image-wrapper">
                                 <img
                                   className="d-block ls-is-cached lazyloaded"
+                                 
                                   alt="RELATED POSTS"
                                   src="/images/solitaire_540x.webp"
                                   data-uw-rm-alt-original=""
@@ -697,6 +741,7 @@ export default function RingStyle() {
                               <div className="image-wrapper">
                                 <img
                                   className="d-block ls-is-cached lazyloaded"
+                                 
                                   alt="RELATED POSTS"
                                   src="/images/product.webp"
                                   data-uw-rm-alt-original=""
@@ -780,6 +825,7 @@ export default function RingStyle() {
                               <div className="image-wrapper">
                                 <img
                                   className="d-block ls-is-cached lazyloaded"
+                                 
                                   alt="RELATED POSTS"
                                   src="/images/STUDS.webp"
                                   data-uw-rm-alt-original=""
@@ -828,8 +874,8 @@ export default function RingStyle() {
                                     className="article__link"
                                     data-uw-rm-brl="PR"
                                   >
-                                    The Luxe Collection by With Dilsejewels -
-                                    it's Big, it's Bold and it's New
+                                    The Luxe Collection by With Dilse Jewels - it's
+                                    Big, it's Bold and it's New
                                   </a>
 
                                   <a

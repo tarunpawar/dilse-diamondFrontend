@@ -19,7 +19,7 @@ const giftSlugs = [
   "jewelry-gift-sets",
   "ready-to-ship-diamond-jewelry-gifts",
   "jewelry-gifts-for-him",
-  "Dilse Jewels-gift-card",
+  "caratcasa-gift-card",
   // ... more gift slugs
 ];
 
@@ -35,11 +35,11 @@ const CollectionsRouter = () => {
   const { slug } = useParams();
 
   if (saleSlugs.includes(slug)) {
-    return <SaleList slug={slug} />;
+    return <SaleList />;
   }
 
   if (giftSlugs.includes(slug)) {
-    return <GiftList slug={slug} />;
+    return <GiftList />;
   }
 
   // fallback if slug doesn't exist

@@ -377,7 +377,7 @@
 }
 
 .price-label-jewelry-page {
-  font-size: 10px;
+  font-size: 12px !important;
 }
 
 .price-label-jewelry-page.active {

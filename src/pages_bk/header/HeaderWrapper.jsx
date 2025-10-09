@@ -1,27 +1,24 @@
+// components/HeaderWrapper.jsx
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
-import Header from "./Header";             // Transparent header (home page)
-import SecondHeader from "./secondHeader"; // White header with Mega Menu
+import Header from "./header";       // transparent header (home)
+import SecondHeader from "./secondHeader";   // white header with megamenu
 
 const HeaderWrapper = () => {
   const location = useLocation();
-  const isHomePage = location.pathname === "/"; // Check if we are on home page
+  const isHomePage = location.pathname === "/";
   const [showSecondHeader, setShowSecondHeader] = useState(false);
 
-  const handleMegaHover = (status) => {
-    // This is called from Header/SecondHeader when Mega Menu is hovered
+  const handleJewelryHover = (status) => {
     setShowSecondHeader(status);
   };
 
-  if (!isHomePage) {
-    // Non-home pages always show SecondHeader
-    return <SecondHeader />;
-  }
+  if (!isHomePage) return <SecondHeader />;
 
   return showSecondHeader ? (
-    <SecondHeader onHoverChange={handleMegaHover} />
+    <SecondHeader onHoverChange={handleJewelryHover} />
   ) : (
-    <Header onHoverChange={handleMegaHover} />
+    <Header onHoverChange={handleJewelryHover} />
   );
 };
 

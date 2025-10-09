@@ -72,7 +72,7 @@ const CompleteRing = () => {
       ring: ringCartItem, // ring details
       diamond: diamond, // diamond details
       size: selectedSize, // ring size
-      itemQuantity:1,
+      itemQuantity: 1,
       totalPrice, // computed total
     };
     addToCart(cartItem);
@@ -97,6 +97,11 @@ const CompleteRing = () => {
                   src={diamond.image_link}
                   alt="Diamond"
                   className="img-fluid rounded shadow"
+                  style={{
+                    maxWidth: "400px",
+                    height: "400px",
+                    objectFit: "cover",
+                  }}
                 />
               </div>
               <div className="w-100">
@@ -104,6 +109,11 @@ const CompleteRing = () => {
                   src={ringCartItem.image}
                   alt="Ring"
                   className="img-fluid rounded shadow"
+                  style={{
+                    maxWidth: "400px",
+                    height: "400px",
+                    objectFit: "scale-down",
+                  }}
                 />
               </div>
             </div>
