@@ -12,7 +12,7 @@ function Metal() {
             precious metals. The metal you choose can depend on your preference
             in durability, look and cost. Factors that set different types of
             metals apart are also the luster (shine), weight and color of the
-            metal. Dilse Jewels crafts jewelry using gold and platinum. We are
+            metal. With Clarity crafts jewelry using gold and platinum. We are
             also committed to using eco-friendly sources of metal. These are
             among the most durable and visually appealing metals, and are most
             commonly used in crafting jewelry. These metals are classified as
