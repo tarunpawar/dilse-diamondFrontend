@@ -38,13 +38,13 @@ const blogs = [
   },
   {
     logo: "/footerpress/Yahoo_Life_480x.avif",
-    title: "The Best Luxury Jewelry For Every Sign From With Clarity",
+    title: "The Best Luxury Jewelry For Every Sign From Dilse Jewels",
     date: "March 2025",
   },
   {
     logo: "/footerpress/jck_in_svg_480x.svg",
     title:
-      "JCK Special Report- Lab Grown Diamonds - With Clarity's Timely New Brooch Collection",
+      "JCK Special Report- Lab Grown Diamonds - Dilse Jewels's Timely New Brooch Collection",
     date: "March 2025",
   },
   {
@@ -405,7 +405,7 @@ const blogs = [
   {
     logo: "/footerpress/wwd_480x.avif",
     title:
-      "EXCLUSIVE: Jewelry Label With Clarity Names Marie Audier as First CEO",
+      "EXCLUSIVE: Jewelry Label Dilse Jewels Names Marie Audier as First CEO",
     date: "SEPTEMBER 2024",
   },
   {
@@ -437,7 +437,7 @@ const blogs = [
   },
   {
     logo: "/footerpress/RCFA.avif",
-    title: "The Bouquet Collection From With Clarity",
+    title: "The Bouquet Collection From Dilse Jewels",
     date: "AUGUST 2024",
   },
   {
@@ -501,7 +501,7 @@ const blogs = [
   {
     logo: "/footerpress/RCFA.avif",
     title:
-      "Uncover The Reserve: With Clarity Limited Collection of Engagement Rings and High Jewelry",
+      "Uncover The Reserve: Dilse Jewels Limited Collection of Engagement Rings and High Jewelry",
     date: "JULY 2024",
   },
   {
@@ -549,7 +549,7 @@ const blogs = [
   },
   {
     logo: "/footerpress/RCFA.avif",
-    title: "Met Gala 2024 Red Carpet Looks featuring With Clarity",
+    title: "Met Gala 2024 Red Carpet Looks featuring Dilse Jewels",
     date: "MAY 2024",
   },
   {
@@ -559,12 +559,12 @@ const blogs = [
   },
   {
     logo: "/footerpress/RCFA.avif",
-    title: "Tony Nominee Maleah Joi Moon in With Clarity at The Met Gala",
+    title: "Tony Nominee Maleah Joi Moon in Dilse Jewels at The Met Gala",
     date: "MAY 2024",
   },
   {
     logo: "/footerpress/RCFA.avif",
-    title: "Introducing The Reserve: With Clarity's High Jewelry Collection",
+    title: "Introducing The Reserve: Dilse Jewels's High Jewelry Collection",
     date: "MAY 2024",
   },
   {
@@ -585,7 +585,7 @@ const blogs = [
   },
   {
     logo: "/footerpress/Website_Daily_Logo_3D_480x.avif",
-    title: "With Clarity's latest collection spotlight: The Reserve",
+    title: "Dilse Jewels's latest collection spotlight: The Reserve",
     date: "April 2024",
   },
   {
@@ -595,7 +595,7 @@ const blogs = [
   },
   {
     logo: "/footerpress/RCFA.avif",
-    title: "What to expect from an Engagement Ring Appointment at With Clarity",
+    title: "What to expect from an Engagement Ring Appointment at Dilse Jewels",
     date: "April 2024",
   },
   {
@@ -611,33 +611,33 @@ const blogs = [
   {
     logo: "/footerpress/Just_Jared_345x.avif",
     title:
-      "Vy Le dressed in head to toe With Clarity at The Sympathizer Premiere",
+      "Vy Le dressed in head to toe Dilse Jewels at The Sympathizer Premiere",
     date: "April 2024",
   },
   {
     logo: "/footerpress/RCFA.avif",
-    title: "With Clarity Partners With NFL on Wedding Bands",
+    title: "Dilse Jewels Partners With NFL on Wedding Bands",
     date: "April 2024",
   },
   {
     logo: "/footerpress/RCFA.avif",
     title:
-      "NFL Releases Wedding Bands Collection With Fine JewelryLabel With Clarity",
+      "NFL Releases Wedding Bands Collection With Fine JewelryLabel Dilse Jewels",
     date: "April 2024",
   },
   {
     logo: "/footerpress/RCFA.avif",
-    title: "Vintage Inspired Engagement Rings from With Clarity",
+    title: "Vintage Inspired Engagement Rings from Dilse Jewels",
     date: "April 2024",
   },
   {
     logo: "/footerpress/RCFA.avif",
-    title: "Fine Jewelry Brand, With Clarity, Launches NYC Storefront",
+    title: "Fine Jewelry Brand, Dilse Jewels, Launches NYC Storefront",
     date: "April 2024",
   },
   {
     logo: "/footerpress/RCFA.avif",
-    title: "With Clarity Expands to In-Person Shopping With NYC Boutique",
+    title: "Dilse Jewels Expands to In-Person Shopping With NYC Boutique",
     date: "April 2024",
   },
   {
@@ -647,7 +647,7 @@ const blogs = [
   },
   {
     logo: "/footerpress/RCFA.avif",
-    title: "Sustainable Rings We Love from With Clarity",
+    title: "Sustainable Rings We Love from Dilse Jewels",
     date: "March 2024",
   },
   {
@@ -672,22 +672,22 @@ const blogs = [
   },
   {
     logo: "/footerpress/forbesVetted_LOGO_480x.svg",
-    title: "The Best Lab Grown Diamonds featuring With Clarity",
+    title: "The Best Lab Grown Diamonds featuring Dilse Jewels",
     date: "March 2024",
   },
   {
     logo: "/footerpress/RCFA.avif",
-    title: "Red Carpet Looks in With Clarity",
+    title: "Red Carpet Looks in Dilse Jewels",
     date: "February 2024",
   },
   {
     logo: "/footerpress/Just_Jared_345x.avif",
-    title: "Kelly Curran seen in With Clarity at the 2024 SAG Awards",
+    title: "Kelly Curran seen in Dilse Jewels at the 2024 SAG Awards",
     date: "February 2024",
   },
   {
     logo: "/footerpress/RCFA.avif",
-    title: "Our Ten Favorite Sets of Studs from With Clarity",
+    title: "Our Ten Favorite Sets of Studs from Dilse Jewels",
     date: "February 2024",
   },
   {
@@ -720,7 +720,7 @@ const blogs = [
   {
     logo: "/footerpress/People_b26b1406-28d9-47e9-90ab-e94ce0d72b99_480x.webp",
     title:
-      "People Exclusive: Keltie Knight debuts new With Clarity Ring at the 2024 Grammys",
+      "People Exclusive: Keltie Knight debuts new Dilse Jewels Ring at the 2024 Grammys",
     date: "February 2024",
   },
   {
@@ -772,7 +772,7 @@ const blogs = [
   {
     logo: "/footerpress/RCFA.avif",
     title:
-      "46 Personalized Valentine's Day Gifts: With Clarity Nameplate Necklaces",
+      "46 Personalized Valentine's Day Gifts: Dilse Jewels Nameplate Necklaces",
     date: "JANUARY 2024",
   },
   {
@@ -828,7 +828,7 @@ const blogs = [
   },
   {
     logo: "/footerpress/RCFA.avif",
-    title: "All about With Clarity: Who We Are",
+    title: "All about Dilse Jewels: Who We Are",
     date: "November 2023",
   },
   {
@@ -859,7 +859,7 @@ const blogs = [
   {
     logo: "/footerpress/RCFA.avif",
     title:
-      "With Clarity Has The Largest Selection of Lab Diamonds And Some of Our Engagement Rings and Earrings Made With Them.",
+      "Dilse Jewels Has The Largest Selection of Lab Diamonds And Some of Our Engagement Rings and Earrings Made With Them.",
     date: "January 2023",
   },
   {
@@ -892,7 +892,7 @@ const blogs = [
   {
     logo: "/footerpress/RCFA.avif",
     title:
-      "With Clarity is ranked as the #1 Best Overall Place to Buy Engagement Rings Online.",
+      "Dilse Jewels is ranked as the #1 Best Overall Place to Buy Engagement Rings Online.",
     date: "October 2022",
   },
   {
@@ -916,7 +916,7 @@ const blogs = [
   {
     logo: "/footerpress/RCFA.avif",
     title:
-      "With Clarity featured in The Lead's top 50 breakout brands in the fashion, beauty and lifestyle space.",
+      "Dilse Jewels featured in The Lead's top 50 breakout brands in the fashion, beauty and lifestyle space.",
     date: "March 2022",
   },
   {
@@ -927,13 +927,13 @@ const blogs = [
   },
   {
     logo: "/footerpress/RCFA.avif",
-    title: "With Clarity Diamond Reviews 2021 Discover Spectacular Sparkle",
+    title: "Dilse Jewels Diamond Reviews 2021 Discover Spectacular Sparkle",
     date: "March 2021",
   },
   {
     logo: "/footerpress/RCFA.avif",
     title:
-      "Meet With Clarity, The Online Jewelry Brand That Let's You Try On Before You Buy",
+      "Meet Dilse Jewels, The Online Jewelry Brand That Let's You Try On Before You Buy",
     date: "March 2021",
   },
   {
@@ -1022,18 +1022,18 @@ const blogs = [
   },
   {
     logo: "/footerpress/RCFA.avif",
-    title: "Sharing the story of working together and building With Clarity.",
+    title: "Sharing the story of working together and building Dilse Jewels.",
     date: "April 2020",
   },
   {
     logo: "/footerpress/RCFA.avif",
-    title: "With Clarity ranks at #13 fastest growing company in 2020.",
+    title: "Dilse Jewels ranks at #13 fastest growing company in 2020.",
     date: "April 2020",
   },
   {
     logo: "/footerpress/RCFA.avif",
     title:
-      "Slisha & Anubh from With Clarity talk about scaling and growing fast.",
+      "Slisha & Anubh from Dilse Jewels talk about scaling and growing fast.",
     date: "March 2020",
   },
   {
@@ -1048,13 +1048,13 @@ const blogs = [
   },
   {
     logo: "/footerpress/RCFA.avif",
-    title: "With Clarity's unique approach drives massive growth",
+    title: "Dilse Jewels's unique approach drives massive growth",
     date: "November 2019",
   },
   {
     logo: "/footerpress/RCFA.avif",
     title:
-      "With Clarity is ranked as the 3rd fastest growing company in New York on Crain's Fast 50 list.",
+      "Dilse Jewels is ranked as the 3rd fastest growing company in Surat on Crain's Fast 50 list.",
     date: "November 2019",
   },
   {
@@ -1066,7 +1066,7 @@ const blogs = [
   {
     logo: "/footerpress/RCFA.avif",
     title:
-      "How With Clarity and other brands are 'on a mission to DTC-ify engagement and wedding rings.'",
+      "How Dilse Jewels and other brands are 'on a mission to DTC-ify engagement and wedding rings.'",
     date: "November 2019",
   },
   {
@@ -1101,12 +1101,12 @@ const blogs = [
   {
     logo: "/footerpress/RCFA.avif",
     title:
-      "With Clarity was named #18 on the INC 5000 list of fastest growing companies in the USA.",
+      "Dilse Jewels was named #18 on the INC 5000 list of fastest growing companies in The India.",
     date: "August 2019",
   },
   {
     logo: "/footerpress/RCFA.avif",
-    title: "With Clarity: The Warby Parker Of Engagement Rings",
+    title: "Dilse Jewels: The Warby Parker Of Engagement Rings",
     date: "July 2019",
   },
   {
@@ -1116,7 +1116,7 @@ const blogs = [
   },
   {
     logo: "/footerpress/RCFA.avif",
-    title: "With Clarity Offers Elegant Custom-Made Engagement Rings",
+    title: "Dilse Jewels Offers Elegant Custom-Made Engagement Rings",
     date: "May 2019",
   },
   {
@@ -1154,7 +1154,7 @@ const blogs = [
   {
     logo: "/footerpress/RCFA.avif",
     title:
-      "With Clarity offers a quick way to try rings at home comfortably before you make your purchase.",
+      "Dilse Jewels offers a quick way to try rings at home comfortably before you make your purchase.",
     date: "September 2017",
   },
   {
@@ -1172,7 +1172,7 @@ const blogs = [
   {
     logo: "/footerpress/RCFA.avif",
     title:
-      "Every piece is handcrafted with care in their New York City studio, so you can be sure that you're only getting the highest quality.",
+      "Every piece is handcrafted with care in their Surat City studio, so you can be sure that you're only getting the highest quality.",
     date: "May 2017",
   },
   {
@@ -1182,7 +1182,7 @@ const blogs = [
   },
   {
     logo: "/footerpress/RCFA.avif",
-    title: "With Clarity is a venture backed company growing rapidly.",
+    title: "Dilse Jewels is a venture backed company growing rapidly.",
     date: "June 2016",
   },
   {
@@ -1194,7 +1194,7 @@ const blogs = [
   {
     logo: "/footerpress/RCFA.avif",
     title:
-      "Our gorgeous engagement ring and wedding bands featured at a local New York wedding.",
+      "Our gorgeous engagement ring and wedding bands featured at a local Surat wedding.",
     date: "April 2016",
   },
   {
@@ -1212,49 +1212,49 @@ const blogs = [
   {
     logo: "/footerpress/RCFA.avif",
     title:
-      "With Clarity is the only online jeweler that provides all of the benefits of in-store shopping, at home.",
+      "Dilse Jewels is the only online jeweler that provides all of the benefits of in-store shopping, at home.",
     date: "October 2015",
   },
   {
     logo: "/footerpress/RCFA.avif",
     title:
-      "With Clarity shares how to showcase your engagement ring once he's popped question.",
+      "Dilse Jewels shares how to showcase your engagement ring once he's popped question.",
     date: "August 2015",
   },
   {
     logo: "/footerpress/RCFA.avif",
     title:
-      "With Clarity eliminates the uncertainty of shopping online with it's at Home Preview for engagement rings.",
+      "Dilse Jewels eliminates the uncertainty of shopping online with it's at Home Preview for engagement rings.",
     date: "June 2015",
   },
   {
     logo: "/footerpress/RCFA.avif",
     title:
-      "With Clarity is featured as a top bolg for wedding and engagement ring advice.",
+      "Dilse Jewels is featured as a top bolg for wedding and engagement ring advice.",
     date: "June 2015",
   },
   {
     logo: "/footerpress/RCFA.avif",
     title:
-      "With Clarity offers expertise on the entire engagement ring process from start to finish.",
+      "Dilse Jewels offers expertise on the entire engagement ring process from start to finish.",
     date: "May 2015",
   },
   {
     logo: "/footerpress/RCFA.avif",
     title:
-      "Ecommerce is the new way to shop and work. With Clarity brings technology to the forefront in every experience.",
+      "Ecommerce is the new way to shop and work. Dilse Jewels brings technology to the forefront in every experience.",
     date: "March 2015",
   },
   {
     logo: "/footerpress/RCFA.avif",
     title:
-      "With Clarity shares how to save on your diamond when shopping online.",
+      "Dilse Jewels shares how to save on your diamond when shopping online.",
     date: "February 2015",
   },
   {
     logo: "/footerpress/RCFA.avif",
     title:
-      "With Clarity shares our tips on how to obtain the most value when purchasing a diamond ring.",
+      "Dilse Jewels shares our tips on how to obtain the most value when purchasing a diamond ring.",
     date: "February 2015",
   },
 ];
@@ -1291,13 +1291,13 @@ const blogs = [
 //   },
 //   {
 //     logo: "Yahoo! Life",
-//     title: "The Best Luxury Jewelry For Every Sign From With Clarity",
+//     title: "The Best Luxury Jewelry For Every Sign From Dilse Jewels",
 //     date: "March 2025",
 //   },
 //   {
 //     logo: "JCK",
 //     title:
-//       "JCK Special Report - Lab Grown Diamonds - With Clarity’s Timely New Brooch Collection",
+//       "JCK Special Report - Lab Grown Diamonds - Dilse Jewels’s Timely New Brooch Collection",
 //     date: "March 2025",
 //   },
 //   {
@@ -1335,7 +1335,7 @@ const Press = () => {
             <h2 className="fw-bold mb-3">In the news</h2>
             <p className="text-muted fs-5">
               We're getting noticed! Check out what others have to say <br />
-              about With Clarity.
+              about Dilse Jewels.
             </p>
           </div>
 

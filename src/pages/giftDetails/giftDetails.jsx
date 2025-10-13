@@ -10,8 +10,9 @@ import {
   Gift,
 } from "lucide-react";
 import axiosClient from "../../api/axios";
-import { useSearchParams } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import Zoom from "react-medium-image-zoom";
+import { useCart } from "../../cart/CartContext";
 import "./giftDetails.css"; // Import the custom CSS
 
 const getImageUrl = (img) => {
@@ -38,13 +39,8 @@ const GiftDetails = () => {
   const [selectedQuality, setSelectedQuality] = useState("f-g-si");
   const [selectedPlan, setSelectedPlan] = useState("3-year");
   const [showMobileCart, setShowMobileCart] = useState(false);
-
-  const images = [
-    "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800",
-    "https://images.unsplash.com/photo-1603561596112-0a132b757442?w=800",
-    "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800",
-    "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=800",
-  ];
+  const { addToCart } = useCart();
+  const navigate = useNavigate();
 
   const qualities = [
     { id: "ef-vs", label: "EF VS+" },
@@ -135,7 +131,7 @@ const GiftDetails = () => {
     sku: variationSku,
     metal_color,
   } = selectedVariation || {};
-  const priceDifference = original_price - price;
+  const priceDifference = Math.max(original_price - price, 0);
   const metalName = metal_color?.name || "-";
   // const { price, weight, sku: variationSku } = selectedVariation || {};
   return (
@@ -246,7 +242,7 @@ const GiftDetails = () => {
               <h1 className="h3 font-serif mb-2">{name}</h1>
               <p className="small text-muted mb-4">SKU#{variationSku}</p>
               <div className="mb-4">
-                <span className="h3 fw-bold">${price}</span>
+                <span className="h3 fw-bold">₹{price}</span>
                 <span className="fs-5 text-secondary text-decoration-line-through ms-2">
                   ${original_price}
                 </span>
@@ -367,7 +363,20 @@ const GiftDetails = () => {
                 </div>
               </div>
 
-              <button className="btn btn-primary w-100 py-3 fw-semibold bg-brand-blue mb-3">
+              <button
+                className="btn btn-primary w-100 py-3 fw-semibold bg-brand-blue mb-3"
+                onClick={() => {
+                  const cartItem = {
+                    ...selectedVariation,
+                    productType: "gift",
+                    name: name,
+                    itemQuantity: 1,
+                    selectedPlan: selectedPlan,
+                  };
+                  addToCart(cartItem);
+                  navigate("/cart");
+                }}
+              >
                 ADD TO CART
               </button>
               <button className="btn btn-outline-dark w-100 py-3 fw-semibold mb-4">
@@ -634,11 +643,24 @@ const GiftDetails = () => {
             <div className="d-flex align-items-center justify-content-between gap-3">
               <div>
                 <div className="small text-muted text-decoration-line-through">
-                  $1,210
+                  {original_price}
                 </div>
-                <div className="h5 fw-bold mb-0">$847</div>
+                <div className="h5 fw-bold mb-0">{price}</div>
               </div>
-              <button className="btn btn-primary flex-grow-1 py-2 fw-semibold bg-brand-blue">
+              <button
+                className="btn btn-primary flex-grow-1 py-2 fw-semibold bg-brand-blue"
+                onClick={() => {
+                  const cartItem = {
+                    ...selectedVariation,
+                    productType: "gift",
+                    name: name,
+                    itemQuantity: 1,
+                    selectedPlan: selectedPlan,
+                  };
+                  addToCart(cartItem);
+                  navigate("/cart");
+                }}
+              >
                 ADD TO CART
               </button>
             </div>

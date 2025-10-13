@@ -185,7 +185,7 @@
 }
 
 /* Sidebar */
-.sidebar {
+.sidebar-man {
   position: fixed;
   top: 0;
   left: -280px;
@@ -198,7 +198,7 @@
   transition: left 0.3s ease;
 }
 
-.sidebar.open {
+.sidebar-man.open {
   left: 0;
 }
 

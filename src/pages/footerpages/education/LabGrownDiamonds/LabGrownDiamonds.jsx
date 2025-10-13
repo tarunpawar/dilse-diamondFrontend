@@ -193,7 +193,7 @@ function LabGrownDiamonds() {
                 <td>C (carbon)</td>
                 <td>Earth (mining deposits)</td>
                 <td>Unknown. But can take millions of years.</td>
-                <td>Depending (With Clarity only sells conflict-free diamonds)</td>
+                <td>Depending (Dilse Jewels only sells conflict-free diamonds)</td>
                 <td>$$$ / $$$$</td>
                 <td>Yes</td>
                 <td>10/10</td>
@@ -225,7 +225,7 @@ function LabGrownDiamonds() {
                     founded in 1931, and in the 1940s, established the “4Cs” (Cut, Color,
                     Clarity, and Carat Weight) or the “International Diamond Grading
                     System.” The GIA is arguably the leading source of knowledge for all
-                    gemstones and jewelry, which is why all With Clarity Natural Diamonds
+                    gemstones and jewelry, which is why all Dilse Jewels Natural Diamonds
                     are graded by GIA.
                   </p>
                 </div>

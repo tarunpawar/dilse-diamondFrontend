@@ -442,7 +442,7 @@ const JewelryList = () => {
             src={
               bannerImage
                 ? `${import.meta.env.VITE_BACKEND_URL}/storage/${bannerImage}`
-                : "https://www.withclarity.com/cdn/shop/files/Women_s_Diamond_Gemstone_Jewelry_1366x.jpg?v=1729163233"
+                : "https://www.dilsejewels.com/cdn/shop/files/Women_s_Diamond_Gemstone_Jewelry_1366x.jpg?v=1729163233"
             }
             alt="banner"
             className="hero-img img-fluid"
@@ -849,7 +849,7 @@ const JewelryList = () => {
                   </div>
 
                   <p className="mt-auto">
-                    <span className="fw-bold">${price}</span>
+                    <span className="fw-bold">₹{price}</span>
                     {originalPrice && (
                       <span className="original-price text-muted text-decoration-line-through ms-2">
                         ${originalPrice}

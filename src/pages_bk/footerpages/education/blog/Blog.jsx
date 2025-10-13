@@ -184,7 +184,7 @@ const BlogHeader = () => {
           </ol>
         </nav>
 
-        <h1 className="header-heading">The With Clarity Blog</h1>
+        <h1 className="header-heading">The Dilse Jewels Blog</h1>
 
         <p>
           Elevate your everyday with inspiration, delivered fresh, by the With

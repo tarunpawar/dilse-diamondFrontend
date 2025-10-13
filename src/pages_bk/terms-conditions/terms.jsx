@@ -480,12 +480,12 @@ export default function Terms() {
                 <p>
                   These Terms and Conditions and your use of this site will be
                   governed by and construed in accordance with the laws of the
-                  State of New York, applicable to agreements made and to be
-                  entirely performed within the State of New York, without
+                  State of Surat, applicable to agreements made and to be
+                  entirely performed within the State of Surat, without
                   resort to its conflict of law provisions. You agree that any
                   action at law or in equity arising out of or relating to these
                   Terms and Conditions shall be filed only in the state and
-                  federal courts located in New York County, New York and you
+                  federal courts located in Surat County, Surat and you
                   hereby irrevocably and unconditionally consent and submit to
                   the exclusive jurisdiction of such courts over any suit,
                   action or proceeding arising out of your use of this site, any
@@ -589,7 +589,7 @@ export default function Terms() {
                 </ul>
                 <h2 className="display-12">WELCOME Discount Code</h2>
                 <p data-uw-rm-sr="">
-                  Use code WELCOME at checkout to receive $100 off your first
+                  Use code WELCOME at checkout to receive ₹100 OFF your first
                   purchase of $1,000 or more (before taxes and shipping). Offer
                   valid for new customers only and applicable to first-time
                   orders placed at{" "}

@@ -375,7 +375,7 @@ export default function DiamondDetails() {
             {openSection === "upgrade" && (
               <div className="contentStyle">
                 We offer a lifetime upgrade policy for all Natural GIA certified
-                diamonds purchased from With Clarity, with proof of receipt. If
+                diamonds purchased from Dilse Jewels, with proof of receipt. If
                 you would like to upgrade your diamond, we’ll apply 100% of the
                 credit toward the purchase of a new GIA certified diamond priced
                 at least twice the original diamond purchase.

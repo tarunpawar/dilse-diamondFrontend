@@ -158,7 +158,7 @@ const Footer = () => {
                   Elevate Your <i>Everyday</i>
                 </p>
                 <p>
-                  Sign up for <strong>$100 OFF</strong> your first purchase
+                  Sign up for <strong>₹100 OFF</strong> your first purchase
                 </p>
               </div>
 
@@ -294,7 +294,7 @@ const Footer = () => {
                 Elevate Your <i>Everyday</i>
               </p>
               <p>
-                Sign up for <strong>$100 OFF</strong> your first purchase
+                Sign up for <strong>₹100 OFF</strong> your first purchase
               </p>
 
               <form className="d-flex mb-3 justify-content-center flex-wrap">

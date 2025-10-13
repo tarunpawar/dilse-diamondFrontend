@@ -9,7 +9,7 @@ const LuxeCollections = () => {
        <div className="majestic-section">
       <div className="majestic-image">
         <img
-            src="https://www.withclarity.com/cdn/shop/files/majestic2x_db769a89-abc5-4806-9377-605692f7089a_1900x.png?v=1711448137"
+            src="https://www.dilsejewels.com/cdn/shop/files/majestic2x_db769a89-abc5-4806-9377-605692f7089a_1900x.png?v=1711448137"
             alt="Heritage Collection"
             className="collection-image"
           />
@@ -28,7 +28,7 @@ const LuxeCollections = () => {
         <h2 className="collection-heading">Heritage Collection</h2>
         <div className="collection-image-block">
           <img
-            src="https://www.withclarity.com/cdn/shop/files/heritage2x_1efd05e0-988d-4455-8a89-c711f4616582_1900x.png?v=1711448158"
+            src="https://www.dilsejewels.com/cdn/shop/files/heritage2x_1efd05e0-988d-4455-8a89-c711f4616582_1900x.png?v=1711448158"
             alt="Heritage Collection"
             className="collection-image"
           />
@@ -50,7 +50,7 @@ const LuxeCollections = () => {
         <h2 className="collection-heading">Illuminate Collection</h2>
         <div className="collection-image-block">
           <img
-            src="https://www.withclarity.com/cdn/shop/files/illuminate2x_f0270809-f2a5-4098-b5f0-e4769815f4e1_1900x.png?v=1711448174"
+            src="https://www.dilsejewels.com/cdn/shop/files/illuminate2x_f0270809-f2a5-4098-b5f0-e4769815f4e1_1900x.png?v=1711448174"
             alt="Heritage Collection"
             className="collection-image"
           />
@@ -71,7 +71,7 @@ const LuxeCollections = () => {
         <h2 className="collection-heading">Elegance Collection</h2>
         <div className="collection-image-block">
           <img
-            src="https://www.withclarity.com/cdn/shop/files/elegance2x_1900x.png?v=1711445293"
+            src="https://www.dilsejewels.com/cdn/shop/files/elegance2x_1900x.png?v=1711445293"
             alt="Heritage Collection"
             className="collection-image"
           />
@@ -92,7 +92,7 @@ const LuxeCollections = () => {
         <h2 className="collection-heading">The Haute Collection</h2>
         <div className="collection-image-block">
           <img
-            src="https://www.withclarity.com/cdn/shop/files/haute2x_1900x.png?v=1711445375"
+            src="https://www.dilsejewels.com/cdn/shop/files/haute2x_1900x.png?v=1711445375"
             alt="Heritage Collection"
             className="collection-image"
           />

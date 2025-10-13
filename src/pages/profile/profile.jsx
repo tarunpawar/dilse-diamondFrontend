@@ -233,7 +233,7 @@ const Profile = () => {
                 <p className="mt-3 text-muted">
                   We offer customers a credit card through Synchrony Bank with a
                   revolving credit line to use again and again at
-                  withclarity.com.
+                  dilsejewels.com.
                 </p>
                 <p className="text-muted">
                   You can apply for a We Store Credit Card{" "}

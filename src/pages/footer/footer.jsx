@@ -60,7 +60,7 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: "fa-instagram",
-      href: "https://www.instagram.com/dilsejewels/",
+      href: "https://www.instagram.com/thecaratcasa/",
       label: "Instagram",
     },
     { icon: "fa-tiktok", href: "https://www.tiktok.com", label: "TikTok" },
@@ -175,10 +175,10 @@ const Footer = () => {
               </ul>
               <div className="contact-info">
                 <a
-                  href="mailto:service@withclarity.com"
+                  href="mailto:service@dilsejewels.com"
                   className="text-white text-decoration-none"
                 >
-                  service@withclarity.com
+                  service@dilsejewels.com
                 </a>
                 <a
                   href="tel:+91 85115 44005"
@@ -193,13 +193,13 @@ const Footer = () => {
             <div className="col-12 col-lg-4 mb-4">
               <div className="text-center text-lg-start">
                 <div className="brand-logo text-white text-uppercase mb-3">
-                  dilse jewels
+                  THE CARATCASA
                 </div>
                 <p className="tagline text-white mb-3">
                   Luxury Made <span className="tagline-italic">Personal.</span>
                 </p>
                 <p className="discount-text text-white">
-                  Sign up for <strong>$100 OFF</strong> your first purchase
+                  Sign up for <strong>₹100 OFF</strong> your first purchase
                 </p>
 
                 <div className="d-flex gap-2 mb-3">

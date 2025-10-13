@@ -572,7 +572,7 @@ export default function Contact() {
                   aria-expanded="false"
                   aria-controls="collapseFour"
                 >
-                  Where can I learn more about dilse jewels policies?
+                  Where can I learn more about The Carat Casa policies?
                 </button>
               </h2>
               <div

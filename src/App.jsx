@@ -38,13 +38,17 @@ import PageNotFound from "./pages/PageNotFound/PageNotFound";
 import WhiteClarityNav from "./pages/header/WhiteClarityNav";
 import PrivateRoute from "./routes/PrivateRoute";
 import CollectionsRouter from "./pages/collectionsRouter/CollectionsRouter";
+import GiftDetails from "./pages/giftDetails/giftDetails";
 
 // Footer pages
 import Press from "./pages/footerpages/company/Press";
 // Education
+import Gemstones from "./pages/footerpages/education/gemstones/Gemstones";
+import Jewelry from "./pages/footerpages/education/jewelry/Jewelry";
+import OurPolicy from "./pages/footerpages/education/policy/OurPolicy";
+import LabGrownDiamonds from "./pages/footerpages/education/labGrownDiamonds/LabGrownDiamonds";
 import Metal from "./pages/footerpages/education/Metal";
 import Blog from "./pages/footerpages/education/blog/Blog";
-import LabGrownDiamonds from "./pages/footerpages/education/LabGrownDiamonds/LabGrownDiamonds";
 
 export default function App() {
   const location = useLocation();
@@ -90,7 +94,7 @@ export default function App() {
           <Route path="/jewelry-list" element={<JewelryList />} />
           <Route path="/engagement-rings/:slug?" element={<EngagementList />} />
           <Route path="/wedding/:slug?" element={<WeddingList />} />
-                    <Route path="/collections/:slug" element={<CollectionsRouter />} />
+          <Route path="/collections/:slug" element={<CollectionsRouter />} />
           <Route
             path="/jewellary-details/:id"
             element={<JewelryDetailsPage />}
@@ -100,6 +104,7 @@ export default function App() {
             path="/engagment-details/:id"
             element={<EngagementDetails />}
           />
+          <Route path="/products/:productSlug" element={<GiftDetails />} />
           <Route path="/megamenu" element={<MegaMenu />} />
           <Route path="/luxe" element={<Luxe />} />
           <Route path="/reserve" element={<Reserve />} />
@@ -109,9 +114,12 @@ export default function App() {
           {/* Footer pages start*/}
           <Route path="/press" element={<Press />} />
           {/* footer Education */}
+          <Route path="/gemstones-types-guide" element={<Gemstones />} />
+          <Route path="/fine-jewelry-earrings" element={<Jewelry />} />
+          <Route path="/our-policies" element={<OurPolicy />} />
+          <Route path="/lab-diamonds" element={<LabGrownDiamonds />} />
           <Route path="/metal" element={<Metal />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/lab-diamonds" element={<LabGrownDiamonds />} />
         </Routes>
       </main>
       <Footer />

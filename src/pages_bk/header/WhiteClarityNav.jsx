@@ -125,7 +125,7 @@ const WhiteClarityNav = () => {
             </button>
           </div>
 
-          {/* <div className="nav-logo">WITH CLARITY</div> */}
+          {/* <div className="nav-logo">Dilse Jewels</div> */}
 
           <div className="nav-logo">
             <img
@@ -341,7 +341,7 @@ const WhiteClarityNav = () => {
       {/* Mobile Sidebar */}
       <div className={`sidebar ${sidebarOpen ? "open" : ""}`}>
         <div className="sidebar-header">
-          <span className="sidebar-logo">WITH CLARITY</span>
+          <span className="sidebar-logo">Dilse Jewels</span>
           <Button
             className="close-btn custom-color-btn"
             variant={undefined}

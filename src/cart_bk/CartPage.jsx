@@ -121,7 +121,7 @@ export default function CartPage() {
           </div>
 
           <div className="verify-card">
-            <h4>GET $100 OFF</h4>
+            <h4>GET ₹100 OFF</h4>
             <p>on orders of $2000 and above</p>
             <p className="verify-text">
               Military, Nurses, and First Responders receive an exclusive ID.me

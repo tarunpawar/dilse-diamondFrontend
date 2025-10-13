@@ -19,19 +19,19 @@ const details = [
     title: "The W Signature—Where Form Meets Feeling",
     description:
       "Inspired by our name The CarateCasa, each ring features a distinctive “W”-shaped basket—an elegant, architectural design that cradles the center stone in light. More than a signature detail, it’s a symbol of brilliance, engineered to maximize sparkle from every angle. Finished with knife-edged prongs, each ring balances innovation with timeless design.",
-    image: "https://www.withclarity.com/cdn/shop/files/w_r_1_480x.jpg?v=1746013571",
+    image: "https://www.dilsejewels.com/cdn/shop/files/w_r_1_480x.jpg?v=1746013571",
   },
   {
     title: "Our Signature Icon, Hidden Just for You",
     description:
       "Timeless in design and rich with meaning, each ring features our exclusive diamond-shaped cutout—hidden beneath the center stone and visible only to those you choose to share it with. This subtle detail, inspired by our logo icon, offers a unique glimpse into the heart of your diamond.",
-    image: "https://www.withclarity.com/cdn/shop/files/w_r2_480x.jpg?v=1746013584",
+    image: "https://www.dilsejewels.com/cdn/shop/files/w_r2_480x.jpg?v=1746013584",
   },
   {
     title: "Stamped in Legacy",
     description:
       "Meticulously inscribed within each W Signature ring, a unique serial number—maintained only at our headquarters—ensures authenticity, traceability, and a lasting connection to your one-of-a-kind design. Enjoy the added benefits of complimentary resizing for two years, a detailed appraisal, and instant Platinum status in our Radiance Rewards program.",
-    image: "https://www.withclarity.com/cdn/shop/files/w_r3_480x.jpg?v=1746013690",
+    image: "https://www.dilsejewels.com/cdn/shop/files/w_r3_480x.jpg?v=1746013690",
   },
 ];
 
@@ -55,7 +55,7 @@ const details = [
 <section className="w-signature-description py-5">
  
         <p className="description-text container">
-          <strong>The W Signature</strong> showcases a distinctive W-shaped basket, inspired by the dilse jewels brand name. Designed to celebrate the brilliance <br /> of the center stone, The W Signature embodies timeless artistry, creating an iconic silhouette that remains classic for generations to come.
+          <strong>The W Signature</strong> showcases a distinctive W-shaped basket, inspired by the The CaratCasa brand name. Designed to celebrate the brilliance <br /> of the center stone, The W Signature embodies timeless artistry, creating an iconic silhouette that remains classic for generations to come.
         </p>
     
     </section>
