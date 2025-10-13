@@ -46,7 +46,7 @@ import Press from "./pages/footerpages/company/Press";
 import Gemstones from "./pages/footerpages/education/gemstones/Gemstones";
 import Jewelry from "./pages/footerpages/education/jewelry/Jewelry";
 import OurPolicy from "./pages/footerpages/education/policy/OurPolicy";
-//import LabGrownDiamonds from "./pages/footerpages/education/labGrownDiamonds/LabGrownDiamonds";
+import LabGrownDiamonds from "./pages/footerpages/education/labGrownDiamonds/LabGrownDiamonds";
 import Metal from "./pages/footerpages/education/Metal";
 import Blog from "./pages/footerpages/education/blog/Blog";
 
