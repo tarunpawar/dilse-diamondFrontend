@@ -48,7 +48,7 @@ import Jewelry from "./pages/footerpages/education/jewelry/Jewelry";
 import OurPolicy from "./pages/footerpages/education/policy/OurPolicy";
 import LabGrownDiamonds from "./pages/footerpages/education/labGrownDiamonds/LabGrownDiamonds";
 import Metal from "./pages/footerpages/education/Metal";
-import Blog from "./pages/footerpages/education/blog/Blog";
+import Blog from "./pages/footerpages/education/blog/Blog"; 
 
 export default function App() {
   const location = useLocation();
