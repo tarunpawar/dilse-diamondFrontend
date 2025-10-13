@@ -60,7 +60,7 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: "fa-instagram",
-      href: "https://www.instagram.com/thecaratcasa/",
+      href: "https://www.instagram.com/dilse_jewels/",
       label: "Instagram",
     },
     { icon: "fa-tiktok", href: "https://www.tiktok.com", label: "TikTok" },
