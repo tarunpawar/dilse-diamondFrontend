@@ -156,7 +156,7 @@ const Footer = () => {
                   </li>
                 ))}
               </ul>
-            </div>
+            </div> 
 
             {/* Customer Care */}
             <div className="col-6 col-lg-2 mb-4 footer-col">
