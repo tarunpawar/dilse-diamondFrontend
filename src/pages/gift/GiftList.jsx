@@ -19,7 +19,6 @@ const slugPriceFilterMap = {
   "gifts-under-1500": ["0-500", "500-1000", "1000-2000"],
 };
 
-
 const slugFiltersConfig = {
   "jewelry-gifts": ["shape", "metal", "price"],
   "diamond-ring-gifts": ["collection", "style", "metal", "price"],
@@ -54,6 +53,7 @@ const GiftList = () => {
   const [activeMetal, setActiveMetal] = useState({});
   const [selectedVariations, setSelectedVariations] = useState({});
 
+  const [shapeData, setShapeData] = useState([]);
   const [styleData, setStyleData] = useState([]);
   const [styleNameToIdMap, setStyleNameToIdMap] = useState({});
 
@@ -186,7 +186,7 @@ const GiftList = () => {
     },
   };
 
-  const filtersSequence = slugFiltersConfig[slug];
+  const filtersSequence = slugFiltersConfig[slug] || [];
 
   const toggleFilterSection = (section) => {
     setActiveFilterSection((prev) => (prev === section ? "" : section));
@@ -298,12 +298,9 @@ const GiftList = () => {
       // -----------------------------
       // Fetch products from API
       // -----------------------------
-      const { data } = await axiosClient.get(
-        `/api/get-all-gift-data/${slug}`,
-        {
-          params: { page, perPage: 20, ...apiFilters },
-        }
-      );
+      const { data } = await axiosClient.get(`/api/get-all-gift-data/${slug}`, {
+        params: { page, perPage: 20, ...apiFilters },
+      });
 
       const fetchedProducts = data.data || [];
       const totalProducts = parseInt(data.totalProducts) || 0;
@@ -312,6 +309,7 @@ const GiftList = () => {
       // -----------------------------
       // Update meta data and maps
       // -----------------------------
+      setShapeData(data.shapes || []);
       setStyleData(data.style_data || []);
       setCollectionData(data.collection_data || []);
       setMetalTypes(data.metal_types || []);
@@ -778,7 +776,7 @@ const GiftList = () => {
               const originalPrice = selectedVariation?.original_price || "NA";
               const sku = selectedVariation?.sku || "NA";
               const discount = selectedVariation?.discount || "";
-                            // Create slug from product name
+              // Create slug from product name
               const productSlug = group.product?.name
                 ? group.product.name
                     .toLowerCase()

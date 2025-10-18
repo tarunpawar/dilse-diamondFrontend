@@ -24,7 +24,7 @@ function OurPolicy() {
               <div className="col-md-6"></div>
               <div className="col-md-6 heading-top">
                 <h1 className="heading-h1">CUSTOMER CARE</h1>
-                <span>Our aim is to delight you not only with the quality and<br /> beauty of our jewelry but also with the care and<br /> attention that we put into everything that we craft.</span>
+                <span className="span-h1">Our aim is to delight you not only with the quality and<br /> beauty of our jewelry but also with the care and<br /> attention that we put into everything that we craft.</span>
               </div>
             </div>
           </div>
@@ -78,9 +78,9 @@ function OurPolicy() {
               </h2>
               <div id="faq1" className="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                 <div className="accordion-body">
-                  With Clarity is committed to creating the highest quality jewelry that lasts a lifetime. Our goal is to make you happy with your jewelry now and forever. We offer complimentary lifetime cleaning. We also provide complimentary replacement of stones under 0.10ct each, which are broken or lost during everyday wear and tear.<br />
+                  Dilse Jewels is committed to creating the highest quality jewelry that lasts a lifetime. Our goal is to make you happy with your jewelry now and forever. We offer complimentary lifetime cleaning. We also provide complimentary replacement of stones under 0.10ct each, which are broken or lost during everyday wear and tear.<br />
 
-                  Diamonds above 0.10ct each are not covered under warranty. Center stone diamonds and gemstones on engagement rings are also not covered under warranty. Damage, loss or theft are not covered by our Lifetime Warranty. While we're happy to repair your jewelry, there are fees assessed based on the repair requirements, as determined by our jewelers. We strongly recommend that all work including cleaning, resizing and repairs performed on your jewelry is done by With Clarity. Otherwise, your warranty will be voided. Please allow 7-10 business days for normal wear and tear repairs. Timelines may vary are jewelry requiring more extensive repair or recrafting.                </div>
+                  Diamonds above 0.10ct each are not covered under warranty. Center stone diamonds and gemstones on engagement rings are also not covered under warranty. Damage, loss or theft are not covered by our Lifetime Warranty. While we're happy to repair your jewelry, there are fees assessed based on the repair requirements, as determined by our jewelers. We strongly recommend that all work including cleaning, resizing and repairs performed on your jewelry is done by Dilse Jewels. Otherwise, your warranty will be voided. Please allow 7-10 business days for normal wear and tear repairs. Timelines may vary are jewelry requiring more extensive repair or recrafting.                </div>
               </div>
             </div>
 
@@ -93,7 +93,7 @@ function OurPolicy() {
               </h2>
               <div id="faq2" className="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                 <div className="accordion-body">
-                  Diamonds above 0.10ct each are not covered under warranty. Center stone diamonds and gemstones on engagement rings are also not covered under warranty. Damage, loss or theft are not covered by our Lifetime Warranty. While we're happy to repair your jewelry, there are fees assessed based on the repair requirements, as determined by our jewelers. We strongly recommend that all work including cleaning, resizing and repairs performed on your jewelry is done by With Clarity. Otherwise, your warranty will be voided. Please allow 7-10 business days for normal wear and tear repairs. Timelines may vary are jewelry requiring more extensive repair or recrafting.                </div>
+                  Diamonds above 0.10ct each are not covered under warranty. Center stone diamonds and gemstones on engagement rings are also not covered under warranty. Damage, loss or theft are not covered by our Lifetime Warranty. While we're happy to repair your jewelry, there are fees assessed based on the repair requirements, as determined by our jewelers. We strongly recommend that all work including cleaning, resizing and repairs performed on your jewelry is done by Dilse Jewels. Otherwise, your warranty will be voided. Please allow 7-10 business days for normal wear and tear repairs. Timelines may vary are jewelry requiring more extensive repair or recrafting.                </div>
               </div>
             </div>
 
@@ -106,9 +106,9 @@ function OurPolicy() {
               </h2>
               <div id="faq3" className="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                 <div className="accordion-body">
-                  With Clarity wants your jewelry to shine as bright as the day it was purchased. We offer complimentary professional cleaning and polishing (excludes shipping fees). We recommend doing this once a year as part of regular servicing.
+                  Dilse Jewels wants your jewelry to shine as bright as the day it was purchased. We offer complimentary professional cleaning and polishing (excludes shipping fees). We recommend doing this once a year as part of regular servicing.
 
-                  For day to day care, we recommend purchasing the With Clarity Luxury Jewelry Cleaner. Our cleaner removes dirt, oil, dust and other materials that reduce shine from daily use.
+                  For day to day care, we recommend purchasing the Dilse Jewels Luxury Jewelry Cleaner. Our cleaner removes dirt, oil, dust and other materials that reduce shine from daily use.
 
                   Please see our online disclosure that includes a list of ingredients for the product, designated lists, fragrance allergens, and nonfunctional constituents.                </div>
               </div>
@@ -130,12 +130,12 @@ function OurPolicy() {
             <div className="accordion-item">
               <h2 className="accordion-header" id="headingFinancing1">
                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFinancing1">
-                  What is the With Clarity Credit Card?
+                  What is the Dilse Jewels Credit Card?
                 </button>
               </h2>
               <div id="collapseFinancing1" className="accordion-collapse collapse" data-bs-parent="#faqFinancing">
                 <div className="accordion-body">
-                  With Clarity offers customers a credit card through Synchrony Bank with a revolving credit line to use again and again at withclarity.com. Please note only customers within the USA are eligible to apply and use the With Clarity Credit Card.
+                  Dilse Jewels offers customers a credit card through Synchrony Bank with a revolving credit line to use again and again at dilsejewels.com. Please note only customers within The India are eligible to apply and use the Dilse Jewels Credit Card.
                 </div>
               </div>
             </div>
@@ -144,12 +144,12 @@ function OurPolicy() {
             <div className="accordion-item">
               <h2 className="accordion-header" id="headingFinancing2">
                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFinancing2">
-                  How do I apply for a With Clarity store credit card?
+                  How do I apply for a Dilse Jewels store credit card?
                 </button>
               </h2>
               <div id="collapseFinancing2" className="accordion-collapse collapse" data-bs-parent="#faqFinancing">
                 <div className="accordion-body">
-                  You can apply for a With Clarity Store Credit Card here. Get a decision instantly.
+                  You can apply for a Dilse Jewels Store Credit Card here. Get a decision instantly.
                 </div>
               </div>
             </div>
@@ -163,7 +163,7 @@ function OurPolicy() {
               </h2>
               <div id="collapseFinancing3" className="accordion-collapse collapse" data-bs-parent="#faqFinancing">
                 <div className="accordion-body">
-                  To check the status of your With Clarity Store Credit Card account,click here to learn more and manage your account on Synchrony Bank's website. After loging into your account, you will be able to:<br />
+                  To check the status of your Dilse Jewels Store Credit Card account,click here to learn more and manage your account on Synchrony Bank's website. After loging into your account, you will be able to:<br />
                   1. Make a payment <br />
                   2. View your balance <br />
                   3. Update your account information <br />
@@ -176,7 +176,7 @@ function OurPolicy() {
             <div className="accordion-item">
               <h2 className="accordion-header" id="headingFinancing4">
                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFinancing4">
-                  How can I make a payment on my With Clarity store Credit Card?
+                  How can I make a payment on my Dilse Jewels store Credit Card?
                 </button>
               </h2>
               <div id="collapseFinancing4" className="accordion-collapse collapse" data-bs-parent="#faqFinancing">
@@ -230,7 +230,7 @@ function OurPolicy() {
               </h2>
               <div id="collapseReplica1" className="accordion-collapse collapse" data-bs-parent="#faqReplica">
                 <div className="accordion-body">
-                  With Clarity's Replica Ring Preview makes it easy for you to select the perfect ring. You can experience your favorite styles in the comfort of your home before you purchase. Choose up to 2 replica rings to preview for 7 days. Share with friends and family or discreetly find a ring style she will love. After you are done viewing, simply use the prepaid shipping label and return via USPS in the original packaging. All replica orders ship USPS free of charge to and from the customer. Please note that Home Preview orders can only ship within the USA. Home Preview orders cannot be shipped to addresses in Canada or the UK.
+                  Dilse Jewels's Replica Ring Preview makes it easy for you to select the perfect ring. You can experience your favorite styles in the comfort of your home before you purchase. Choose up to 2 replica rings to preview for 7 days. Share with friends and family or discreetly find a ring style she will love. After you are done viewing, simply use the prepaid shipping label and return via USPS in the original packaging. All replica orders ship USPS free of charge to and from the customer. Please note that Home Preview orders can only ship within The India. Home Preview orders cannot be shipped to addresses in Canada or the UK.
                 </div>
               </div>
             </div>
@@ -258,7 +258,7 @@ function OurPolicy() {
               </h2>
               <div id="collapseReplica3" className="accordion-collapse collapse" data-bs-parent="#faqReplica">
                 <div className="accordion-body">
-                  All our replica rings look exactly like real With Clarity engagement rings. Our Replica Rings are made of a white metallic alloy and round one carat diamond simulant. Just by looking at it, it’s hard to tell a Replica Ring apart from a real diamond ring. Replica Rings are only intended for visual purposes, not extended wear, which may result in damage or tarnish.
+                  All our replica rings look exactly like real Dilse Jewels engagement rings. Our Replica Rings are made of a white metallic alloy and round one carat diamond simulant. Just by looking at it, it’s hard to tell a Replica Ring apart from a real diamond ring. Replica Rings are only intended for visual purposes, not extended wear, which may result in damage or tarnish.
                 </div>
               </div>
             </div>
@@ -335,7 +335,7 @@ function OurPolicy() {
               </h2>
               <div id="collapseEthics3" className="accordion-collapse collapse" data-bs-parent="#faqEthics">
                 <div className="accordion-body">
-                  The most recent influx of conflict diamonds has been from mining in Zimbabwe’s Marange diamond fields. Due to reports of human rights abuses, With Clarity does not purchase or inventory any diamonds that are associated or affiliated with Zimbabwean mining. With Clarity employs trained experts who can identify Zimbabwean diamonds that are in circulation, further ensuring our responsibility in purchasing and sourcing diamonds. With Clarity regularly reviews and improves its conflict diamond and environmental safety standards.
+                  The most recent influx of conflict diamonds has been from mining in Zimbabwe’s Marange diamond fields. Due to reports of human rights abuses, Dilse Jewels does not purchase or inventory any diamonds that are associated or affiliated with Zimbabwean mining. Dilse Jewels employs trained experts who can identify Zimbabwean diamonds that are in circulation, further ensuring our responsibility in purchasing and sourcing diamonds. Dilse Jewels regularly reviews and improves its conflict diamond and environmental safety standards.
                 </div>
               </div>
             </div>
@@ -344,12 +344,12 @@ function OurPolicy() {
             <div className="accordion-item">
               <h2 className="accordion-header" id="headingEthics4">
                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEthics4">
-                  What is With Clarity’s Conflict Diamond Policy?
+                  What is Dilse Jewels’s Conflict Diamond Policy?
                 </button>
               </h2>
               <div id="collapseEthics4" className="accordion-collapse collapse" data-bs-parent="#faqEthics">
                 <div className="accordion-body">
-                  With Clarity is committed to the highest level of ethical responsibility. We understand that the diamond you purchase is a symbol of love and commitment. For this reason, we ensure that every diamond we offer is not tainted by conflict or human rights abuses. We work to enforce the strictest standards set forth by the Kimberley Process and United Nations Resolutions. At With Clarity, we’re proud that the distribution of our jewelry, from mine to market, adheres with all international laws and human rights policies. With supplier relationships that span generations, we have transparency into the operations and sourcing of our suppliers. We only work with reputable suppliers who value conflict-free sourcing and ethical business practices.
+                  Dilse Jewels is committed to the highest level of ethical responsibility. We understand that the diamond you purchase is a symbol of love and commitment. For this reason, we ensure that every diamond we offer is not tainted by conflict or human rights abuses. We work to enforce the strictest standards set forth by the Kimberley Process and United Nations Resolutions. At Dilse Jewels, we’re proud that the distribution of our jewelry, from mine to market, adheres with all international laws and human rights policies. With supplier relationships that span generations, we have transparency into the operations and sourcing of our suppliers. We only work with reputable suppliers who value conflict-free sourcing and ethical business practices.
                 </div>
               </div>
             </div>
@@ -369,7 +369,7 @@ function OurPolicy() {
               </h2>
               <div id="collapseShipping1" className="accordion-collapse collapse" data-bs-parent="#faqShipping">
                 <div className="accordion-body">
-                  All With Clarity customers enjoy complimentary insured shipping on orders shipped within the United States, Canada and the UK. We provide shipment tracking so that you can keep track of when your package will arrive. All items shipping via FedEx will require a signature upon delivery.
+                  All Dilse Jewels customers enjoy complimentary insured shipping on orders shipped within the United States, Canada and the UK. We provide shipment tracking so that you can keep track of when your package will arrive. All items shipping via FedEx will require a signature upon delivery.
 
                   We offer the following shipping options:
 
@@ -377,7 +377,7 @@ function OurPolicy() {
                   FedEx Insured Overnight (Additional $40)
                   USPS Priority Mail® - APO / FPO Shipments
 
-                  With Clarity insured shipping covers items that are lost, damaged or stolen during transit. We will make efforts to recover the item(s). If unrecoverable, we will offer an item of equal or similar quality and size to match your original order. Insurance coverage applies to the cost (not retail value) of the item, as provided by our insurers.
+                  Dilse Jewels insured shipping covers items that are lost, damaged or stolen during transit. We will make efforts to recover the item(s). If unrecoverable, we will offer an item of equal or similar quality and size to match your original order. Insurance coverage applies to the cost (not retail value) of the item, as provided by our insurers.
                 </div>
               </div>
             </div>
@@ -391,7 +391,7 @@ function OurPolicy() {
               </h2>
               <div id="collapseShipping2" className="accordion-collapse collapse" data-bs-parent="#faqShipping">
                 <div className="accordion-body">
-                  If your billing and shipping address are different, With Clarity will gladly ship your jewelry to the preferred location. For security verification, we may use an email confirmation, government issued ID verification and/or telephone call to confirm the desired delivery address.
+                  If your billing and shipping address are different, Dilse Jewels will gladly ship your jewelry to the preferred location. For security verification, we may use an email confirmation, government issued ID verification and/or telephone call to confirm the desired delivery address.
                 </div>
               </div>
             </div>
@@ -405,7 +405,7 @@ function OurPolicy() {
               </h2>
               <div id="collapseShipping3" className="accordion-collapse collapse" data-bs-parent="#faqShipping">
                 <div className="accordion-body">
-                  With Clarity provides estimated shipping information to help you understand when you can expect to receive your order. We begin processing orders the day they are received and do our absolute best to minimize delays. Please understand that each order requires special attention and our With Clarity craftsmen are dedicated to placing quality above all else. Loose diamond orders typically ship in 11 business days and finished rings and other jewelry in up to 12 business days. Please consider an additional day for third party lab appraisal services. If you require urgent processing or rushed shipping, please call us at (844) 234-6463 to discuss the available options.
+                  Dilse Jewels provides estimated shipping information to help you understand when you can expect to receive your order. We begin processing orders the day they are received and do our absolute best to minimize delays. Please understand that each order requires special attention and our Dilse Jewels craftsmen are dedicated to placing quality above all else. Loose diamond orders typically ship in 11 business days and finished rings and other jewelry in up to 12 business days. Please consider an additional day for third party lab appraisal services. If you require urgent processing or rushed shipping, please call us at (844) 234-6463 to discuss the available options.
                 </div>
               </div>
             </div>
@@ -419,7 +419,7 @@ function OurPolicy() {
               </h2>
               <div id="collapseShipping4" className="accordion-collapse collapse" data-bs-parent="#faqShipping">
                 <div className="accordion-body">
-                  Sales tax is assessed based on a customer’s shipping address. Orders in the State of New York,California,Texas, Arizona, Illinois, Delaware, Arkansas, Georgia, Indiana, Iowa, Kansas, Kentucky, Michigan, Minnesota, Nebraska, Nevada, New Jersey, North Carolina, North Dakota, Ohio, Oklahoma, Rhode Island, South Dakota, Tennessee, Utah, Vermont, Washington, West Virginia, Wisconsin, and Wyoming are subject to sales tax.
+                  Sales tax is assessed based on a customer’s shipping address. Orders in the State of Surat,California,Texas, Arizona, Illinois, Delaware, Arkansas, Georgia, Indiana, Iowa, Kansas, Kentucky, Michigan, Minnesota, Nebraska, Nevada, New Jersey, North Carolina, North Dakota, Ohio, Oklahoma, Rhode Island, South Dakota, Tennessee, Utah, Vermont, Washington, West Virginia, Wisconsin, and Wyoming are subject to sales tax.
 
                   For international orders shipping to the UK or Canada, VAT is assessed based on the shipping address. Once the item is shipped, the FedEx broker will contact you about the cost and payment for the duties.
                 </div>
@@ -435,7 +435,7 @@ function OurPolicy() {
               </h2>
               <div id="collapseShipping5" className="accordion-collapse collapse" data-bs-parent="#faqShipping">
                 <div className="accordion-body">
-                  With Clarity ships to personal residences, offices, and local FedEx/UPS locations. We do not ship to PO Boxes for security reasons. We can ship anywhere within the USA, Canada or the UK.
+                  Dilse Jewels ships to personal residences, offices, and local FedEx/UPS locations. We do not ship to PO Boxes for security reasons. We can ship anywhere within The India, Canada or the UK.
                 </div>
               </div>
             </div>
@@ -467,7 +467,7 @@ function OurPolicy() {
                   Diamond upgrades are not eligible for return or exchange.
                   Rings and/or loose diamond orders with damaged or lost center diamonds are not eligible for return.
                   Jewelry or rings that have chips, scratches, breaks or nicks will not be eligible for return.
-                  All With Clarity jewelry is marked with microscopic trademark etchings. If jewelry is worked on, resized or repaired by another jeweler it will not be eligible for returns.
+                  All Dilse Jewels jewelry is marked with microscopic trademark etchings. If jewelry is worked on, resized or repaired by another jeweler it will not be eligible for returns.
                   Loose diamond purchases with a D FL color / clarity quality with a GIA seal are non-returnable if the GIA seal is broken.
                   Multiple loose diamond items in orders will not be eligible for return, exchange or store credit and will be considered final sale.
                   Items that have been submitted for resizing, even if still within the 30-day return period
@@ -500,7 +500,7 @@ function OurPolicy() {
               </h2>
               <div id="collapseReturns3" className="accordion-collapse collapse" data-bs-parent="#faqReturns">
                 <div className="accordion-body">
-                  Please allow With Clarity up to 7 business days to process returns and inspect returned jewelry, from the date on which your return is received. Once With Clarity receives your returned jewelry, you will receive a confirmation that your return is being processed. Returns are at the sole discretion of With Clarity based on the condition of the jewelry. If your purchase included a GIA or IGI certificate, please be sure to return that. If a certificate is not returned or returned with damage, there will be a charge of $300 in order to re-certify the diamond. Once inspected and approved, your return will be completed and you will receive a confirmation email with details about your refund. Refunds will be made via the original method of payment. Please allow time for the refund to be processed. A refund will generally take less than 7 business days to be completed. All refunds will be made in USD. There may be minor discrepancies based on exchange rates.
+                  Please allow Dilse Jewels up to 7 business days to process returns and inspect returned jewelry, from the date on which your return is received. Once Dilse Jewels receives your returned jewelry, you will receive a confirmation that your return is being processed. Returns are at the sole discretion of Dilse Jewels based on the condition of the jewelry. If your purchase included a GIA or IGI certificate, please be sure to return that. If a certificate is not returned or returned with damage, there will be a charge of $300 in order to re-certify the diamond. Once inspected and approved, your return will be completed and you will receive a confirmation email with details about your refund. Refunds will be made via the original method of payment. Please allow time for the refund to be processed. A refund will generally take less than 7 business days to be completed. All refunds will be made in USD. There may be minor discrepancies based on exchange rates.
                 </div>
               </div>
             </div>
@@ -513,7 +513,7 @@ function OurPolicy() {
               </h2>
               <div id="collapseReturns4" className="accordion-collapse collapse" data-bs-parent="#faqReturns">
                 <div className="accordion-body">
-                  Unsure of your purchase? Not a problem! Orders can be cancelled within the first 48 hours. Simply email service@withclarity.com with a reason for the cancellation. After 48 hours, the order will need to go through the returns process. Refunds are processed only to the original payment method and take up to 5-7 business days. One order cancellation is permitted within a 6 month period. A second order within the same six month period is final sale.
+                  Unsure of your purchase? Not a problem! Orders can be cancelled within the first 48 hours. Simply email service@dilsejewels.com with a reason for the cancellation. After 48 hours, the order will need to go through the returns process. Refunds are processed only to the original payment method and take up to 5-7 business days. One order cancellation is permitted within a 6 month period. A second order within the same six month period is final sale.
                 </div>
               </div>
             </div>
@@ -532,7 +532,7 @@ function OurPolicy() {
               </h2>
               <div id="collapseCustom" className="accordion-collapse collapse" data-bs-parent="#faqCustom">
                 <div className="accordion-body">
-                  We’re happy to create the perfect jewelry for you, based on a custom design. Simply send an image and description of your desired jewelry to service@withclarity.com We will then confirm that we can create the design for you and provide a custom quote. If any changes need to be made, we will work closely with you during the custom process to ensure that your jewelry is perfect. Our expert designers will provide you with a complimentary rendering and a quote for your approval before your jewelry is crafted with one complimentary revision. Once a design is approved through the computer animated design process and paid for, the order may not be cancelled or changed. Quotations on custom jewelry are valid for 30 days and subject to change thereafter. If you'd like to design and purchase a custom setting, you would be required to purchase the center diamond/gemstone from With Clarity.
+                  We’re happy to create the perfect jewelry for you, based on a custom design. Simply send an image and description of your desired jewelry to service@dilsejewels.com We will then confirm that we can create the design for you and provide a custom quote. If any changes need to be made, we will work closely with you during the custom process to ensure that your jewelry is perfect. Our expert designers will provide you with a complimentary rendering and a quote for your approval before your jewelry is crafted with one complimentary revision. Once a design is approved through the computer animated design process and paid for, the order may not be cancelled or changed. Quotations on custom jewelry are valid for 30 days and subject to change thereafter. If you'd like to design and purchase a custom setting, you would be required to purchase the center diamond/gemstone from Dilse Jewels.
 
                   Custom settings alone are not available for purchase. Learn more about our custom design process. Custom jewelry is eligible for returns within 30 days of receipt. Our lifetime warranty will apply to all custom jewelry. However, if the jewelry is worked on by another jeweler, the warranty will be void as we cannot guarantee the work of another jeweler.
                 </div>
@@ -612,7 +612,7 @@ function OurPolicy() {
 
                   For any additional information about our ID.me discount, please visit ID.me or contact our team here.
 
-                  *With Clarity reserves the right to deactivate your code and cancel any outstanding orders if we believe it is being misused.
+                  *Dilse Jewels reserves the right to deactivate your code and cancel any outstanding orders if we believe it is being misused.
                 </div>
               </div>
             </div>
@@ -697,11 +697,11 @@ function OurPolicy() {
               </h2>
               <div id="collapseCrafting5" className="accordion-collapse collapse" data-bs-parent="#faqCrafting">
                 <div className="accordion-body">
-                  With Clarity recognizes that ring sizing is not a perfect science. To this end, we offer one free resizing within 30 days of your purchase for all orders shipped within the USA, UK, Canada & Australia. For orders shipping to and from USA addresses, there is a $25 one way FedEx insured shipping fee that applies (complimentary return shipping). For orders shipping to and from UK & Canada addresses, there is a $30 roundtrip insured FedEx shipping fee that applies (complimentary return shipping). For orders shipping to and from Australia addresses, there is a $40 roundtrip insured FedEx shipping fee that applies (complimentary return shipping). Any resizing up will not be subject to additional metal charges. During the resize process small amounts of metal will be added or removed to increase or decrease the size to adjust for the new size needed. As a result, your ring may be slightly thicker or thinner when completed. Please be aware that a resizing down may result in a slight reduction in metal weight, which cannot be reimbursed.
+                  Dilse Jewels recognizes that ring sizing is not a perfect science. To this end, we offer one free resizing within 30 days of your purchase for all orders shipped within The India, UK, Canada & Australia. For orders shipping to and from USA addresses, there is a $25 one way FedEx insured shipping fee that applies (complimentary return shipping). For orders shipping to and from UK & Canada addresses, there is a $30 roundtrip insured FedEx shipping fee that applies (complimentary return shipping). For orders shipping to and from Australia addresses, there is a $40 roundtrip insured FedEx shipping fee that applies (complimentary return shipping). Any resizing up will not be subject to additional metal charges. During the resize process small amounts of metal will be added or removed to increase or decrease the size to adjust for the new size needed. As a result, your ring may be slightly thicker or thinner when completed. Please be aware that a resizing down may result in a slight reduction in metal weight, which cannot be reimbursed.
 
                   We request up to 1 week to perform a resizing, excluding shipping days. Please Note: Eternity rings cannot be resized or exchanged outside our 30-day return policy.
 
-                  Any resizing request outside 30 days will be subject to fees, including shipping and resizing fees. In most cases, subject to With Clarity's discretion, a ring resizing under 1 US finger size will be accompanied by shipping charges plus $30 for 14kt gold, $40 for 18kt gold and $50 for platinum. For resizing above or below 1 finger size, a new ring will need to be re-crafted to preserve the quality and structural integrity of the jewelry. In such instances, please contact our team for a quotation.      </div>
+                  Any resizing request outside 30 days will be subject to fees, including shipping and resizing fees. In most cases, subject to Dilse Jewels's discretion, a ring resizing under 1 US finger size will be accompanied by shipping charges plus $30 for 14kt gold, $40 for 18kt gold and $50 for platinum. For resizing above or below 1 finger size, a new ring will need to be re-crafted to preserve the quality and structural integrity of the jewelry. In such instances, please contact our team for a quotation.      </div>
               </div>
             </div>
 

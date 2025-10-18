@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./footer.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -11,18 +12,18 @@ const Footer = () => {
     { label: "Contact us", to: "/contact" },
     { label: "Press", to: "/press" },
     { label: "Reviews", to: "/reviews" },
-    { label: "Radiance Rewards", to: "/rewards" },
-    { label: "Home preview FAQ's", to: "/faqs" },
-    { label: "Monthly Payment Option", to: "/payment-options" },
-    { label: "Affiliate program", to: "/affiliate" },
-    { label: "Terms of use", to: "/terms" },
-    { label: "Privacy policy", to: "/policy" },
-    { label: "Site map", to: "/site-map" },
+    { label: "Radiance Rewards", to: "/radiance-rewards-program" },
+    { label: "Home Preview FAQs", to: "/our-policies" },
+    { label: "Monthly Payment Option", to: "/monthly-payment-option" },
+    { label: "Affiliate Program", to: "/affiliates" },
+    { label: "Terms of Use", to: "/terms" },
+    { label: "Privacy Policy", to: "/policy" },
+    { label: "Site Map", to: "/site-map" },
   ];
 
   const educationLinks = [
-    { label: "Diamonds", to: "/diamond" },
-    { label: "Clarity Plus™ Diamonds", to: "/clarity-plus" },
+    { label: "Diamonds", to: "/diamonds" },
+    { label: "Clarity Plus™ Diamonds", to: "/clarity-plus-diamonds" },
     { label: "Engagement", to: "/engagement" },
     { label: "Wedding bands", to: "/wedding-brands" },
     { label: "Gemstones", to: "/gemstones-types-guide" },
@@ -46,15 +47,15 @@ const Footer = () => {
   ];
 
   const customerCareLinks = [
-    { label: "Schedule an appointment", to: "/appointment" },
-    { label: "Free shipping", to: "/shipping" },
-    { label: "Free returns", to: "/returns" },
-    { label: "Extended warranty", to: "/warranty-extended" },
-    { label: "Lifetime warranty", to: "/warranty-lifetime" },
+    { label: "Schedule an appointment", to: "/book-an-appointment" },
+    { label: "Free shipping", to: "/our-policies" },
+    { label: "Free Returns", to: "/our-policies" },
+    { label: "Extended warranty", to: "jewelry-protection-plan" },
+    { label: "Lifetime warranty", to: "/our-policies" },
     { label: "Financing", to: "/financing" },
     { label: "Insurance", to: "/insurance" },
-    { label: "ID.me", to: "/idme" },
-    { label: "Accessibility", to: "/accessibility" },
+    { label: "ID.me", to: "/id-me" },
+    { label: "Accessibility", to: "#" },
   ];
 
   const socialLinks = [
@@ -113,12 +114,18 @@ const Footer = () => {
               <ul className="list-unstyled">
                 {companyLinks.map((item, i) => (
                   <li key={i}>
-                    <a
+                    {/* <a
                       href={item.to}
                       className="text-white text-decoration-none footer-link"
                     >
                       {item.label}
-                    </a>
+                    </a> */}
+                    <Link
+                      to={item.to}
+                      className="text-white text-decoration-none footer-link"
+                    >
+                      {item.label}
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -130,12 +137,18 @@ const Footer = () => {
               <ul className="list-unstyled">
                 {educationLinks.map((item, i) => (
                   <li key={i}>
-                    <a
+                    {/* <a
                       href={item.to}
                       className="text-white text-decoration-none footer-link"
                     >
                       {item.label}
-                    </a>
+                    </a> */}
+                    <Link
+                      to={item.to}
+                      className="text-white text-decoration-none footer-link"
+                    >
+                      {item.label}
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -147,16 +160,22 @@ const Footer = () => {
               <ul className="list-unstyled">
                 {shopLinks.map((item, i) => (
                   <li key={i}>
-                    <a
+                    {/* <a
                       href={item.to}
                       className="text-white text-decoration-none footer-link"
                     >
                       {item.label}
-                    </a>
+                    </a> */}
+                    <Link
+                      to={item.to}
+                      className="text-white text-decoration-none footer-link"
+                    >
+                      {item.label}
+                    </Link>
                   </li>
                 ))}
               </ul>
-            </div> 
+            </div>
 
             {/* Customer Care */}
             <div className="col-6 col-lg-2 mb-4 footer-col">
@@ -164,12 +183,18 @@ const Footer = () => {
               <ul className="list-unstyled">
                 {customerCareLinks.map((item, i) => (
                   <li key={i}>
-                    <a
+                    {/* <a
                       href={item.to}
                       className="text-white text-decoration-none footer-link"
                     >
                       {item.label}
-                    </a>
+                    </a> */}
+                    <Link
+                      to={item.to}
+                      className="text-white text-decoration-none footer-link"
+                    >
+                      {item.label}
+                    </Link>
                   </li>
                 ))}
               </ul>

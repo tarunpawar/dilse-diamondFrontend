@@ -70,7 +70,7 @@ const WhiteClarityNav = () => {
     ENGAGEMENT: "/engagement",
     WEDDING: "/wedding-brands",
     DIAMONDS: "/diamond",
-    "HIGH JEWELRY": "/high-jewelry",
+    "HIGH JEWELRY": "/page/luxe-collection-engagement-rings-and-wedding-bands",
     JEWELRY: "/jewelry-list",
     COLLECTIONS: "/collections",
     GIFTS: "/collections/jewelry-gifts",
