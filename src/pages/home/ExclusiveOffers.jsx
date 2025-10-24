@@ -28,12 +28,12 @@ const ExclusiveOffers = () => {
   };
 
   const offers = [
-    { img: 'images/natural.webp', label: 'natural diamonds' },
-    { img: 'images/BRACELETS.webp', label: 'bracelets' },
-    { img: 'images/STUDS.webp', label: 'studs earrings' },
-    { img: 'images/ETERNITY.webp', label: 'eternity rings' },
-    { img: 'images/annivarsary.webp', label: 'anniversary band' },
-    { img: 'images/lab.webp', label: 'lab diamonds' }
+    { img: 'images/natural.webp', label: 'natural diamonds', link:'/diamond?menudiamond=natural-diamond' },
+    { img: 'images/BRACELETS.webp', label: 'bracelets', link:'/jewelry-list?category=bracelets-13' },
+    { img: 'images/STUDS.webp', label: 'studs earrings', link:'/jewelry-list?category=earrings-1&subcategory=studs-2' },
+    { img: 'images/ETERNITY.webp', label: 'eternity rings', link:'/jewelry-list?category=rings-22&subcategory=eternity-24' },
+    { img: 'images/annivarsary.webp', label: 'anniversary band', link:'/jewelry-list?category=rings-22&subcategory=anniversary-23' },
+    { img: 'images/lab.webp', label: 'lab diamonds', link:'/diamond?menudiamond=lab-diamond' }
   ];
 
   return (
@@ -51,7 +51,9 @@ const ExclusiveOffers = () => {
                     <img src={item.img} alt={item.label} className="img-fluid mb-2" />
                     <p className="offer text-uppercase text-white m-0">up to 30% off</p>
                   </div>
+                  <a href={item.label} className="text-decoration-none">
                   <p className="text-center text-uppercase  mt-2">{item.label}</p>
+                  </a>
                 </div>
               ))}
             </Slider>

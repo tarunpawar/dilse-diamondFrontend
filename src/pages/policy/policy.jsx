@@ -15,16 +15,16 @@ export default function Policy() {
             </div>
             <div className="page-content">
               <p>
-                Thank you for visiting thecaratcasa.com. At The Carat Casa, we
+                Thank you for visiting dilsejewels.com. At The Carat Casa, we
                 respect your privacy and protect your personal information.
                 Please carefully review our privacy policies. By visiting and
-                using thecaratcasa.com, you agree with the policies described
+                using dilsejewels.com, you agree with the policies described
                 below. By agreeing, you provide The Carat Casa consent to
                 collect, use, store and disclose your information. Please feel
                 free to contact a service representative for more information
                 regarding our Privacy Policy at{" "}
-                <a href="mailto:service@thecaratcasa.com">
-                  service@thecaratcasa.com
+                <a href="mailto:service@dilsejewels.com">
+                  service@dilsejewels.com
                 </a>{" "}
                 or <a href="tel:+1 (816) 888-1111">+1 (816) 888-1111</a>
               </p>
@@ -49,7 +49,7 @@ export default function Policy() {
                 information and account username.
               </p>
               <p>
-                By visiting thecaratcasa.com, we may receive and store certain
+                By visiting dilsejewels.com, we may receive and store certain
                 personally non-identifiable information. Such information, which
                 is collected by various third-party providers and technologies,
                 cannot be used to specifically identify you personally. The

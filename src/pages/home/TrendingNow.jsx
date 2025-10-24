@@ -51,7 +51,7 @@ const TrendingNow = () => {
           <div className="col-12 col-md-3 mb-4 mb-md-0 text-center text-md-start">
             <h2 className="trending-title mb-3">Trending Now</h2>
             <a
-              href="#"
+              href="/jewelry-list"
               className="btn explore-btn border rounded-0 fw-bold"
             >
               EXPLORE NOW

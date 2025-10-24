@@ -25,13 +25,13 @@ export default function Home() {
             </div>
             <div className="slide-btn-wrapper justify-content-center align-items-center gap-5">
               <a
-                href="#"
+                href="/engagement-rings/engagement-rings"
                 className="text-white btn border-button border my-2 p-2 rounded-0 fw-bold border-white"
               >
                 SHOP ENGAGEMENT RINGS
               </a>
               <a
-                href="#"
+                href="/jewelry-list"
                 className="text-white btn border-button border my-2 p-2 rounded-0 fw-bold border-white"
               >
                 SHOP JEWELRY
@@ -60,7 +60,7 @@ export default function Home() {
                       ring.
                     </p>
                     <a
-                      href="#"
+                      href="/engagement-rings/engagement-rings"
                       className="btn border-button border p-2 rounded-0 fw-bold border-dark"
                     >
                       START DESIGNING
@@ -103,7 +103,7 @@ export default function Home() {
                       purchase designs.
                     </p>
                     <a
-                      href="#"
+                      href="/engagement-rings/preset-rings"
                       className="btn border-button border p-2 rounded-0 fw-bold border-dark"
                     >
                       EXPLORE NOW
@@ -140,7 +140,7 @@ export default function Home() {
             </p>
             <div className="button-wrapper flex flex-wrap justify-content_center">
               <a
-                href="#"
+                href="/jewelry-list?menucollection=new-bond-48"
                 className="btn border-button border p-2 rounded-0 fw-bold border-dark"
               >
                 EXPLORE THE COLLECTION
@@ -176,7 +176,7 @@ export default function Home() {
                   <li>COMPLIMENTARY CONSULTATION</li>
                 </ul>
                 <a
-                  href="#"
+                  href="/jewelry-list"
                   className="btn border-button border p-2 rounded-0 fw-bold border-dark"
                 >
                   LEARN MORE
@@ -231,7 +231,7 @@ export default function Home() {
                   engagement ring or gift.
                 </p>
                 <a
-                  href="#"
+                  href="/book-an-appointment"
                   className="btn border-button border my-3 p-2 rounded-0 fw-bold border-dark"
                 >
                   SCHEDULE YOUR APPOINTMENT
@@ -268,13 +268,13 @@ export default function Home() {
             </p>
             <div className="button-wrapper flex flex-wrap justify-content_center">
               <a
-                href="#"
+                href="/reserve"
                 className="btn border-button border mx-3 p-2 rounded-0 fw-bold border-dark"
               >
                 DISCOVER THE RESERVE
               </a>
               <a
-                href="#"
+                href="/luxe"
                 className="btn border-button border mx-3 p-2 rounded-0 fw-bold border-dark"
               >
                 EXPLORE LUXE

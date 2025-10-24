@@ -19,7 +19,7 @@ const giftSlugs = [
   "jewelry-gift-sets",
   "ready-to-ship-diamond-jewelry-gifts",
   "jewelry-gifts-for-him",
-  "caratcasa-gift-card",
+  "Dilse Jewels-gift-card",
   // ... more gift slugs
 ];
 

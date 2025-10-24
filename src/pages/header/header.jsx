@@ -53,6 +53,7 @@ const Header = ({ onHoverChange }) => {
         {/* Top bar */}
         <div className="d-flex align-items-center justify-content-between">
           <div className="left-side-logo-wrapper">
+           <a href="/book-an-appointment"> 
             <button
               type="button"
               className="border-0 bg-transparent text-white p-1 border-bottom d-flex gap-2 align-items-center"
@@ -62,6 +63,7 @@ const Header = ({ onHoverChange }) => {
               <img src="./svg/book-appoinment.svg" height={20} width={20} />
               Book an Appointment
             </button>
+          </a>
           </div>
 
           <div className="logo-wrapper">

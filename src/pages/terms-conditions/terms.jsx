@@ -18,7 +18,7 @@ export default function Terms() {
               </div>
               <div className="page-content">
                 <p>
-                  Welcome to https://thecaratcasa.com (“The caratcasa”). If there is
+                  Welcome to https://dilsejewels.com (“Dilse Jewels”). If there is
                   anything at all we can do to improve your experience, please
                   do not hesitate to contact us at&nbsp;&nbsp;
                   <a
@@ -41,9 +41,9 @@ export default function Terms() {
                 </p>
                 <p>
                   Renaissance FMI Inc. / The Carat Casa (“The Carat Casa,” “we,”
-                  “us,” “our,” “www.thecaratcasa.com”) provides services and
+                  “us,” “our,” “www.dilsejewels.com”) provides services and
                   products subject to terms and conditions that govern your use
-                  of thecaratcasa.com or any related The Carat Casa /
+                  of dilsejewels.com or any related The Carat Casa /
                   Renaissance FMI Inc. sites.
                 </p>
                 <p>
@@ -54,7 +54,7 @@ export default function Terms() {
                   using The Carat Casa or purchasing The Carat Casa products,
                   you acknowledge that you have read, understood and agreed to
                   all of the Terms &amp; Conditions outlined on
-                  thecaratcasa.com. You also agree to comply with all applicable
+                  dilsejewels.com. You also agree to comply with all applicable
                   laws and regulations, including United States Copyright and
                   Trademark laws.
                 </p>
@@ -120,7 +120,7 @@ export default function Terms() {
                 <h2 className="display-12">Product Returns</h2>
                 <p>
                   Customer must express the return request in writing or via
-                  email to service@thecaratcasa.com. Returns must occur within
+                  email to service@dilsejewels.com. Returns must occur within
                   30 calendar days of receipt of products. Orders are considered
                   final sale after 30 days from receiving the order, as verified
                   by the official FedEx tracking information. Returns must be
@@ -238,12 +238,12 @@ export default function Terms() {
                   The Carat Casa reserves the right to change, modify,
                   discontinue, add to or delete from any portion, temporarily or
                   permanently, its website or related websites at any time. You
-                  agree that by visiting thecaratcasa.com, you have read
+                  agree that by visiting dilsejewels.com, you have read
                   understood and agreed to all terms of use.
                 </p>
                 <h2 className="display-12">Your Account</h2>
                 <p>
-                  Should you create an account on thecaratcasa.com, it is solely
+                  Should you create an account on dilsejewels.com, it is solely
                   your responsibility to maintain the confidentiality of account
                   and restrict access to electronic devices in which you log
                   onto The Carat Casa. You are responsible for all activities
@@ -317,10 +317,10 @@ export default function Terms() {
                   For Service support or assistance, text HELP to +1 (816) 888-1111
                   or email{" "}
                   <a
-                    href="mailto:service@thecaratcasa.com"
+                    href="mailto:service@dilsejewels.com"
                     aria-describedby="a11y-external-message"
                   >
-                    service@thecaratcasa.com.
+                    service@dilsejewels.com.
                   </a>
                 </p>
                 <p>
@@ -350,7 +350,7 @@ export default function Terms() {
                   <a
                     href="/pages/privacy-policy"
                     data-uw-rm-brl="PR"
-                    data-uw-original-href="https://www.thecaratcasa.com/pages/privacy-policy"
+                    data-uw-original-href="https://www.dilsejewels.com/pages/privacy-policy"
                   >
                     Privacy Notice
                   </a>
@@ -358,7 +358,7 @@ export default function Terms() {
                 </p>
                 <h2 className="display-12">Ownership &amp; Copyright</h2>
                 <p>
-                  thecaratcasa.com is owned and operated by Renaissance FMI Inc.
+                  dilsejewels.com is owned and operated by Renaissance FMI Inc.
                   Unless otherwise noted, all design and content included on
                   this web site, including text, graphics, logos, icons, images,
                   artwork, audio and video clips and software is the property of
@@ -496,10 +496,10 @@ export default function Terms() {
                   We hope that your experience at any The Carat Casa website is
                   enjoyable. Please contact us at{" "}
                   <a
-                    href="mailto:service@thecaratcasa.com"
+                    href="mailto:service@dilsejewels.com"
                     aria-describedby="a11y-external-message"
                   >
-                    service@thecaratcasa.com
+                    service@dilsejewels.com
                   </a>{" "}
                   to report any violations of the Terms of Use or to pose any
                   questions regarding these Terms of Use or the Site.
@@ -594,12 +594,12 @@ export default function Terms() {
                   valid for new customers only and applicable to first-time
                   orders placed at{" "}
                   <a
-                    href="https://www.thecaratcasa.com/"
+                    href="https://www.dilsejewels.com/"
                     data-uw-rm-brl="PR"
-                    data-uw-original-href="https://www.thecaratcasa.com/"
+                    data-uw-original-href="https://www.dilsejewels.com/"
                   >
                     {" "}
-                    thecaratcasa.com
+                    dilsejewels.com
                   </a>
                   .
                 </p>
@@ -660,10 +660,10 @@ export default function Terms() {
                   If you have any questions, please do not hesitate to contact
                   one of our representatives at{" "}
                   <a
-                    href="mailto:service@thecaratcasa.com"
+                    href="mailto:service@dilsejewels.com"
                     aria-describedby="a11y-external-message"
                   >
-                    service@thecaratcasa.com
+                    service@dilsejewels.com
                   </a>{" "}
                   or{" "}
                   <a

@@ -55,7 +55,7 @@ const details = [
 <section className="w-signature-description py-5">
  
         <p className="description-text container">
-          <strong>The W Signature</strong> showcases a distinctive W-shaped basket, inspired by the The CaratCasa brand name. Designed to celebrate the brilliance <br /> of the center stone, The W Signature embodies timeless artistry, creating an iconic silhouette that remains classic for generations to come.
+          <strong>The W Signature</strong> showcases a distinctive W-shaped basket, inspired by the Dilse Jewels brand name. Designed to celebrate the brilliance <br /> of the center stone, The W Signature embodies timeless artistry, creating an iconic silhouette that remains classic for generations to come.
         </p>
     
     </section>

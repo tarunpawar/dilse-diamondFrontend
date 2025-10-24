@@ -218,7 +218,7 @@ const Footer = () => {
             <div className="col-12 col-lg-4 mb-4">
               <div className="text-center text-lg-start">
                 <div className="brand-logo text-white text-uppercase mb-3">
-                  THE CARATCASA
+                  Dilse Jewels
                 </div>
                 <p className="tagline text-white mb-3">
                   Luxury Made <span className="tagline-italic">Personal.</span>

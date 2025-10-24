@@ -119,10 +119,12 @@ const WhiteClarityNav = () => {
             >
               ☰
             </Button>
+            <a href="/book-an-appointment">
             <button className="appointment-btn" style={{ color: "inherit" }}>
               <span className="icon">📅</span>
               <span className="text">Book an Appointment</span>
             </button>
+            </a>
           </div>
 
           {/* <div className="nav-logo">Dilse Jewels</div> */}
