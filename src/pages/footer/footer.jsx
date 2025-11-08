@@ -23,9 +23,9 @@ const Footer = () => {
 
   const educationLinks = [
     { label: "Diamonds", to: "/diamonds" },
-    { label: "Clarity Plus™ Diamonds", to: "/clarity-plus-diamonds" },
+    { label: "Dilse Jewels Diamonds", to: "/clarity-plus-diamonds" },
     { label: "Engagement", to: "/engagement" },
-    { label: "Wedding bands", to: "/wedding-brands" },
+    { label: "Wedding bands", to: "/wedding-band-styles" },
     { label: "Gemstones", to: "/gemstones-types-guide" },
     { label: "Jewelry", to: "/fine-jewelry-earrings" },
     { label: "Conflict diamond policy", to: "/our-policies" },
@@ -36,14 +36,14 @@ const Footer = () => {
 
   const shopLinks = [
     { label: "Diamonds", to: "/diamond" },
-    { label: "Engagement rings", to: "/engagement-ring-style" },
-    { label: "Bands for him", to: "/bands-him" },
-    { label: "Bands for her", to: "/bands-her" },
-    { label: "Home preview", to: "/home" },
-    { label: "Gemstone rings", to: "/gemstone-rings" },
-    { label: "Preset rings", to: "/preset-rings" },
-    { label: "Custom rings", to: "/custom-rings" },
-    { label: "Fine jewelry", to: "/fine-jewelry" },
+    { label: "Engagement rings", to: "/engagement-rings" },
+    { label: "Bands for him", to: "/mens-wedding-rings" },
+    { label: "Bands for her", to: "/womens-wedding-rings" },
+    { label: "Home preview", to: "/home-preview" },
+    { label: "Gemstone rings", to: "/jewelry-list?category=rings-22&subcategory=gemstone-27" },
+    { label: "Preset rings", to: "/engagement-rings/preset-rings" },
+    { label: "Custom rings", to: "/engagement-rings" },
+    { label: "Fine jewelry", to: "/jewelry-list" },
   ];
 
   const customerCareLinks = [
@@ -61,17 +61,17 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: "fa-instagram",
-      href: "https://www.instagram.com/dilse_jewels/",
+      href: "https://www.instagram.com/theDilse Jewels/",
       label: "Instagram",
     },
-    { icon: "fa-tiktok", href: "https://www.tiktok.com", label: "TikTok" },
+    // { icon: "fa-tiktok", href: "https://www.tiktok.com", label: "TikTok" },
     {
       icon: "fa-facebook-f",
-      href: "https://www.facebook.com/share/194gTHJY21/",
+      href: "https://www.facebook.com/profile.php?id=100083864271889",
       label: "Facebook",
     },
-    { icon: "fa-twitter", href: "https://www.twitter.com", label: "Twitter" },
-    { icon: "fa-youtube", href: "https://www.youtube.com", label: "YouTube" },
+    { icon: "fa-twitter", href: "https://x.com/DilseJewels", label: "Twitter" },
+    // { icon: "fa-youtube", href: "https://www.youtube.com", label: "YouTube" },
     {
       icon: "fa-pinterest-p",
       href: "https://www.pinterest.com",
@@ -216,7 +216,7 @@ const Footer = () => {
 
             {/* Newsletter / Brand */}
             <div className="col-12 col-lg-4 mb-4">
-              <div className="text-center text-lg-start">
+              <div className="text-center text-lg-start" style={{justifyItems:"center"}}> 
                 <div className="brand-logo text-white text-uppercase mb-3">
                   Dilse Jewels
                 </div>
@@ -244,6 +244,7 @@ const Footer = () => {
                     SUBMIT
                   </button>
                 </div>
+
 
                 {emailError && (
                   <small className="text-danger d-block mb-2">

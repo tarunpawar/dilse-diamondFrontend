@@ -102,7 +102,7 @@ export default function CartPage() {
 
         <div className="cart-right">
           <div className="summary-card">
-            <p className="subtotal">Subtotal : ${getSubTotal().toFixed(2)}</p>
+            <p className="subtotal">Subtotal : ₹{getSubTotal().toFixed(2)}</p>
             <p className="tax-info">
               Taxes and shipping calculated at checkout
             </p>
@@ -110,7 +110,7 @@ export default function CartPage() {
               CHECKOUT
             </button>
             <p className="discount-note">
-              GET50 - Get $50 off on orders above $1000 on checkout
+              GET50 - Get ₹50 off on orders above ₹1000 on checkout
             </p>
 
             <div className="summary-features">

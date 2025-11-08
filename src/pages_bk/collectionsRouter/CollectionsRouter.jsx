@@ -35,11 +35,11 @@ const CollectionsRouter = () => {
   const { slug } = useParams();
 
   if (saleSlugs.includes(slug)) {
-    return <SaleList slug={slug} />;
+    return <SaleList />;
   }
 
   if (giftSlugs.includes(slug)) {
-    return <GiftList slug={slug} />;
+    return <GiftList />;
   }
 
   // fallback if slug doesn't exist

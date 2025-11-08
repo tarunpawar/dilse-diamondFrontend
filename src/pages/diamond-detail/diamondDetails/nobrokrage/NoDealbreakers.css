@@ -29,10 +29,8 @@
   width: 150px;
 }
 
-.dealbreaker-icon img, svg{
-  
+.dealbreaker-icon img, svg{ 
   font-size: 40px !important;
-  margin-bottom: 10px;
 }
 
 .dealbreaker-label {

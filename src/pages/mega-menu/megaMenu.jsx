@@ -163,6 +163,7 @@ const MegaMenu = ({ type = "engagement", closeMegaMenu = () => {} }) => {
           slugify={slugify}
         />
       )}
+      
       {type === "wedding" && (
         <Wedding
           closeMegaMenu={closeMegaMenu}

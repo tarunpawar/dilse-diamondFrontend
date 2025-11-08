@@ -3,7 +3,7 @@ import axiosClient from "../../api/axios";
 import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
 import Loader from "../diamond/loader";
 import "react-medium-image-zoom/dist/styles.css";
-import "./weddingList.css";
+// import "./weddingList.css";
 
 const priceSlugMap = {
   "0-500": "$0 - $500",
@@ -371,7 +371,7 @@ const WeddingList = () => {
         <img
           src={heroContent[slug]?.image}
           alt={heroContent[slug]?.title || "Wedding Bands"}
-          className="hero-img img-fluid"
+          className="hero-img"
         />
         <div className="hero-text text-center">
           <h1 className="fw-bold">
@@ -626,7 +626,6 @@ const WeddingList = () => {
         <hr />
 
         {/* Applied Filters */}
-
         {visibleFilters.length > 0 && (
           <div className="applied-filters-bar mt-3">
             <strong>APPLIED FILTERS</strong>
@@ -699,12 +698,18 @@ const WeddingList = () => {
               const originalPrice = selectedVariation?.original_price || "NA";
               const sku = selectedVariation?.sku || "NA";
               const discount = selectedVariation?.discount || "";
-
+              // Create slug from product name
+              const productSlug = group.product?.name
+                ? group.product.name
+                    .toLowerCase()
+                    .replace(/\s+/g, "-")
+                    .replace(/[^a-z0-9-]/g, "")
+                : "product";
               return (
                 <div className="col" key={group.id}>
-                  <div className="h-100 d-flex flex-column product-card shadow-sm rounded">
+                  <div className="h-100 d-flex flex-column list-product-card rounded">
                     <Link
-                      to={`/jewellary-details/${group.product?.id}`}
+                      to={`/products/${productSlug}?product=${group.product?.id}`}
                       className="text-decoration-none text-dark mt-2"
                     >
                       <div className="product-image-container position-relative">
@@ -736,7 +741,7 @@ const WeddingList = () => {
                         return (
                           <button
                             key={metalId}
-                            className="product-variation__btn btn btn-sm"
+                            className="product-variation__btn"
                             style={{
                               background: metal?.hex,
                               border: `1px solid ${

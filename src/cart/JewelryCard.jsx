@@ -72,7 +72,7 @@ export default function JewelryCard({
 
             {/* Ring Info */}
             <div style={{ marginBottom: "10px" }}>
-              <p> ${ring.price}</p>
+              <p> ₹{ring.price}</p>
               <p>Metal Color: {ring.metal_color.name || "N/A"}</p>
               <p>Total Carat Weight: {ring.weight || "N/A"}</p>
               {ring.size && <p>Size: {ring.size}</p>}

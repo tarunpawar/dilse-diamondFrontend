@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
 
 const Appointment = () => {
     const [hoveredBtn, setHoveredBtn] = useState(null);
@@ -49,7 +50,7 @@ const Appointment = () => {
                         textShadow: '0px 3px 8px #00000080'
                     }}
                 >
-                    MEET US IN SOHO, NYC
+                    MEET US IN SOHO, Surat
                 </h1>
 
                 <div
@@ -61,23 +62,23 @@ const Appointment = () => {
                         gap: "32px",
                     }}
                 >
-                    <a
-                        href="#"
+                    <Link
+                        to="/book-appointment"
                         style={buttonStyle(hoveredBtn === 1)}
                         onMouseEnter={() => setHoveredBtn(1)}
                         onMouseLeave={() => setHoveredBtn(null)}
                     >
                         SHOWROOM APPOINTMENT
-                    </a>
+                    </Link>
 
-                    <a
-                        href="#"
+                    <Link
+                        to="/book-appointment"
                         style={buttonStyle(hoveredBtn === 2)}
                         onMouseEnter={() => setHoveredBtn(2)}
                         onMouseLeave={() => setHoveredBtn(null)}
                     >
                         VIRTUAL APPOINTMENT
-                    </a>
+                    </Link>
                 </div>
             </section>
             <section style={{ background: '#213245', marginBottom: '80px' }}>
@@ -202,7 +203,7 @@ const Appointment = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6">
-                            <img src="/images/appointment/3.webp" alt="" style={{width:'100%'}}/>
+                            <img src="/images/appointment/3.webp" alt="" width="100%"/>
                         </div>
                         <div className="col-md-6 d-flex flex-column justify-content-center" >
                             <h2>YOUR VIRTUAL EXPERIENCE</h2>
@@ -223,11 +224,11 @@ const Appointment = () => {
                                 alt="Easy Financing Options"
                                 className="radiance-feature-img mx-auto"
                             />
-                            <a className="text-decoration-none" href="/our-policies">
+                            <Link className="text-decoration-none" to="/our-policies">
                                 <p className="radiance-feature-text mt-2">
                                     EASY FINANCING OPTIONS
                                 </p>
-                            </a>
+                            </Link>
                         </div>
 
                         {/* Item 2 */}
@@ -237,11 +238,11 @@ const Appointment = () => {
                                 alt="Lifetime Warranty"
                                 className="radiance-feature-img mx-auto"
                             />
-                            <a className="text-decoration-none" href="/our-policies">
+                            <Link className="text-decoration-none" to="/our-policies">
                                 <p className="radiance-feature-text mt-2">
                                     LIFETIME WARRANTY
                                 </p>
-                            </a>
+                            </Link>
                         </div>
 
                         {/* Item 3 */}
@@ -251,11 +252,11 @@ const Appointment = () => {
                                 alt="Hassle Free Returns"
                                 className="radiance-feature-img mx-auto"
                             />
-                            <a className="text-decoration-none" href="/our-policies">
+                            <Link className="text-decoration-none" to="/our-policies">
                                 <p className="radiance-feature-text mt-2">
                                     HASSLE FREE RETURNS
                                 </p>
-                            </a>
+                            </Link>
                         </div>
 
                         {/* Item 4 */}
@@ -265,11 +266,11 @@ const Appointment = () => {
                                 alt="Free Resizing"
                                 className="radiance-feature-img mx-auto"
                             />
-                            <a className="text-decoration-none" href="/our-policies">
+                            <Link className="text-decoration-none" to="/our-policies">
                                 <p className="radiance-feature-text mt-2">
                                     FREE RESIZING
                                 </p>
-                            </a>
+                            </Link>
                         </div>
 
                         {/* Item 5 */}
@@ -279,11 +280,11 @@ const Appointment = () => {
                                 alt="Conflict Free Diamonds"
                                 className="radiance-feature-img mx-auto"
                             />
-                            <a className="text-decoration-none" href="/our-policies">
+                            <Link className="text-decoration-none" to="/our-policies">
                                 <p className="radiance-feature-text mt-2">
                                     CONFLICT FREE DIAMONDS
                                 </p>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

@@ -5,6 +5,8 @@ import DesigningProcess from "../engagement/designing-process/designingProcess."
 import Quetions from "../engagement/quetions/quetions";
 import WedingCollection from "./collaction/wedingCollection";
 import "./index.css";
+
+
 export default function Weddingbrands() {
   return (
     <>
@@ -27,7 +29,6 @@ export default function Weddingbrands() {
                   your love so easy. Elevate your story with the perfect wedding
                   band.
                 </p>
-                <button className="btn wedding-btn">SHOP WEDDING BANDS</button>
               </div>
             </div>
 

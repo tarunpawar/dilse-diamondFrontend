@@ -9,24 +9,26 @@ import {
   Mail,
   Gift,
 } from "lucide-react";
+import { ChevronUp, ChevronDown, MessageCircle } from "lucide-react";
 import axiosClient from "../../api/axios";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import Zoom from "react-medium-image-zoom";
 import { useCart } from "../../cart/CartContext";
-import "./giftDetails.css"; // Import the custom CSS
+import LoadingDots from "./LoadingDots";
+import ProductReviewSystem from "../review/ProductReviewSystem";
+import "./giftDetails.css";
 
 const getImageUrl = (img) => {
-  const fallback = `${
-    import.meta.env.VITE_BACKEND_URL
-  }/storage/variation_images/No_Image_Available.jpg`;
+  const fallback = `https://dilsejewels.com/storage/variation_images/No_Image_Available.jpg`;
   if (!img) return fallback;
-  return `${import.meta.env.VITE_BACKEND_URL}${img}`;
+  return `https://dilsejewels.com/api${img}`;
 };
 
 const getVideoUrl = (video) => {
   if (!video) return null;
-  return `${import.meta.env.VITE_BACKEND_URL}${video}`;
+  return `https://dilsejewels.com/api${video}`;
 };
+
 const GiftDetails = () => {
   const [searchParams] = useSearchParams();
   const productId = searchParams.get("product");
@@ -42,6 +44,13 @@ const GiftDetails = () => {
   const { addToCart } = useCart();
   const navigate = useNavigate();
 
+  const [openSection, setOpenSection] = useState("product");
+  const [reviewsRefreshed, setReviewsRefreshed] = useState(0);
+
+  const toggleSection = (section) => {
+    setOpenSection(openSection === section ? null : section);
+  };
+
   const qualities = [
     { id: "ef-vs", label: "EF VS+" },
     { id: "f-g-si", label: "F/G SI+" },
@@ -56,20 +65,30 @@ const GiftDetails = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const res = await axiosClient.get(`/api/product-details/${productId}`);
-        const data = res.data;
-
+        const response = await axiosClient.get(
+          `/api/product-details/${productId}`
+        );
+        const data = response.data;
         const metalVariationKeys = Object.keys(data.metal_variations);
         const defaultMetalId = metalVariationKeys[0];
         setProduct(data);
         setSelectedMetalId(defaultMetalId);
         setSelectedVariationIndex(0);
 
-        // CHANGE: keep your old (non-build) logic
         const defaultVariation = data.metal_variations[defaultMetalId][0];
         setMainImage(getImageUrl(defaultVariation?.images?.[0]));
       } catch (err) {
         console.error("Failed to fetch product", err);
+        // Fallback if API fails
+        setProduct({
+          product: {
+            id: productId,
+            average_rating: "4.5",
+            review_count: "0",
+            name: "Product",
+            description: "Product description",
+          },
+        });
       }
     };
 
@@ -93,18 +112,23 @@ const GiftDetails = () => {
     setMainImage(getImageUrl(variation?.images?.[0]));
   };
 
-  // const { name, description } = product;
-  if (!product) return <div className="container py-5">Loading...</div>;
-  // Select the correct variation directly
+  const handleCaratChange = (index) => {
+    setSelectedVariationIndex(index);
+    setIsVideo(false);
+
+    const variation = product.metal_variations[selectedMetalId][index];
+    setMainImage(getImageUrl(variation?.images?.[0]));
+  };
+
+  if (!product) return <LoadingDots />;
+
   const selectedVariation =
     product.metal_variations?.[selectedMetalId]?.[selectedVariationIndex];
   const currentMedia = selectedVariation
     ? [
-        // Add video first if it exists
         ...(selectedVariation.video
           ? [{ type: "video", src: getVideoUrl(selectedVariation.video) }]
           : []),
-        // Then add all images
         ...(selectedVariation.images?.map((img) => ({
           type: "image",
           src: getImageUrl(img),
@@ -112,7 +136,6 @@ const GiftDetails = () => {
       ]
     : [];
 
-  // Navigation functions for mobile carousel
   const nextImage = () =>
     setCurrentImageIndex((prev) => (prev + 1) % currentMedia.length);
 
@@ -121,8 +144,7 @@ const GiftDetails = () => {
       (prev) => (prev - 1 + currentMedia.length) % currentMedia.length
     );
 
-  // Extract product details safely
-  const { name, description } = product.product || {};
+  const { name, description, delivery_days } = product.product || {};
 
   const {
     price,
@@ -131,16 +153,50 @@ const GiftDetails = () => {
     sku: variationSku,
     metal_color,
   } = selectedVariation || {};
-  const priceDifference = Math.max(original_price - price, 0);
+  const priceDifference = Math.max(original_price - price, 0).toFixed(2);
   const metalName = metal_color?.name || "-";
-  // const { price, weight, sku: variationSku } = selectedVariation || {};
+
+  const currentDate = new Date();
+  const estimatedDays = delivery_days + 1;
+  const deliveryDate = new Date(currentDate);
+  deliveryDate.setDate(currentDate.getDate() + estimatedDays);
+
+  const options = { weekday: "short", month: "short", day: "numeric" };
+  const formattedDate = deliveryDate.toLocaleDateString("en-US", options);
+
+  const handleReviewAdded = () => {
+    setReviewsRefreshed((prev) => prev + 1);
+  };
+
+  const actions = [
+    { icon: <Mail size={16} />, text: "DROP A HINT", path: "/inquiry" },
+    { icon: <Phone size={16} />, text: "CONTACT US", path: "/contact" },
+    {
+      icon: <Heart size={16} />,
+      text: "ADD TO WISHLIST",
+      path: "/drop-a-hint",
+    },
+    {
+      icon: <Calendar size={16} />,
+      text: "SCHEDULE APPOINTMENT",
+      path: "/book-appointment",
+    },
+  ];
+
+  const handleNavigation = (item) => {
+    // If it’s the inquiry page, add productId as a query param
+    if (item.path === "/inquiry") {
+      navigate(`${item.path}?productId=${productId}`);
+    } else {
+      navigate(item.path);
+    }
+  };
+
   return (
     <div className="bg-white min-vh-100">
-      {/* =============================================================================== */}
-      {/* DESKTOP LAYOUT                                   */}
-      {/* =============================================================================== */}
+      {/* Desktop Layout */}
       <div className="d-none d-md-block">
-        <div className="container py-5">
+        <div className="container">
           <div className="row" style={{ "--bs-gutter-x": "2.5rem" }}>
             {/* Image Thumbnails */}
             <div className="col-1">
@@ -172,7 +228,6 @@ const GiftDetails = () => {
                   />
                 )}
 
-                {/* Image thumbnails */}
                 {selectedVariation?.images?.map((img, i) => {
                   const src = getImageUrl(img);
                   return (
@@ -244,10 +299,10 @@ const GiftDetails = () => {
               <div className="mb-4">
                 <span className="h3 fw-bold">₹{price}</span>
                 <span className="fs-5 text-secondary text-decoration-line-through ms-2">
-                  ${original_price}
+                  ₹{original_price}	 	 	
                 </span>
                 <span className="text-green-custom ms-2">
-                  (${priceDifference} OFF)
+                  (₹{priceDifference} OFF) 	 	 	
                 </span>
               </div>
 
@@ -262,7 +317,7 @@ const GiftDetails = () => {
                     .sort(([aKey, aGroup], [bKey, bGroup]) => {
                       const aMetal = aGroup[0].metal_color;
                       const bMetal = bGroup[0].metal_color;
-                      const order = ["14k", "18k", "PL"]; // Customize the order here
+                      const order = ["14k", "18k", "PL"];
                       return (
                         order.indexOf(aMetal?.quality) -
                         order.indexOf(bMetal?.quality)
@@ -332,39 +387,9 @@ const GiftDetails = () => {
                 </div>
               </div>
 
-              <div className="mb-4">
-                <h3 className="fw-semibold small mb-2">
-                  ADD CLARITY COMMITMENT PROTECTION PLAN
-                </h3>
-                <div className="d-flex align-items-center gap-2 mb-3">
-                  <p className="small text-muted mb-0">
-                    Ensure your jewelry lasts a lifetime.
-                  </p>
-                  <Info size={16} className="text-secondary" />
-                </div>
-                <div className="row row-cols-3 g-2 pt-2">
-                  {protectionPlans.map((plan) => (
-                    <div className="col" key={plan.id}>
-                      <button
-                        onClick={() => setSelectedPlan(plan.id)}
-                        className={`btn w-100 border text-center p-3 small plan-btn ${
-                          selectedPlan === plan.id ? "active" : ""
-                        }`}
-                      >
-                        {plan.popular && (
-                          <span className="popular-badge badge rounded-pill">
-                            MOST POPULAR
-                          </span>
-                        )}
-                        {plan.label}
-                      </button>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
               <button
-                className="btn btn-primary w-100 py-3 fw-semibold bg-brand-blue mb-3"
+                className="btn w-100 py-3 fw-semibold mb-3"
+                style={{ backgroundColor: "#0060AC", color: "white" }}
                 onClick={() => {
                   const cartItem = {
                     ...selectedVariation,
@@ -379,21 +404,21 @@ const GiftDetails = () => {
               >
                 ADD TO CART
               </button>
-              <button className="btn btn-outline-dark w-100 py-3 fw-semibold mb-4">
+              {/* <button className="btn btn-outline-dark w-100 py-3 fw-semibold mb-4">
                 VIRTUAL / SHOWROOM APPOINTMENT
-              </button>
+              </button> */}
 
               <p className="small mb-2">
-                Ships by <strong>Wed, Oct 8</strong> | Track in real time before
-                it ships
+                Ships by <strong>{formattedDate}</strong> | Track in real time
+                before it ships
               </p>
-              <p className="small mb-2">
+              {/*  <p className="small mb-2">
                 <span className="text-blue-link">0% APR</span> or as low as
                 $53/mo with <strong>affirm</strong>.{" "}
                 <a href="#" className="text-decoration-underline">
                   See if you qualify
                 </a>
-              </p>
+              </p> */}
               <p className="small mb-4">
                 Free Insured Shipping.
                 <a href="#" className="text-decoration-underline">
@@ -403,17 +428,12 @@ const GiftDetails = () => {
 
               <div className="border-top pt-4">
                 <div className="row row-cols-2 g-2 mb-4">
-                  {[
-                    { icon: <Mail size={16} />, text: "DROP A HINT" },
-                    { icon: <Phone size={16} />, text: "CONTACT US" },
-                    { icon: <Heart size={16} />, text: "ADD TO WISHLIST" },
-                    {
-                      icon: <Calendar size={16} />,
-                      text: "SCHEDULE APPOINTMENT",
-                    },
-                  ].map((item) => (
+                  {actions.map((item) => (
                     <div className="col" key={item.text}>
-                      <button className="btn btn-outline-secondary w-100 d-flex align-items-center justify-content-center gap-2 small py-2">
+                      <button
+                        className="btn btn-outline-secondary w-100 d-flex align-items-center justify-content-center gap-2 small py-2"
+                        onClick={() => handleNavigation(item)}
+                      >
                         {item.icon} {item.text}
                       </button>
                     </div>
@@ -431,15 +451,145 @@ const GiftDetails = () => {
                     Earn 847 Points when you buy this item.
                   </span>
                 </div>
+
+                <div className="product-details-container">
+                  <div>
+                    <div
+                      className="detail-section-header"
+                      onClick={() => toggleSection("product")}
+                    >
+                      <h5 className="detail-section-title">Product Details</h5>
+                      {openSection === "product" ? (
+                        <ChevronUp size={20} className="chevron-icon" />
+                      ) : (
+                        <ChevronDown size={20} className="chevron-icon" />
+                      )}
+                    </div>
+                    <div
+                      className={`section-content ${
+                        openSection === "product" ? "" : "collapsed"
+                      }`}
+                    >
+                      <p className="detail-description">{description|| "NA"}</p>
+
+                      <div className="details-grid">
+                        <span className="detail-label">Metal Details</span>
+                        <span className="detail-value">{metalName}</span>
+
+                        <span className="detail-label">Setting Type</span>
+                        <span className="detail-value">Prong</span>
+
+                        <span className="detail-label">Clasp</span>
+                        <span className="detail-value">Box</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div
+                      className="detail-section-header"
+                      onClick={() => toggleSection("stone")}
+                    >
+                      <h5 className="detail-section-title">Stone Details</h5>
+                      {openSection === "stone" ? (
+                        <ChevronUp size={20} className="chevron-icon" />
+                      ) : (
+                        <ChevronDown size={20} className="chevron-icon" />
+                      )}
+                    </div>
+                    <div
+                      className={`section-content ${
+                        openSection === "stone" ? "" : "collapsed"
+                      }`}
+                    >
+                      <div className="details-grid">
+                        <span className="detail-label">Stone Type</span>
+                        <span className="detail-value">Diamond</span>
+
+                        <span className="detail-label">Total Carat Weight</span>
+                        <span className="detail-value">{weight}</span>
+
+                        <span className="detail-label">Cut</span>
+                        <span className="detail-value">Brilliant</span>
+
+                        <span className="detail-label">Number of Stones</span>
+                        <span className="detail-value">Single Row</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div
+                      className="detail-section-header"
+                      onClick={() => toggleSection("shipping")}
+                    >
+                      <h5 className="detail-section-title">
+                        Shipping & Returns
+                      </h5>
+                      {openSection === "shipping" ? (
+                        <ChevronUp size={20} className="chevron-icon" />
+                      ) : (
+                        <ChevronDown size={20} className="chevron-icon" />
+                      )}
+                    </div>
+                    <div
+                      className={`section-content ${
+                        openSection === "shipping" ? "" : "collapsed"
+                      }`}
+                    >
+                      <p className="detail-description">
+                        Free standard shipping on all orders. Express shipping
+                        available at checkout.
+                      </p>
+                      <p className="detail-description">
+                        30-day return policy. Items must be in original
+                        condition with all packaging and documentation.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div
+                      className="detail-section-header"
+                      onClick={() => toggleSection("warranty")}
+                    >
+                      <h5 className="detail-section-title">
+                        Lifetime Warranty
+                      </h5>
+                      {openSection === "warranty" ? (
+                        <ChevronUp size={20} className="chevron-icon" />
+                      ) : (
+                        <ChevronDown size={20} className="chevron-icon" />
+                      )}
+                    </div>
+                    <div
+                      className={`section-content ${
+                        openSection === "warranty" ? "" : "collapsed"
+                      }`}
+                    >
+                      <p className="detail-description">
+                        All jewelry comes with a lifetime warranty covering
+                        manufacturing defects and craftsmanship.
+                      </p>
+                      <p className="detail-description">
+                        Includes complimentary cleaning, inspection, and minor
+                        repairs for the lifetime of the piece.
+                      </p>
+                    </div>
+                  </div>
+
+                  <button className="help-button">
+                    <MessageCircle size={20} />
+                    Need Help?
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* =============================================================================== */}
-      {/* MOBILE LAYOUT                                   */}
-      {/* =============================================================================== */}
+      {/* Mobile Layout */}
       <div className="d-block d-md-none">
         <div className="mobile-image-slider">
           {currentMedia[currentImageIndex]?.type === "video" ? (
@@ -491,7 +641,7 @@ const GiftDetails = () => {
           )}
         </div>
 
-        <div className="p-3 pb-5 mb-5">
+        <div className="p-3 pb-0">
           <div className="d-flex align-items-center gap-2 mb-2">
             <div className="text-yellow-custom small">★★★★★</div>
             <span className="small text-muted">21 reviews</span>
@@ -504,7 +654,7 @@ const GiftDetails = () => {
               {original_price}
             </span>
             <span className="text-green-custom small ms-2">
-              (${priceDifference} OFF)
+              (₹{priceDifference} OFF) 	 	 	
             </span>
           </div>
 
@@ -518,7 +668,7 @@ const GiftDetails = () => {
                 .sort(([aKey, aGroup], [bKey, bGroup]) => {
                   const aMetal = aGroup[0].metal_color;
                   const bMetal = bGroup[0].metal_color;
-                  const order = ["14k", "18k", "PL"]; // Customize the order here
+                  const order = ["14k", "18k", "PL"];
                   return (
                     order.indexOf(aMetal?.quality) -
                     order.indexOf(bMetal?.quality)
@@ -586,31 +736,9 @@ const GiftDetails = () => {
             </div>
           </div>
 
-          <div className="mb-4">
-            <h3 className="fw-semibold small mb-2">ADD PROTECTION PLAN</h3>
-            <div className="d-flex flex-nowrap gap-2 overflow-x-auto pb-2">
-              {protectionPlans.map((plan) => (
-                <button
-                  key={plan.id}
-                  onClick={() => setSelectedPlan(plan.id)}
-                  className={`btn border text-center p-3 small plan-btn flex-shrink-0 ${
-                    selectedPlan === plan.id ? "active" : ""
-                  }`}
-                >
-                  {plan.popular && (
-                    <span className="popular-badge badge rounded-pill">
-                      MOST POPULAR
-                    </span>
-                  )}
-                  {plan.label}
-                </button>
-              ))}
-            </div>
-          </div>
-
           <p className="small mb-2">
-            Ships by <strong>Wed, Oct 8</strong> | Track in real time before it
-            ships
+            Ships by <strong>{formattedDate}</strong> | Track in real time
+            before it ships
           </p>
           <p className="small mb-4">
             Free Insured Shipping.{" "}
@@ -621,25 +749,150 @@ const GiftDetails = () => {
 
           <div className="border-top pt-4">
             <div className="row row-cols-2 g-2">
-              {[
-                { icon: <Mail size={14} />, text: "DROP A HINT" },
-                { icon: <Phone size={14} />, text: "CONTACT US" },
-                { icon: <Heart size={14} />, text: "ADD TO WISHLIST" },
-                { icon: <Calendar size={14} />, text: "APPOINTMENT" },
-              ].map((item) => (
+              {actions.map((item) => (
                 <div className="col" key={item.text}>
-                  <button className="btn btn-outline-secondary w-100 d-flex align-items-center justify-content-center gap-2 small py-2">
+                  <button
+                    className="btn btn-outline-secondary w-100 d-flex align-items-center justify-content-center gap-2 small py-2"
+                    onClick={() => handleNavigation(item)}
+                  >
                     {item.icon} {item.text}
                   </button>
                 </div>
               ))}
             </div>
           </div>
+
+          <div className="product-details-container">
+            <div>
+              <div
+                className="detail-section-header"
+                onClick={() => toggleSection("product")}
+              >
+                <h5 className="detail-section-title">Product Details</h5>
+                {openSection === "product" ? (
+                  <ChevronUp size={20} className="chevron-icon" />
+                ) : (
+                  <ChevronDown size={20} className="chevron-icon" />
+                )}
+              </div>
+              <div
+                className={`section-content ${
+                  openSection === "product" ? "" : "collapsed"
+                }`}
+              >
+                <p className="detail-description">{description || "NA"}</p>
+
+                <div className="details-grid">
+                  <span className="detail-label">Metal Details</span>
+                  <span className="detail-value">{metalName}</span>
+
+                  <span className="detail-label">Product Model</span>
+                  <span className="detail-value">Prong</span>
+
+                  <span className="detail-label">Certified Lab</span>
+                  <span className="detail-value">Box</span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div
+                className="detail-section-header"
+                onClick={() => toggleSection("stone")}
+              >
+                <h5 className="detail-section-title">Stone Details</h5>
+                {openSection === "stone" ? (
+                  <ChevronUp size={20} className="chevron-icon" />
+                ) : (
+                  <ChevronDown size={20} className="chevron-icon" />
+                )}
+              </div>
+              <div
+                className={`section-content ${
+                  openSection === "stone" ? "" : "collapsed"
+                }`}
+              >
+                <div className="details-grid">
+                  <span className="detail-label">Stone Type</span>
+                  <span className="detail-value">Diamond</span>
+
+                  <span className="detail-label">Total Carat Weight</span>
+                  <span className="detail-value">{weight}</span>
+
+                  <span className="detail-label">Cut</span>
+                  <span className="detail-value">Brilliant</span>
+
+                  <span className="detail-label">Clarity</span>
+                  <span className="detail-value">Single Row</span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div
+                className="detail-section-header"
+                onClick={() => toggleSection("shipping")}
+              >
+                <h5 className="detail-section-title">Shipping & Returns</h5>
+                {openSection === "shipping" ? (
+                  <ChevronUp size={20} className="chevron-icon" />
+                ) : (
+                  <ChevronDown size={20} className="chevron-icon" />
+                )}
+              </div>
+              <div
+                className={`section-content ${
+                  openSection === "shipping" ? "" : "collapsed"
+                }`}
+              >
+                <p className="detail-description">
+                  Free standard shipping on all orders. Express shipping
+                  available at checkout.
+                </p>
+                <p className="detail-description">
+                  30-day return policy. Items must be in original condition with
+                  all packaging and documentation.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <div
+                className="detail-section-header"
+                onClick={() => toggleSection("warranty")}
+              >
+                <h5 className="detail-section-title">Lifetime Warranty</h5>
+                {openSection === "warranty" ? (
+                  <ChevronUp size={20} className="chevron-icon" />
+                ) : (
+                  <ChevronDown size={20} className="chevron-icon" />
+                )}
+              </div>
+              <div
+                className={`section-content ${
+                  openSection === "warranty" ? "" : "collapsed"
+                }`}
+              >
+                <p className="detail-description">
+                  All jewelry comes with a lifetime warranty covering
+                  manufacturing defects and craftsmanship.
+                </p>
+                <p className="detail-description">
+                  Includes complimentary cleaning, inspection, and minor repairs
+                  for the lifetime of the piece.
+                </p>
+              </div>
+            </div>
+
+            <button className="help-button">
+              <MessageCircle size={20} />
+              Need Help?
+            </button>
+          </div>
         </div>
 
-        {/* Sticky Add to Cart Bar */}
         {showMobileCart && (
-          <div className=" bg-white p-3 border-top">
+          <div className=" bg-white p-3 pt-1 border-top">
             <div className="d-flex align-items-center justify-content-between gap-3">
               <div>
                 <div className="small text-muted text-decoration-line-through">
@@ -648,7 +901,8 @@ const GiftDetails = () => {
                 <div className="h5 fw-bold mb-0">{price}</div>
               </div>
               <button
-                className="btn btn-primary flex-grow-1 py-2 fw-semibold bg-brand-blue"
+                className="btn flex-grow-1 py-2 fw-semibold bg-brand-blue"
+                style={{ backgroundColor: "#0060AC", color: "white" }}
                 onClick={() => {
                   const cartItem = {
                     ...selectedVariation,
@@ -666,6 +920,14 @@ const GiftDetails = () => {
             </div>
           </div>
         )}
+      </div>
+
+      {/* Review System */}
+      <div className="container mt-5">
+        <ProductReviewSystem
+          productId={productId}
+          refreshTrigger={reviewsRefreshed}
+        />
       </div>
     </div>
   );

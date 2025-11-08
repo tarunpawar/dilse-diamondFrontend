@@ -401,16 +401,22 @@ export default function Diamond() {
 
   return (
     <>
-      <section className="hero_section_wrapper">
-        <div className="container-fluid p-0 position-relative h-100">
-          {/* Hero image */}
-          <img
-            src="images/Header_Banner.jpg"
-            alt="Header Banner"
-            className="w-100 h-100 hero-img"
-          />
+      <section className="hero-wrapper">
+        <img
+          src="/images/Lab_Natural_Diamond.webp"
+          alt={"diamonds images "}
+          className="hero-img"
+        />
+        <div className="hero-text text-center">
+          <h1 className="fw-bold">{"Lab Grown Diamonds"}</h1>
+          <p>
+            {
+              "Shine brighter with no compromise on cost with our stunning collection of lab grown diamonds."
+            }
+          </p>
         </div>
       </section>
+
       <RingWrapper ringCartItem={ringCartItem} />
       <DiamondTabFilter
         activeTab={activeTab}
@@ -484,8 +490,6 @@ export default function Diamond() {
         onToggleCheck={toggleDiamondCheck}
         ringCartItem={ringCartItem}
       />
-
-      {/* Pagination Controls */}
 
       {isFetchingMore && <Loader />}
       <div ref={loaderRef} style={{ height: 50 }} />

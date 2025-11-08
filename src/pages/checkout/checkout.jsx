@@ -378,7 +378,7 @@ const Checkout = () => {
                 >
                   <option value="">Select a country</option>
                   <option value="Canada">Canada</option>
-                  <option value="United States">United States</option>
+                  <option value="India">India</option>
                 </select>
               </div>
 
@@ -765,7 +765,7 @@ const Checkout = () => {
 
                       {/* ITEM TOTAL PRICE */}
                       <div className="text-end ms-3">
-                        <strong>${total}</strong>
+                        <strong>₹{total}</strong>
                       </div>
                     </div>
                   );
@@ -806,7 +806,7 @@ const Checkout = () => {
                 {/* Subtotal */}
                 <div className="d-flex justify-content-between mb-2">
                   <div className="text-gray">Subtotal</div>
-                  <div>${getTotalAmount().toFixed(2)}</div>
+                  <div>₹{getTotalAmount().toFixed(2)}</div>
                 </div>
 
                 {/* Shipping */}
@@ -826,9 +826,9 @@ const Checkout = () => {
                     <strong>Total</strong>
                   </div>
                   <div>
-                    <span className="currency">USD</span>{" "}
+                    <span className="currency">INR</span>{" "}
                     <span className="total-price">
-                      ${getTotalAmount().toFixed(2)}
+                      ₹{getTotalAmount().toFixed(2)}
                     </span>
                   </div>
                 </div>

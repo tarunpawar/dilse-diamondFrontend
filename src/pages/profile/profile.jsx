@@ -205,7 +205,7 @@ const Profile = () => {
               <div className="address-card">
                 <div className="address-info">
                   <h4>Ganesh Pathan</h4>
-                  <p>United States</p>
+                  <p>India</p>
                   <span className="default-badge">Default</span>
                 </div>
                 <div className="address-actions">

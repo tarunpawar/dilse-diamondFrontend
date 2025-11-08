@@ -3,7 +3,7 @@ import axiosClient from "../../api/axios";
 import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
 import Loader from "../diamond/loader";
 import "react-medium-image-zoom/dist/styles.css";
-import "./SaleList.css";
+// import "./SaleList.css";
 
 const priceSlugMap = {
   "0-500": "$0 - $500",
@@ -660,7 +660,7 @@ const SaleList = () => {
                 : "product";
               return (
                 <div className="col" key={group.id}>
-                  <div className="h-100 d-flex flex-column product-card shadow-sm rounded">
+                  <div className="h-100 d-flex flex-column list-product-card rounded">
                     <Link
                       to={`/products/${productSlug}?product=${group.product?.id}`}
                       className="text-decoration-none text-dark mt-2"

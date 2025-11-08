@@ -22,21 +22,21 @@ export default function Terms() {
                   anything at all we can do to improve your experience, please
                   do not hesitate to contact us at&nbsp;&nbsp;
                   <a
-                    href="mailto:service@TheCaratecasa.com"
+                    href="mailto:service@dilsejewels.com"
                     aria-describedby="a11y-external-message"
                   >
-                    service@TheCaratecasa.com
+                    service@dilsejewels.com
                   </a>
                   &nbsp; or&nbsp;&nbsp;
                   <a
-                    href="tel:+1 (816) 888-1111"
+                    href="tel:+91 85115 44005"
                     aria-describedby="a11y-external-message"
-                    aria-label="call +1 (816) 888-1111"
+                    aria-label="call +91 85115 44005"
                     data-uw-rm-vglnk=""
-                    uw-rm-vague-link-id="tel:+1 (816) 888-1111$call +1 (816) 888-1111"
+                    uw-rm-vague-link-id="tel:+91 85115 44005$call +91 85115 44005"
                   >
                     {" "}
-                    +1 (816) 888-1111
+                    +91 85115 44005
                   </a>
                 </p>
                 <p>
@@ -55,7 +55,7 @@ export default function Terms() {
                   you acknowledge that you have read, understood and agreed to
                   all of the Terms &amp; Conditions outlined on
                   dilsejewels.com. You also agree to comply with all applicable
-                  laws and regulations, including United States Copyright and
+                  laws and regulations, including India Copyright and
                   Trademark laws.
                 </p>
                 <p>
@@ -66,7 +66,7 @@ export default function Terms() {
                   agree that regardless of any statute or law to the contrary,
                   any claim or cause of action arising out of or related to use
                   of the Site or the Terms of Use must be filed within one (1)
-                  year after such claim or cause of action arose or be forever
+                  year after such claim or cause of action arose or be forever 
                   barred. The section titles in the Terms of Use are for
                   convenience only and have no legal or contractual effect.
                   Notices to you may be made via either email or postal mail.
@@ -184,7 +184,7 @@ export default function Terms() {
                 </p>
                 <h2 className="display-12">Use of Website</h2>
                 <p>
-                  Dilse Jewels’s website(s) and content are intended solely
+                  Dilse Jewels website(s) and content are intended solely
                   for personal and non-commercial use by visitors and online
                   shoppers. Any use of any Dilse Jewels website or its content
                   other than for personal and non-commercial purposes is
@@ -212,7 +212,7 @@ export default function Terms() {
                   utilize framing techniques to enclose any trademark, logo, or
                   other Dilse Jewels Properties (including images, text, page
                   layout or form) of Dilse Jewels; (b) you shall not use any
-                  metatags or other “hidden text” using Dilse Jewels’s name or
+                  metatags or other “hidden text” using Dilse Jewels name or
                   trademarks; (c) you shall not use any manual or automated
                   software, devices or other processes (including but not
                   limited to spiders, robots, scrapers, crawlers, avatars, data
@@ -255,7 +255,7 @@ export default function Terms() {
                 </p>
                 <h2 className="display-12">Privacy</h2>
                 <p>
-                  Please review Dilse Jewels’s Privacy Policy , which applies
+                  Please review Dilse Jewels Privacy Policy , which applies
                   to your site visit and use of the Dilse Jewels website. Our
                   Privacy Policy discloses how Dilse Jewels collects and uses
                   personal or private information from potential and current
@@ -274,7 +274,7 @@ export default function Terms() {
                   constitute your acceptance of such changes.
                 </p>
                 <p>
-                  By consenting to Dilse Jewels’s SMS/text messaging service,
+                  By consenting to Dilse Jewels SMS/text messaging service,
                   you agree to receive recurring SMS/text messages from and on
                   behalf of Dilse Jewels through your wireless provider to the
                   mobile number you provided, even if your mobile number is
@@ -303,7 +303,7 @@ export default function Terms() {
                 </p>
                 <p>
                   You may opt-out of the Service at any time. Text the single
-                  keyword command STOP to +1 (816) 888-1111 or click the unsubscribe
+                  keyword command STOP to +91 85115 44005 or click the unsubscribe
                   link (where available) in any text message to cancel. You'll
                   receive a one-time opt-out confirmation text message. No
                   further messages will be sent to your mobile device, unless
@@ -314,7 +314,7 @@ export default function Terms() {
                   provided in their respective mobile terms.
                 </p>
                 <p>
-                  For Service support or assistance, text HELP to +1 (816) 888-1111
+                  For Service support or assistance, text HELP to +91 85115 44005
                   or email{" "}
                   <a
                     href="mailto:service@dilsejewels.com"
@@ -363,14 +363,14 @@ export default function Terms() {
                   this web site, including text, graphics, logos, icons, images,
                   artwork, audio and video clips and software is the property of
                   Dilse Jewels (or is used under license to Dilse Jewels)
-                  and is protected by United States and international copyright
+                  and is protected by India and international copyright
                   laws.
                 </p>
                 <h2 className="display-12">Infringer Policy</h2>
                 <p>
                   In accordance with the Digital Millennium Copyright Act (DMCA)
                   and other applicable law, Dilse Jewels may terminate and
-                  bar, in appropriate circumstances and at Dilse Jewels’s sole
+                  bar, in appropriate circumstances and at Dilse Jewels sole
                   discretion, website users or account holders who are deemed to
                   be repeat infringers. Dilse Jewels may also at its sole
                   discretion limit access to this site and/or terminate the
@@ -397,14 +397,14 @@ export default function Terms() {
                 </p>
                 <h2 className="display-12">Other Sites</h2>
                 <p>
-                  Dilse Jewels’s website(s) contain links to web sites that
+                  Dilse Jewels website(s) contain links to web sites that
                   are not maintained by Dilse Jewels. We try to include links
                   to only those web sites that are appropriate, in good standing
                   and safe for our visitors, but we are not responsible for the
                   content or accuracy of any web sites other than our own and
                   cannot guarantee that such websites will not change without
                   our knowledge. The inclusion of a link in this website does
-                  not imply Dilse Jewels’s endorsement of the website. If you
+                  not imply Dilse Jewels endorsement of the website. If you
                   decide to use any links to access other websites, you do so at
                   your own risk.
                 </p>
@@ -450,10 +450,10 @@ export default function Terms() {
                   warranties or damages as described above. If such law applies
                   to you, some or all of the above disclaimers, exclusions or
                   warranties may not apply to you and you may have additional
-                  rights. However, in no event shall Dilse Jewels’s aggregate
+                  rights. However, in no event shall Dilse Jewels aggregate
                   liability to you for all claims, damages, losses, and causes
                   of action exceed the amount paid to Dilse Jewels by you for
-                  accessing Dilse Jewels’s website(s).
+                  accessing Dilse Jewels website(s).
                 </p>
                 <h2 className="display-12">Indemnity</h2>
                 <p>
@@ -514,7 +514,7 @@ export default function Terms() {
                 </p>
                 <h2 className="display-12">Home Preview</h2>
                 <p>
-                  By utilizing Dilse Jewels’s Home Preview program, the
+                  By utilizing Dilse Jewels Home Preview program, the
                   customer agrees to all of the following:
                 </p>
                 <ul>
@@ -667,13 +667,13 @@ export default function Terms() {
                   </a>{" "}
                   or{" "}
                   <a
-                    href="tel:+1 (816) 888-1111"
+                    href="tel:+91 85115 44005"
                     aria-describedby="a11y-external-message"
-                    aria-label="call +1 (816) 888-1111"
+                    aria-label="call +91 85115 44005"
                     data-uw-rm-vglnk=""
-                    uw-rm-vague-link-id="tel:+1 (816) 888-1111$call +1 (816) 888-1111"
+                    uw-rm-vague-link-id="tel:+91 85115 44005$call +91 85115 44005"
                   >
-                  +1 (816) 888-1111
+                  +91 85115 44005
                   </a>
                   . For written inquiries, please submit to Service at
                   Renaissance FMI Inc. 46-24 28th Street, Long Island City,

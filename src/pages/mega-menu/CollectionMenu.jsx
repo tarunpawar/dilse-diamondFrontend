@@ -6,7 +6,6 @@ const staticCollectionRoutes = {
 };
 
 const CollectionMenu = ({
-  setHoveredOption,
   closeMegaMenu,
   navigate,
   slugify,
@@ -32,8 +31,7 @@ const CollectionMenu = ({
 
   return (
     <div
-      className=" collection-menu"
-      onMouseLeave={() => setHoveredOption(null)}
+      className="jwl-mega-menu-inner"
     >
       {/* Left Menu */}
       <div className="menu-left">

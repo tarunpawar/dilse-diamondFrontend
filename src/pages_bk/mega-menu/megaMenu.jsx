@@ -134,6 +134,16 @@ const MegaMenu = ({ type = "engagement", closeMegaMenu = () => {} }) => {
     });
   };
 
+  const handlePriceFilter = (min, max) => {
+    navigate(`/diamond?price_min=${min}&price_max=${max}`);
+    closeMegaMenu();
+  };
+
+  const handleCaratFilter = (min, max) => {
+    navigate(`/diamond?carat_min=${min}&carat_max=${max}`);
+    closeMegaMenu();
+  };
+
   return (
     <div className="jwl-mega-menu-dropdown">
       {type === "engagement" && (
@@ -162,8 +172,15 @@ const MegaMenu = ({ type = "engagement", closeMegaMenu = () => {} }) => {
       )}
 
       {type === "diamond" && (
-        <DiamondMenu closeMegaMenu={closeMegaMenu} navigate={navigate} />
+        <DiamondMenu
+          handleDiamondClick={handleDiamondClick}
+          handlePriceFilter={handlePriceFilter}
+          handleCaratFilter={handleCaratFilter}
+          closeMegaMenu={closeMegaMenu}
+          navigate={navigate}
+        />
       )}
+
       {type === "highJewelry" && (
         <HighJewelryMenu
           closeMegaMenu={closeMegaMenu}

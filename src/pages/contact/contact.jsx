@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axiosClient from "../../api/axios";
 import Help from "./help";
+import FAQAccordion from "../FAQ/FAQAccordion";
 import "./contact.css";
 
 export default function Contact() {
@@ -66,42 +67,39 @@ export default function Contact() {
     }
   };
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
+  const faqs = [
+    {
+      question: "Can I place an order on the phone?",
+      answer:
+        "We would love to hear from you. To place an order on thephone, simply call us at +91 85115 44005 during our business hours. It may be helpful to call in for custom orders, split payments, or if you have a shipping deadline in mind. We’realways available to help with questions and specialrequests.",
+    },
+    {
+      question: "What’s the best way to get the status of my order?",
+      answer:
+        "As all our jewelry is made to order, the best way to get all the details on your order is emailing us at service@dilsejewels.com. We can also assist you via live chat or phone to get you information right away about your ring or jewelry order.",
+    },
+    {
+      question: "How do I order custom jewelry or a custom ring?",
+      answer:
+        "We specialize in custom jewelry and rings. Simply call us or email us with the specifications of what you have in mind. We will get back to you within a day with a pricing quote and a way to make your custom jewelry vision come to life. Our team of gemologists and design consultants works in-house here in Surat to make all designs.",
+    },
+    {
+      question: "Where can I learn more about Dilse Jewels policies?",
+      answer:
+        "For all general questions, you can see our policies about warranties, insurance, returns and more. For anything specific, please feel free to email, live chat or call us at +91 85115 44005 and we can provide you with quick answers to your questions.",
+    },
+    {
+      question: "Do you have gemologists on your team?",
+      answer:
+        "Our customer care team is composed of gemologists with decades of experience and design consultants that have an eye for recommending the perfect diamond jewelry. We’re able to offer helpful guidance on both lab grown and natural diamonds and also help you find the right jewelry. Because of our design expertise, we can also craft custom jewelry to suit your needs.",
+    },
+    {
+      question: "Why should I choose Dilse Jewels?",
+      answer:
+        "Founded with a commitment to sustainability, transparent shopping and convenience, we have thousands of happy customers and 5 star reviews. We’re rated A+ with the BBB, and have been featured as one of the fastest growing diamond jewelry companies. Talk to us, we’d be happy to tell you more. Our commitment to crafting jewelry that celebrates your moments is paramount.",
+    },
+  ];
 
-  //   setSuccessMessage("");
-
-  //   try {
-  //     const response = await axiosClient.post("/api/contact", formData, {
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //     });
-
-  //     if (response.status === 200) {
-  //       setSuccessMessage(response.data.message); // Display success message
-  //       setFormData({
-  //         name: "",
-  //         email: "",
-  //         phone: "",
-  //         topic: "",
-  //         question: "",
-  //       });
-  //     } else {
-  //       // setError('Submission failed. Please try again.');
-  //     }
-  //   } catch (err) {
-  //     if (err.response && err.response.status === 422) {
-  //       // Laravel validation error
-  //       const errors = err.response.data.errors;
-  //       const errorMessages = Object.values(errors).flat().join(" ");
-  //       setErrorMessage(errorMessages);
-  //     } else {
-  //       // General error
-  //       setErrorMessage("Something went wrong. Please try again later.");
-  //     }
-  //   }
-  // };
   return (
     <>
       <section className="customize-engagement-ring py-5">
@@ -273,158 +271,23 @@ export default function Contact() {
         </div>
       </section>
 
-            <section>
+      <section>
         <div className="container text-center">
-
           <div className="faq-section">
-            <h1 style={{
-              color: '#213245', fontSize: '50px',
-              lineHeight: '67px',
-              paddingBottom: '20px'
-            }}>FAQ's</h1>
-
-            <div className="accordion" id="faqAccordion" style={{ background: 'none !important' }}>
-              {/* Q1 */}
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="heading1">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#faq1"
-                  >
-                    Can I place an order on the phone?
-                  </button>
-                </h2>
-                <div
-                  id="faq1"
-                  className="accordion-collapse collapse"
-                  data-bs-parent="#faqAccordion"
-                >
-                  <div className="accordion-body">
-                    We would love to hear from you. To place an order on the phone, simply call us at 844-234-6463 during our business hours. It may be helpful to call in for custom orders, split payments, or if you have a shipping deadline in mind. We’re always available to help with questions and special requests.                                    </div>
-                </div>
-              </div>
-
-              {/* Q2 */}
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="heading2">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#faq2"
-                  >
-                    What’s the best way to get the status of my order?
-                  </button>
-                </h2>
-                <div
-                  id="faq2"
-                  className="accordion-collapse collapse"
-                  data-bs-parent="#faqAccordion"
-                >
-                  <div className="accordion-body">
-                    As all our jewelry is made to order, the best way to get all the details on your order is emailing us at service@dilsejewels.com. We can also assist you via live chat or phone to get you information right away about your ring or jewelry order.
-                  </div>
-                </div>
-              </div>
-
-              {/* Q3 */}
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="heading3">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#faq3"
-                  >
-                    How do I order custom jewelry or a custom ring?
-                  </button>
-                </h2>
-                <div
-                  id="faq3"
-                  className="accordion-collapse collapse"
-                  data-bs-parent="#faqAccordion"
-                >
-                  <div className="accordion-body">
-                    We specialize in custom jewelry and rings. Simply call us or email us with the specifications of what you have in mind. We will get back to you within a day with a pricing quote and a way to make your custom jewelry vision come to life. Our team of gemologists and design consultants works in-house here in NYC to make all designs.
-                  </div>
-                </div>
-              </div>
-
-              {/* Q4 */}
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="heading4">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#faq4"
-                  >
-                    Where can I learn more about Dilse Jewels policies?
-                  </button>
-                </h2>
-                <div
-                  id="faq4"
-                  className="accordion-collapse collapse"
-                  data-bs-parent="#faqAccordion"
-                >
-                  <div className="accordion-body">
-                    For all general questions, you can see our policies about warranties, insurance, returns and more. For anything specific, please feel free to email, live chat or call us at 844-234-6463 and we can provide you with quick answers to your questions.
-                  </div>
-                </div>
-              </div>
-
-              {/* Q5 */}
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="heading5">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#faq5"
-                  >
-                    Do you have gemologists on your team?
-                  </button>
-                </h2>
-                <div
-                  id="faq5"
-                  className="accordion-collapse collapse"
-                  data-bs-parent="#faqAccordion"
-                >
-                  <div className="accordion-body">
-                    Our customer care team is composed of gemologists with decades of experience and design consultants that have an eye for recommending the perfect diamond jewelry. We’re able to offer helpful guidance on both lab grown and natural diamonds and also help you find the right jewelry. Because of our design expertise, we can also craft custom jewelry to suit your needs.
-                  </div>
-                </div>
-              </div>
-
-              {/* Q6 */}
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="heading6">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#faq6"
-                  >
-                    Why should I choose WithClarity?
-                  </button>
-                </h2>
-                <div
-                  id="faq6"
-                  className="accordion-collapse collapse"
-                  data-bs-parent="#faqAccordion"
-                >
-                  <div className="accordion-body">
-                    Founded with a commitment to sustainability, transparent shopping and convenience, we have thousands of happy customers and 5 star reviews. We’re rated A+ with the BBB, and have been featured as one of the fastest growing diamond jewelry companies. Talk to us, we’d be happy to tell you more. Our commitment to crafting jewelry that celebrates your moments is paramount.
-                  </div>
-                </div>
-              </div>
-            </div>
+            <h1
+              style={{
+                color: "#213245",
+                fontSize: "50px",
+                lineHeight: "67px",
+                paddingBottom: "20px",
+              }}
+            >
+              FAQ's
+            </h1>
+            <FAQAccordion faqs={faqs} />
           </div>
         </div>
       </section>
-      
     </>
   );
 }

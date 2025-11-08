@@ -442,7 +442,7 @@ const JewelryList = () => {
             src={
               bannerImage
                 ? `${import.meta.env.VITE_BACKEND_URL}/storage/${bannerImage}`
-                : "https://www.withclarity.com/cdn/shop/files/Women_s_Diamond_Gemstone_Jewelry_1366x.jpg?v=1729163233"
+                : "/images/Women_s_Diamond_Gemstone_Jewelry_1366x.jpg"
             }
             alt="banner"
             className="hero-img img-fluid"
@@ -764,12 +764,17 @@ const JewelryList = () => {
             const originalPrice = selectedVariation?.original_price || "";
             const sku = selectedVariation?.sku || "NA";
             const discount = selectedVariation?.discount || "";
-
+            const productSlug = group.product?.name
+              ? group.product.name
+                  .toLowerCase()
+                  .replace(/\s+/g, "-")
+                  .replace(/[^a-z0-9-]/g, "")
+              : "product";
             return (
               <div className="col" key={group.id}>
                 <div className="h-100 d-flex flex-column">
                   <Link
-                    to={`/jewellary-details/${group.product?.id}`}
+                    to={`/products/${productSlug}?product=${group.product?.id}`}
                     className="text-decoration-none text-dark mt-2"
                   >
                     <div className="product-image-container position-relative shadow">

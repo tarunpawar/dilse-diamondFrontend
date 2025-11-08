@@ -1,5 +1,6 @@
 import React from "react";
 import "./LabGrownDiamonds.css";
+import { Link } from "react-router-dom";
 
 function LabGrownDiamonds() {
   return (
@@ -7,10 +8,10 @@ function LabGrownDiamonds() {
       <section>
         <div className="container">
           <div className="row pb-4">
-            <div className="col-md-6">
+            <div className="col-md-6 LabGrownDiamonds-column">
               <div className="hero-image-lab">
                 <img
-                  src="/images/labGrownDiamonds/Diamond_Vid_990x.webp"
+                  src="/images/LabGrownDiamonds/Diamond_Vid_990x.webp"
                   alt=""
                   width={650}
                 />
@@ -23,7 +24,7 @@ function LabGrownDiamonds() {
                   All about lab grown diamonds and rings.
                 </span>
                 <div className="hero-button pt-3">
-                  <a className="hero_btn btn">SHOP LAB-GROWN DIAMONDS</a>
+                  <Link to="/diamond?menudiamond=lab-diamonds" className="hero_btn btn">SHOP LAB-GROWN DIAMONDS</Link>
                 </div>
               </div>
             </div>
@@ -52,7 +53,7 @@ function LabGrownDiamonds() {
                 textAlign: 'center'
               }}>
                 <img
-                  src={`/images/labGrownDiamonds/${item.src}`}
+                  src={`images/LabGrownDiamonds/${item.src}`}
                   alt={item.alt}
                   style={{ width: '150px', height: 'auto', marginBottom: '10px' }}
                 />
@@ -71,7 +72,7 @@ function LabGrownDiamonds() {
               <div className="col-md-4 d-flex justify-content-center">
                 <div className="text-center">
                   <img
-                    src="/images/labGrownDiamonds/01.avif"
+                    src="images/LabGrownDiamonds/01.avif"
                     alt="GIA"
                     width={100}
                     className="mb-3 mx-auto d-block"
@@ -92,7 +93,7 @@ function LabGrownDiamonds() {
               <div className="col-md-4 d-flex justify-content-center">
                 <div className="text-center">
                   <img
-                    src="/images/labGrownDiamonds/03.avif"
+                    src="images/LabGrownDiamonds/03.avif"
                     alt="AWDC"
                     width={100}
                     className="mb-3 mx-auto d-block"
@@ -112,7 +113,7 @@ function LabGrownDiamonds() {
               <div className="col-md-4 d-flex justify-content-center">
                 <div className="text-center">
                   <img
-                    src="/images/labGrownDiamonds/02.avif"
+                    src="images/LabGrownDiamonds/02.avif"
                     alt="AGS"
                     width={100}
                     className="mb-3 mx-auto d-block"
@@ -150,7 +151,7 @@ function LabGrownDiamonds() {
               <div className="col-md-6">
                 <div className="hero-image">
                   <img
-                    src="/images/labGrownDiamonds/lab-created_990x.webp"
+                    src="images/LabGrownDiamonds/lab-created_990x.webp"
                     alt=""
                     width={650}
                   />
@@ -171,7 +172,7 @@ function LabGrownDiamonds() {
           <h3 className="text-center pt-2">LAB DIAMONDS</h3>
           <h3 className="text-center pt-3">NATURAL DIAMONDS</h3>
 
-          <table className="diamond-table">
+          <table className="diamond-table-labgrow">
             <thead>
               <tr>
                 <th>Chemical Composition</th>
@@ -220,7 +221,7 @@ function LabGrownDiamonds() {
               <div className="col-md-4">
                 <div className="text-center">
                   <img
-                    src="/images/labGrownDiamonds/GIA-logo-2.png"
+                    src="images/LabGrownDiamonds/GIA-logo-2.png"
                     alt="GIA"
                     width={100}
                     className="mb-3 mx-auto d-block"
@@ -238,7 +239,7 @@ function LabGrownDiamonds() {
               <div className="col-md-4">
                 <div className="text-center">
                   <img
-                    src="/images/labGrownDiamonds/logo-AWDC-HR.png"
+                    src="images/LabGrownDiamonds/logo-AWDC-HR.png"
                     alt="AWDC"
                     width={100}
                     className="mb-3 mx-auto d-block"
@@ -256,7 +257,7 @@ function LabGrownDiamonds() {
               <div className="col-md-4">
                 <div className="text-center">
                   <img
-                    src="/images/labGrownDiamonds/ags_logo.png"
+                    src="images/LabGrownDiamonds/ags_logo.png"
                     alt="AGS"
                     width={100}
                     className="mb-3 mx-auto d-block"
@@ -276,7 +277,7 @@ function LabGrownDiamonds() {
               <div className="col-md-6">
                 <div className="text-center">
                   <img
-                    src="/images/labGrownDiamonds/igi-logo-png-transparent.avif"
+                    src="images/LabGrownDiamonds/igi-logo-png-transparent.avif"
                     alt="IGI"
                     width={100}
                     className="mb-3 mx-auto d-block"
@@ -294,7 +295,7 @@ function LabGrownDiamonds() {
               <div className="col-md-6">
                 <div className="text-center">
                   <img
-                    src="./images/labGrownDiamonds/GSI_Logo.avif"
+                    src="images/LabGrownDiamonds/GSI_Logo.avif"
                     alt="GSI"
                     width={100}
                     className="mb-3 mx-auto d-block"
@@ -303,7 +304,7 @@ function LabGrownDiamonds() {
                   <p>
                     <strong>Gemological Science International</strong>
                     <br />
-                    At Gemological Science International, hundreds of researchers use advanced technology and intelligent software to automate the diamond grading process. GSI diamond grading reports stand for “innovation, integrity, and professionalism.” Their labs in the United States, India, Belgium, and Israel follow the alphabetical grading system.
+                    At Gemological Science International, hundreds of researchers use advanced technology and intelligent software to automate the diamond grading process. GSI diamond grading reports stand for “innovation, integrity, and professionalism.” Their labs in the India, India, Belgium, and Israel follow the alphabetical grading system.
                   </p>
                 </div>
               </div>

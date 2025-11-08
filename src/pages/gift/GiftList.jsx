@@ -789,7 +789,7 @@ const GiftList = () => {
 
               return (
                 <div className="col" key={group.id}>
-                  <div className="h-100 d-flex flex-column product-card shadow-sm rounded">
+                  <div className="h-100 d-flex flex-column list-product-card rounded">
                     <Link
                       to={`/products/${productSlug}?product=${group.product?.id}`}
                       className="text-decoration-none text-dark mt-2"

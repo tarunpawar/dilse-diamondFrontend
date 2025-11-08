@@ -13,15 +13,30 @@ const priceSlugMap = {
   "3000-100000": "$3,000 - $100,000",
 };
 
-const priceSlugReverseMap = Object.entries(priceSlugMap).reduce(
-  (acc, [slug, label]) => {
-    acc[label] = slug;
-    return acc;
-  },
-  {}
-);
+const slugPriceFilterMap = {
+  "gifts-under-500": ["0-500"],
+  "gifts-under-1000": ["0-500", "500-1000"],
+  "gifts-under-1500": ["0-500", "500-1000", "1000-2000"],
+};
 
-const priceRanges = Object.values(priceSlugMap);
+const slugFiltersConfig = {
+  "jewelry-gifts": ["shape", "metal", "price"],
+  "diamond-ring-gifts": ["collection", "style", "metal", "price"],
+  "necklace-gifts": ["collection", "style", "metal", "price"],
+  "earring-gifts": ["collection", "style", "metal", "price"],
+  "bracelet-gifts": ["collection", "style", "metal", "price"],
+  "gifts-under-500": ["collection", "style", "shape", "metal", "price"],
+  "gifts-under-1000": ["collection", "style", "shape", "metal", "price"],
+  "gifts-under-1500": ["collection", "style", "metal", "price"],
+  bouquet: ["style", "metal", "price"],
+  "toi-et-moi-collection": ["style", "shape", "metal", "price"],
+  "vine-collection": ["shape", "metal", "price"],
+  "incredible-value": ["style", "shape", "metal", "price"],
+  "jewelry-gift-sets": ["metal", "price"],
+  "ready-to-ship-diamond-jewelry-gifts": ["metal", "price"],
+  "jewelry-gifts-for-him": ["style", "metal", "price"],
+};
+
 const GiftList = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -38,6 +53,7 @@ const GiftList = () => {
   const [activeMetal, setActiveMetal] = useState({});
   const [selectedVariations, setSelectedVariations] = useState({});
 
+  const [shapeData, setShapeData] = useState([]);
   const [styleData, setStyleData] = useState([]);
   const [styleNameToIdMap, setStyleNameToIdMap] = useState({});
 
@@ -55,6 +71,20 @@ const GiftList = () => {
   const location = useLocation();
   const { slug } = useParams();
   const navigate = useNavigate();
+
+  const priceSlugReverseMap = Object.entries(priceSlugMap).reduce(
+    (acc, [slug, label]) => {
+      acc[label] = slug;
+      return acc;
+    },
+    {}
+  );
+
+  let priceRanges = Object.values(priceSlugMap);
+
+  if (slugPriceFilterMap[slug]) {
+    priceRanges = slugPriceFilterMap[slug].map((key) => priceSlugMap[key]);
+  }
 
   const heroContent = {
     "jewelry-gifts": {
@@ -155,6 +185,8 @@ const GiftList = () => {
       image: "/images/giftImages/jewelry-gifts-for-him.webp",
     },
   };
+
+  const filtersSequence = slugFiltersConfig[slug] || [];
 
   const toggleFilterSection = (section) => {
     setActiveFilterSection((prev) => (prev === section ? "" : section));
@@ -266,12 +298,9 @@ const GiftList = () => {
       // -----------------------------
       // Fetch products from API
       // -----------------------------
-      const { data } = await axiosClient.get(
-        `/api/get-all-wedding-data/${slug}`,
-        {
-          params: { page, perPage: 20, ...apiFilters },
-        }
-      );
+      const { data } = await axiosClient.get(`/api/get-all-gift-data/${slug}`, {
+        params: { page, perPage: 20, ...apiFilters },
+      });
 
       const fetchedProducts = data.data || [];
       const totalProducts = parseInt(data.totalProducts) || 0;
@@ -280,6 +309,7 @@ const GiftList = () => {
       // -----------------------------
       // Update meta data and maps
       // -----------------------------
+      setShapeData(data.shapes || []);
       setStyleData(data.style_data || []);
       setCollectionData(data.collection_data || []);
       setMetalTypes(data.metal_types || []);
@@ -414,14 +444,173 @@ const GiftList = () => {
   }, [slug]);
 
   const visibleFilters = Object.entries(appliedFilters);
+  const renderFilterContent = (filterKey) => {
+    switch (filterKey) {
+      case "shape":
+        return (
+          activeFilterSection === "shape" &&
+          shapeData.length > 0 && (
+            <div className="style-scroll-wrapper">
+              <div className="shape-icon-bar">
+                {shapeData.map((shape) => (
+                  <div
+                    key={shape.id}
+                    className={`shape-item ${
+                      appliedFilters.shape === shape.name ? "active-style" : ""
+                    }`}
+                    onClick={() => addFilter(shape.name)}
+                  >
+                    <img
+                      src={`${
+                        import.meta.env.VITE_BACKEND_URL
+                      }/storage/shapes/${shape.image}`}
+                      alt={shape.name}
+                      className="style-img"
+                    />
+                    <div className="style-name">{shape.name}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )
+        );
+
+      case "collection":
+        return (
+          activeFilterSection === "collection" &&
+          collectionData.length > 0 && (
+            <div className="style-scroll-wrapper">
+              <div className="collection-icon-bar">
+                {collectionData.map((collection) => (
+                  <div
+                    key={collection.id}
+                    className={`collection-item ${
+                      appliedFilters.collection === collection.name
+                        ? "active-style"
+                        : ""
+                    }`}
+                    onClick={() => addFilter(collection.name)}
+                  >
+                    <img
+                      src={`${import.meta.env.VITE_BACKEND_URL}/storage/${
+                        collection.collection_image
+                      }`}
+                      alt={collection.name}
+                      className="style-img"
+                    />
+                    <div className="style-name">{collection.name}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )
+        );
+
+      case "style":
+        return (
+          activeFilterSection === "style" &&
+          styleData.length > 0 && (
+            <div className="style-scroll-wrapper">
+              <div className="style-icon-bar">
+                {styleData.map((style) => (
+                  <div
+                    key={style.psc_id}
+                    className={`style-item ${
+                      appliedFilters.style === style.psc_name
+                        ? "active-style"
+                        : ""
+                    }`}
+                    onClick={() => addFilter(style.psc_name)}
+                  >
+                    <img
+                      src={style.image_url}
+                      alt={style.psc_name}
+                      className="style-img"
+                    />
+                    <div className="style-name">{style.psc_name}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )
+        );
+
+      case "metal":
+        return (
+          activeFilterSection === "metal" &&
+          metalTypes.length > 0 && (
+            <div className="metal-selector">
+              {metalTypes.map((metal) => (
+                <div
+                  key={metal.dmt_id}
+                  className={`metal-item ${
+                    appliedFilters.metal === metal.dmt_name ? "active" : ""
+                  }`}
+                  onClick={() => handleMetalClick(metal.dmt_id)}
+                >
+                  <span
+                    className="metal-circle"
+                    style={{ background: metal.color_code }}
+                  ></span>
+                  <span className="metal-label">
+                    {metal.dmt_name.toUpperCase()}
+                  </span>
+                </div>
+              ))}
+            </div>
+          )
+        );
+
+      case "price":
+        return (
+          activeFilterSection === "price" && (
+            <div className="price-scroll-wrapper mt-3">
+              <div className="price-filter-bar d-flex gap-3 flex-wrap">
+                {priceRanges.map((price) => (
+                  <div
+                    key={price}
+                    className={`price-box d-flex align-items-center gap-2 ${
+                      appliedFilters.price === price ? "active" : ""
+                    }`}
+                    style={{ cursor: "pointer" }}
+                    onClick={() => addFilter(price)}
+                  >
+                    <div
+                      className="price-checkbox"
+                      style={{
+                        width: "16px",
+                        height: "16px",
+                        border: "1px solid #999",
+                        backgroundColor:
+                          appliedFilters.price === price ? "#000" : "#fff",
+                      }}
+                    ></div>
+                    <span
+                      className={`price-label-jewelry-page ${
+                        appliedFilters.price === price ? "active" : ""
+                      }`}
+                    >
+                      {price}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )
+        );
+
+      default:
+        return null;
+    }
+  };
+
   return (
     <>
-      <h1>gift</h1>
       <section className="hero-wrapper">
         <img
           src={heroContent[slug]?.image}
           alt={heroContent[slug]?.title || "Wedding Bands"}
-          className="hero-img img-fluid"
+          className="hero-img"
         />
         <div className="hero-text text-center">
           <h1 className="fw-bold">
@@ -439,84 +628,28 @@ const GiftList = () => {
         <div className="d-flex justify-content-between filters-bar">
           <div className="d-flex align-items-center flex-wrap gap-3">
             <strong>FILTERS</strong>
-            <span className="filter-divider">|</span>
-
-            {/* Collection */}
-            {!slug.startsWith("mens") && (
-              <>
+            {filtersSequence.map((filterKey, idx) => (
+              <React.Fragment key={filterKey}>
+                <span className="filter-divider">|</span>
                 <div
-                  onClick={() => toggleFilterSection("collection")}
+                  onClick={() => toggleFilterSection(filterKey)}
                   style={{
                     display: "flex",
                     alignItems: "center",
                     cursor: "pointer",
                   }}
                 >
-                  <span>Collection</span>
+                  <span>
+                    {filterKey.charAt(0).toUpperCase() + filterKey.slice(1)}
+                  </span>
                   <span className="material-symbols-outlined">
-                    {activeFilterSection === "collection"
+                    {activeFilterSection === filterKey
                       ? "expand_less"
                       : "expand_more"}
                   </span>
                 </div>
-
-                <span className="filter-divider">|</span>
-              </>
-            )}
-            {/* Style */}
-            <div
-              onClick={() => toggleFilterSection("style")}
-              style={{
-                display: "flex",
-                alignItems: "center",
-                cursor: "pointer",
-              }}
-            >
-              <span>Style</span>
-              <span className="material-symbols-outlined">
-                {activeFilterSection === "style"
-                  ? "expand_less"
-                  : "expand_more"}
-              </span>
-            </div>
-
-            <span className="filter-divider">|</span>
-
-            {/* Metal */}
-            <div
-              onClick={() => toggleFilterSection("metal")}
-              style={{
-                display: "flex",
-                alignItems: "center",
-                cursor: "pointer",
-              }}
-            >
-              <span>Metal</span>
-              <span className="material-symbols-outlined">
-                {activeFilterSection === "metal"
-                  ? "expand_less"
-                  : "expand_more"}
-              </span>
-            </div>
-
-            <span className="filter-divider">|</span>
-
-            {/* Price */}
-            <div
-              onClick={() => toggleFilterSection("price")}
-              style={{
-                display: "flex",
-                alignItems: "center",
-                cursor: "pointer",
-              }}
-            >
-              <span>Price</span>
-              <span className="material-symbols-outlined">
-                {activeFilterSection === "price"
-                  ? "expand_less"
-                  : "expand_more"}
-              </span>
-            </div>
+              </React.Fragment>
+            ))}
 
             <span className="filter-divider">|</span>
 
@@ -562,121 +695,15 @@ const GiftList = () => {
           </div>
         </div>
 
-        {!slug.startsWith("mens") &&
-          activeFilterSection === "collection" &&
-          collectionData.length > 0 && (
-            <div className="style-scroll-wrapper">
-              <div className="collection-icon-bar">
-                {collectionData.map((collection) => (
-                  <div
-                    key={collection.id}
-                    className={`collection-item ${
-                      appliedFilters.collection === collection.name
-                        ? "active-style"
-                        : ""
-                    }`}
-                    onClick={() => addFilter(collection.name)}
-                  >
-                    <img
-                      src={`${import.meta.env.VITE_BACKEND_URL}/storage/${
-                        collection.collection_image
-                      }`}
-                      alt={collection.name}
-                      className="style-img"
-                    />
-                    <div className="style-name">{collection.name}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
-
-        {activeFilterSection === "style" && styleData.length > 0 && (
-          <div className="style-scroll-wrapper">
-            <div className="style-icon-bar">
-              {styleData.map((style) => (
-                <div
-                  key={style.psc_id}
-                  className={`style-item ${
-                    appliedFilters.style === style.psc_name
-                      ? "active-style"
-                      : ""
-                  }`}
-                  onClick={() => addFilter(style.psc_name)}
-                >
-                  <img
-                    src={style.image_url}
-                    alt={style.psc_name}
-                    className="style-img"
-                  />
-                  <div className="style-name">{style.psc_name}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
-
-        {activeFilterSection === "metal" && metalTypes.length > 0 && (
-          <div className="metal-selector">
-            {metalTypes.map((metal) => (
-              <div
-                key={metal.dmt_id}
-                className={`metal-item ${
-                  appliedFilters.metal === metal.dmt_name ? "active" : ""
-                }`}
-                onClick={() => handleMetalClick(metal.dmt_id)}
-              >
-                <span
-                  className="metal-circle"
-                  style={{ background: metal.color_code }}
-                ></span>
-                <span className="metal-label">
-                  {metal.dmt_name.toUpperCase()}
-                </span>
-              </div>
-            ))}
-          </div>
-        )}
-
-        {activeFilterSection === "price" && (
-          <div className="price-scroll-wrapper mt-3">
-            <div className="price-filter-bar d-flex gap-3 flex-wrap">
-              {priceRanges.map((price) => (
-                <div
-                  key={price}
-                  className={`price-box d-flex align-items-center gap-2 ${
-                    appliedFilters.price === price ? "active" : ""
-                  }`}
-                  style={{ cursor: "pointer" }}
-                  onClick={() => addFilter(price)}
-                >
-                  <div
-                    className="price-checkbox"
-                    style={{
-                      width: "16px",
-                      height: "16px",
-                      border: "1px solid #999",
-                      backgroundColor:
-                        appliedFilters.price === price ? "#000" : "#fff",
-                    }}
-                  ></div>
-                  <span
-                    className={`price-label-jewelry-page ${
-                      appliedFilters.price === price ? "active" : ""
-                    }`}
-                  >
-                    {price}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
+        {filtersSequence.map((filterKey) => (
+          <React.Fragment key={filterKey}>
+            {renderFilterContent(filterKey)}
+          </React.Fragment>
+        ))}
 
         <hr />
 
         {/* Applied Filters */}
-
         {visibleFilters.length > 0 && (
           <div className="applied-filters-bar mt-3">
             <strong>APPLIED FILTERS</strong>
@@ -749,12 +776,22 @@ const GiftList = () => {
               const originalPrice = selectedVariation?.original_price || "NA";
               const sku = selectedVariation?.sku || "NA";
               const discount = selectedVariation?.discount || "";
+              // Create slug from product name
+              const productSlug = group.product?.name
+                ? group.product.name
+                    .toLowerCase()
+                    .replace(/\s+/g, "-")
+                    .replace(/[^a-z0-9-]/g, "")
+                : "product";
+
+              // Get variant ID
+              const variantId = selectedVariation?.id || "";
 
               return (
                 <div className="col" key={group.id}>
-                  <div className="h-100 d-flex flex-column product-card shadow-sm rounded">
+                  <div className="h-100 d-flex flex-column list-product-card rounded">
                     <Link
-                      to={`/jewellary-details/${group.product?.id}`}
+                      to={`/products/${productSlug}?product=${group.product?.id}`}
                       className="text-decoration-none text-dark mt-2"
                     >
                       <div className="product-image-container position-relative">
@@ -786,7 +823,7 @@ const GiftList = () => {
                         return (
                           <button
                             key={metalId}
-                            className="product-variation__btn btn btn-sm"
+                            className="product-variation__btn"
                             style={{
                               background: metal?.hex,
                               border: `1px solid ${
@@ -822,7 +859,7 @@ const GiftList = () => {
                         {metalOptions.map((variation, index) => (
                           <button
                             key={index}
-                            className={`product-variation__carat-pill btn btn-outline-dark btn-sm ${
+                            className={`product-variation__carat-pill ${
                               selectedIndex === index ? "active" : ""
                             }`}
                             onClick={() =>

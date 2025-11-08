@@ -98,7 +98,7 @@ const SecondHeader = ({ onHoverChange }) => {
                   className="fa-solid fa-phone me-2"
                   style={{ color: "#fff" }}
                 ></i>
-                +1 (816) 888-1111
+                +91 85115 44005
               </a>
 
               <button
@@ -235,7 +235,7 @@ const SecondHeader = ({ onHoverChange }) => {
                   className="fa-solid fa-phone me-2"
                   style={{ color: "#fff" }}
                 ></i>
-                <span className="d-none d-sm-inline">+1 (816) 888-1111</span>
+                <span className="d-none d-sm-inline">+91 85115 44005</span>
               </a>
 
               <button

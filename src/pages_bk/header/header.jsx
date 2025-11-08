@@ -78,7 +78,7 @@ const Header = ({ onHoverChange }) => {
                   className="text-decoration-none text-white d-inline-flex align-items-center"
                 >
                   <i className="fa-solid fa-phone me-2"></i>
-                  +1 (816) 888-1111
+                  +91 85115 44005
                 </a>
               </div>
               <div
@@ -149,7 +149,7 @@ const Header = ({ onHoverChange }) => {
                   className="text-decoration-none text-white d-inline-flex align-items-center gap-2"
                 >
                   <i className="fa-solid fa-phone"></i>
-                  <span>+1 (816) 888-1111</span>
+                  <span>+91 85115 44005</span>
                 </a>
               </div>
 

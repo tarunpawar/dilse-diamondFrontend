@@ -20,7 +20,7 @@ export default function Help() {
           </div>
  <div className="help-grid absolute-link-wrapper">
  <a
-  href="https://mail.google.com/mail/?view=cm&to=service@TheCaratecasa.com"
+  href="https://mail.google.com/mail/?view=cm&to=service@dilsejewels.com"
   target="_blank"
   rel="noopener noreferrer"
   className="button-email"
@@ -35,7 +35,7 @@ export default function Help() {
 
           <div className="help-grid absolute-link-wrapper">
             <a
-              href="tel: +1 (816) 888-1111"
+              href="tel: +91 85115 44005"
               className="button-call US-contact fa-regular fa-phone"
             ></a>
             <p className="help-title">Call</p>

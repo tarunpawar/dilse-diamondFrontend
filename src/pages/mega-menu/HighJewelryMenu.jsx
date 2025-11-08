@@ -1,7 +1,7 @@
 import React from "react";
 import "./highJewelryMenu.css";
 
-const HighJewelryMenu = ({ setHoveredOption, navigate }) => {
+const HighJewelryMenu = ({navigate }) => {
   const collections = [
     {
       name: "Luxe",
@@ -19,8 +19,7 @@ const HighJewelryMenu = ({ setHoveredOption, navigate }) => {
 
   return (
     <div
-      className="collection-menu"
-      onMouseLeave={() => setHoveredOption(null)}
+      className="jwl-mega-menu-inner"
     >
       <div className="collection-grid">
         {collections.map((col, i) => (
@@ -29,7 +28,7 @@ const HighJewelryMenu = ({ setHoveredOption, navigate }) => {
             className="collection-card"
             onClick={() => navigate(col.route)}
           >
-            <img src={col.image} alt={col.name} className="collection-image" />
+            <img src={col.image} alt={col.name} className="collection-image-high-jewelry" />
             <p className="collection-label">{col.name}</p>
           </div>
         ))}

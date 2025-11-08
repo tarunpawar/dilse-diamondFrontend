@@ -1,10 +1,16 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 import ScrollToTop from "./pages/scrolltop/ScrollToTop";
 import Footer from "./pages/footer/footer";
-import HeaderWrapper from "./pages/header/HeaderWrapper";
+
 
 // All your page imports
 import Home from "./pages/home/home";
+import ReviewList from "./pages/review/ReviewList";
+import ProductReviewSystem from "./pages/review/ProductReviewSystem";
+import ReviewForm from "./pages/review/ReviewForm";
+import ReviewItem from "./pages/review/ReviewItem";
+import ReplyList from "./pages/review/ReplyList";
+import HomePreview from "./pages/homePreview/HomePreview";
 import Contact from "./pages/contact/contact";
 import Engagement from "./pages/engagement/engagement";
 import About from "./pages/about/about";
@@ -40,25 +46,27 @@ import PrivateRoute from "./routes/PrivateRoute";
 import CollectionsRouter from "./pages/collectionsRouter/CollectionsRouter";
 import GiftDetails from "./pages/giftDetails/giftDetails";
 import JewelryCollections from "./pages/highJewelry/JewelryCollections";
+import BookAppointment from "./pages/appointmentModal/BookAppointment";
+import EnquiryForm from "./pages/Enquiry/EnquiryForm";
 
 // Footer pages
 import RadianceRewards from "./pages/footerpages/company/RadianceRewards";
 import Press from "./pages/footerpages/company/Press";
 import Reviews from "./pages/footerpages/company/Reviews";
 import Affiliates from "./pages/footerpages/company/Affiliates";
-import SiteMap  from "./pages/footerpages/company/Sitemap";
-import MonthlyPaymentOption  from "./pages/footerpages/company/MonthlyPaymentOption";
-
+import SiteMap from "./pages/footerpages/company/Sitemap";
+import MonthlyPaymentOption from "./pages/footerpages/company/MonthlyPaymentOption";
 
 // Education
 import DiamondFooter from "./pages/footerpages/education/DiamondFooter";
-import ClarityPlusDiamonds  from "./pages/footerpages/education/ClarityPlusDiamonds";
+import ClarityPlusDiamonds from "./pages/footerpages/education/ClarityPlusDiamonds";
 import Jewelry from "./pages/footerpages/education/jewelry/Jewelry";
 import OurPolicy from "./pages/footerpages/education/policy/OurPolicy";
 import Gemstones from "./pages/footerpages/education/gemstones/Gemstones";
 import LabGrownDiamonds from "./pages/footerpages/education/labGrownDiamonds/LabGrownDiamonds";
 import Metal from "./pages/footerpages/education/Metal";
 import Blog from "./pages/footerpages/education/blog/Blog";
+import BlogDetail from "./pages/footerpages/education/blog/BlogDetail";
 import WeddingBandStyle from "./pages/footerpages/education/WeddingBandStyle";
 
 // Customer care
@@ -71,36 +79,24 @@ import Appointment from "./pages/footerpages/customercare/Appointment";
 import { useEffect, useState } from "react";
 
 export default function App() {
-  const [paddingTop, setPaddingTop] = useState("146px");
-  const isHome = window.location.pathname === "/"; // Adjust if your home path differs
-
-  useEffect(() => {
-    const updatePadding = () => {
-      const width = window.innerWidth;
-
-      if (isHome) {
-        setPaddingTop("0px");
-      } else if (width <= 1024) {
-        setPaddingTop("100px");
-      } else {
-        setPaddingTop("146px");
-      }
-    };
-
-    updatePadding(); // Set on mount
-    window.addEventListener("resize", updatePadding);
-
-    return () => window.removeEventListener("resize", updatePadding);
-  }, [isHome]);
 
   return (
     <>
       <ScrollToTop />
       {/* <HeaderWrapper /> */}
       <WhiteClarityNav />
-      <main style={{ paddingTop }}>
+      <main >
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/book-appointment" element={<BookAppointment />} />
+          <Route path="/inquiry" element={<EnquiryForm />} />
+          {/* 🌟 Review Routes */}
+          <Route path="/review-list" element={<ReviewList />} />
+          <Route path="/product-review-system" element={<ProductReviewSystem />} />
+          <Route path="/review-form" element={<ReviewForm />} />
+          <Route path="/review-item/:id" element={<ReviewItem />} />
+          <Route path="/review/:id/replies" element={<ReplyList />} />
+          <Route path="/home-preview" element={<HomePreview />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/engagement" element={<Engagement />} />
           <Route path="/about" element={<About />} />
@@ -157,29 +153,39 @@ export default function App() {
           <Route path="/reviews" element={<Reviews />} />
           <Route path="/affiliates" element={<Affiliates />} />
           <Route path="/site-map" element={<SiteMap />} />
-          <Route path="/monthly-payment-option" element={<MonthlyPaymentOption />} />
-          <Route path="/radiance-rewards-program" element={<RadianceRewards />} />
-
+          <Route
+            path="/monthly-payment-option"
+            element={<MonthlyPaymentOption />}
+          />
+          <Route
+            path="/radiance-rewards-program"
+            element={<RadianceRewards />}
+          />
 
           {/* footer Education */}
           <Route path="/diamonds" element={<DiamondFooter />} />
-          <Route path="/clarity-plus-diamonds" element={<ClarityPlusDiamonds />} />
+          <Route
+            path="/clarity-plus-diamonds"
+            element={<ClarityPlusDiamonds />}
+          />
           <Route path="/fine-jewelry-earrings" element={<Jewelry />} />
           <Route path="/our-policies" element={<OurPolicy />} />
           <Route path="/gemstones-types-guide" element={<Gemstones />} />
           <Route path="/lab-diamonds" element={<LabGrownDiamonds />} />
           <Route path="/metal" element={<Metal />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogDetail />} />
           <Route path="/wedding-band-styles" element={<WeddingBandStyle />} />
 
           {/* Customer care */}
           <Route path="/id-me" element={<Idme />} />
           <Route path="/insurance" element={<Insurance />} />
           <Route path="/financing" element={<Financing />} />
-          <Route path="/jewelry-protection-plan" element={<ExtendedWarranty />} />
+          <Route
+            path="/jewelry-protection-plan"
+            element={<ExtendedWarranty />}
+          />
           <Route path="/book-an-appointment" element={<Appointment />} />
-
-
         </Routes>
       </main>
       <Footer />
